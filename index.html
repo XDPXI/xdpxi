@@ -113,10 +113,10 @@
         .cube {
             position: absolute;
             bottom: -50px;
-            width: 40px;
-            height: 40px;
-            background-color: #00f7ff;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            width: 20px; /* Smaller size */
+            height: 20px; /* Smaller size */
+            background-color: #ff4c4c; /* Red theme */
+            box-shadow: 0 0 20px rgba(255, 76, 76, 0.8); /* Glowing red effect */
             animation: floatUp 10s linear infinite;
             z-index: 0;
         }
@@ -136,11 +136,11 @@
         /* Add randomness for cubes */
         .cube:nth-child(odd) {
             animation-duration: 12s;
-            animation-delay: 2s;
+            animation-delay: 1s; /* Delay each cube randomly */
         }
         .cube:nth-child(even) {
             animation-duration: 15s;
-            animation-delay: 3s;
+            animation-delay: 2s; /* Delay each cube randomly */
         }
     </style>
 </head>
@@ -187,18 +187,17 @@
             alert("Dashboard clicked!");
         }
 
-        // Create random cubes
         function createCubes() {
             const container = document.getElementById('floatingCubes');
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 30; i++) {
                 const cube = document.createElement('div');
                 cube.classList.add('cube');
-                cube.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                cube.style.left = `${Math.random() * 100}vw`;
+                cube.style.animationDelay = `${Math.random() * 5}s`;
                 container.appendChild(cube);
             }
         }
 
-        // Initialize cubes
         createCubes();
     </script>
 </body>
