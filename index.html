@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to XDPXI! Explore our Discord, GitHub, and Dashboard.">
+    <title>XDPXI</title>
+    <script src="https://kit.fontawesome.com/7ea2a77467.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Noto Color Emoji', Arial, sans-serif;
+            background: linear-gradient(180deg, #000000, #333333);
+            color: white;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .gradient-background {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .blur-background {
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        header {
+            text-align: center;
+            font-size: 48px;
+            z-index: 1;
+            color: #ff4c4c;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #ff4c4c;
+            border: 2px solid #ff4c4c;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 76, 76, 0.2);
+            border-radius: 20px;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .button:hover::before { opacity: 1; }
+        .button:hover { transform: scale(1.1); }
+        .button:focus { outline: none; border-color: #ff6666; }
+    </style>
+</head>
+<body>
+    <noscript>
+        <p style="text-align: center; color: white;">JavaScript is required for full functionality of this site.</p>
+    </noscript>
+    <div class="gradient-background">
+        <div class="blur-background"></div>
+        <header>
+            <h1>XDPXI</h1>
+            <div class="button-container">
+                <button id="discordBtn" class="button" aria-label="Join Discord" onclick="discordBtn()">
+                    <i class="fa-brands fa-discord"></i> Discord
+                </button>
+                <button id="githubBtn" class="button" aria-label="Visit GitHub" onclick="githubBtn()">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </button>
+                <button id="dashboardBtn" class="button" aria-label="Open Dashboard" onclick="dashboardBtn()">
+                    <i class="fa-solid fa-bars"></i> Dashboard
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <script>
+        function discordBtn() {
+            window.open('https://discord.com/invite/example', '_blank', 'noopener noreferrer');
+        }
+
+        function githubBtn() {
+            window.open('https://github.com/xdpxi', '_blank', 'noopener noreferrer');
+        }
+
+        function dashboardBtn() {
+            alert("Dashboard clicked!");
+        }
+    </script>
+</body>
 </html>
