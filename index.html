@@ -122,6 +122,13 @@
             box-shadow: 0 0 20px rgba(255, 76, 76, 0.8); /* Glowing red effect */
             animation: floatUp 10s linear infinite;
             z-index: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+        }
+
+        /* Hover effect to make the cubes grow and glow */
+        .cube:hover {
+            transform: scale(1.5); /* Increase size */
+            box-shadow: 0 0 40px rgba(255, 76, 76, 1); /* Stronger glowing effect */
         }
 
         /* Animation to float cubes up */
@@ -162,7 +169,7 @@
                 <span>I</span>
             </h1>
             <div class="button-container">
-                <button id="discordBtn" class="button" aria-label="Join Discord" onclick="openLink('https://discord.com/invite/example')">
+                <button id="discordBtn" class="button" aria-label="Join Discord" onclick="openLink('https://discord.com/invite/EPZa3sTb3k')">
                     <i class="fa-brands fa-discord"></i> Discord
                 </button>
                 <button id="githubBtn" class="button" aria-label="Visit GitHub" onclick="openLink('https://github.com/xdpxi')">
