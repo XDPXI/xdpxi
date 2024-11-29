@@ -16,6 +16,7 @@
             font-family: 'Noto Color Emoji', Arial, sans-serif;
             background: linear-gradient(180deg, #000000, #333333);
             color: white;
+            overflow: hidden; /* Prevent scrollbars due to cube animation */
         }
 
         h1 {
@@ -65,6 +66,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            z-index: 2;
         }
 
         .button {
@@ -106,6 +108,40 @@
             outline: none;
             border-color: #ff6666;
         }
+
+        /* Glowing cube styles */
+        .cube {
+            position: absolute;
+            bottom: -50px;
+            width: 40px;
+            height: 40px;
+            background-color: #00f7ff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            animation: floatUp 10s linear infinite;
+            z-index: 0;
+        }
+
+        /* Animation to float cubes up */
+        @keyframes floatUp {
+            0% {
+                bottom: -50px;
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+
+        /* Add randomness for cubes */
+        .cube:nth-child(odd) {
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+        .cube:nth-child(even) {
+            animation-duration: 15s;
+            animation-delay: 3s;
+        }
     </style>
 </head>
 <body>
@@ -136,6 +172,8 @@
         </header>
     </div>
 
+    <div id="floatingCubes"></div>
+
     <script>
         function discordBtn() {
             window.open('https://discord.com/invite/example', '_blank', 'noopener noreferrer');
@@ -148,6 +186,20 @@
         function dashboardBtn() {
             alert("Dashboard clicked!");
         }
+
+        // Create random cubes
+        function createCubes() {
+            const container = document.getElementById('floatingCubes');
+            for (let i = 0; i < 10; i++) {
+                const cube = document.createElement('div');
+                cube.classList.add('cube');
+                cube.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                container.appendChild(cube);
+            }
+        }
+
+        // Initialize cubes
+        createCubes();
     </script>
 </body>
 </html>
