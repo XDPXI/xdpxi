@@ -21,7 +21,18 @@
         h1 {
             font-size: 2em;
             text-align: center;
-            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            cursor: default;
+        }
+
+        h1 span {
+            transition: transform 0.3s ease;
+        }
+
+        h1 span:hover {
+            transform: scale(1.2);
         }
 
         .gradient-background {
@@ -104,7 +115,13 @@
     <div class="gradient-background">
         <div class="blur-background"></div>
         <header>
-            <h1>XDPXI</h1>
+            <h1>
+                <span>X</span>
+                <span>D</span>
+                <span>P</span>
+                <span>X</span>
+                <span>I</span>
+            </h1>
             <div class="button-container">
                 <button id="discordBtn" class="button" aria-label="Join Discord" onclick="discordBtn()">
                     <i class="fa-brands fa-discord"></i> Discord
