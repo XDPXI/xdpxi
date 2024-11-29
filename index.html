@@ -159,10 +159,10 @@
                 <span>I</span>
             </h1>
             <div class="button-container">
-                <button id="discordBtn" class="button" aria-label="Join Discord" onclick="discordBtn()">
+                <button id="discordBtn" class="button" aria-label="Join Discord" onclick="openLink('https://discord.com/invite/example')">
                     <i class="fa-brands fa-discord"></i> Discord
                 </button>
-                <button id="githubBtn" class="button" aria-label="Visit GitHub" onclick="githubBtn()">
+                <button id="githubBtn" class="button" aria-label="Visit GitHub" onclick="openLink('https://github.com/xdpxi')">
                     <i class="fa-brands fa-github"></i> GitHub
                 </button>
                 <button id="dashboardBtn" class="button" aria-label="Open Dashboard" onclick="dashboardBtn()">
@@ -175,12 +175,8 @@
     <div id="floatingCubes"></div>
 
     <script>
-        function discordBtn() {
-            window.open('https://discord.com/invite/example', '_blank', 'noopener noreferrer');
-        }
-
-        function githubBtn() {
-            window.open('https://github.com/xdpxi', '_blank', 'noopener noreferrer');
+        function openLink(url) {
+            window.open(url, '_blank', 'noopener noreferrer');
         }
 
         function dashboardBtn() {
