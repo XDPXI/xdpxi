@@ -24,7 +24,7 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            gap: 5px;
+            gap: 10px;
             cursor: default;
         }
 
@@ -67,10 +67,12 @@
             justify-content: center;
             gap: 20px;
             z-index: 2;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: transparent;
             color: #ff4c4c;
             border: 2px solid #ff4c4c;
@@ -79,7 +81,7 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, background 0.3s ease;
         }
 
         .button::before {
@@ -102,6 +104,7 @@
 
         .button:hover {
             transform: scale(1.1);
+            background-color: rgba(255, 76, 76, 0.1);
         }
 
         .button:focus {
@@ -113,8 +116,8 @@
         .cube {
             position: absolute;
             bottom: -50px;
-            width: 20px; /* Smaller size */
-            height: 20px; /* Smaller size */
+            width: 15px; /* Smaller size */
+            height: 15px; /* Smaller size */
             background-color: #ff4c4c; /* Red theme */
             box-shadow: 0 0 20px rgba(255, 76, 76, 0.8); /* Glowing red effect */
             animation: floatUp 10s linear infinite;
