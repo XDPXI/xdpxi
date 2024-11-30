@@ -16,7 +16,7 @@
             font-family: 'Noto Color Emoji', Arial, sans-serif;
             background: linear-gradient(180deg, #000000, #333333);
             color: white;
-            overflow: hidden; /* Prevent scrollbars due to cube animation */
+            overflow: hidden;
         }
 
         h1 {
@@ -35,6 +35,48 @@
 
         h1 span:hover {
             transform: scale(1.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+        }
+
+        nav a {
+            font-family: 'Noto Color Emoji', Arial, sans-serif;
+            margin: 0 15px;
+            color: #ff4c4c;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff4c4c;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: white;
         }
 
         .gradient-background {
@@ -113,6 +155,47 @@
             border-color: #ff6666;
         }
 
+        .navButton {
+            padding: 10px 17px;
+            background-color: transparent;
+            color: #ff4c4c;
+            border: 2px solid #ff4c4c;
+            border-radius: 20px;
+            font-size: 15px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .navButton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 76, 76, 0.2);
+            border-radius: 20px;
+            z-index: -1;
+            transition: opacity 0.3s ease, filter 0.3s ease;
+        }
+
+        .navButton:hover::before {
+            opacity: 1;
+            filter: blur(10px);
+        }
+
+        .navButton:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 76, 76, 0.1);
+        }
+
+        .navButton:focus {
+            outline: none;
+            border-color: #ff6666;
+        }
+
         /* Glowing cube styles */
         .cube {
             position: absolute;
@@ -159,6 +242,21 @@
     <noscript>
         <p style="text-align: center; color: white;">JavaScript is required for full functionality of this site.</p>
     </noscript>
+
+    <nav>
+        <div class="button-container">
+            <button id="homeBtn" class="navButton" aria-label="Visit Homepage" onclick="replaceLink('/')">
+                <i class="fa-solid fa-house"></i> Home
+            </button>
+            <button id="xdlibBtn" class="navButton" aria-label="Visit XDLib" onclick="replaceLink('/xdlib')">
+                <i class="fa-solid fa-puzzle-piece"></i> XDLib
+            </button>
+            <button id="dashboardBtn" class="navButton" aria-label="Visit Dashboard" onclick="replaceLink('/dash')">
+                <i class="fa-solid fa-bars"></i> Dashboard
+            </button>
+        </div>
+    </nav>
+
     <div class="gradient-background">
         <div class="blur-background"></div>
         <header>
