@@ -20,11 +20,12 @@
         }
 
         h1 {
+            font-family: 'Poppins', Arial, sans-serif;
             font-size: 2em;
             text-align: center;
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 25px;
             cursor: default;
         }
 
@@ -180,14 +181,6 @@
     <div id="floatingCubes"></div>
 
     <script>
-        function openLink(url) {
-            window.open(url, '_blank', 'noopener noreferrer');
-        }
-
-        function dashboardBtn() {
-            alert("Dashboard clicked!");
-        }
-
         function createCubes() {
             const container = document.getElementById('floatingCubes');
             for (let i = 0; i < 30; i++) {
