@@ -274,9 +274,6 @@
                 <button id="githubBtn" class="button" aria-label="Visit GitHub" onclick="openLink('https://github.com/xdpxi')">
                     <i class="fa-brands fa-github"></i> GitHub
                 </button>
-                <button id="dashboardBtn" class="button" aria-label="Open Dashboard" onclick="dashboardBtn()">
-                    <i class="fa-solid fa-bars"></i> Dashboard
-                </button>
             </div>
         </header>
     </div>
@@ -288,8 +285,8 @@
             window.open(url, '_blank', 'noopener noreferrer');
         }
 
-        function dashboardBtn() {
-            alert("Dashboard clicked!");
+        function replaceLink(url) {
+            location.href = url;
         }
 
         function createCubes() {
