@@ -193,6 +193,10 @@
         .footer-column ul li a:hover {
             text-decoration: underline;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
@@ -245,8 +249,17 @@
         const urlParams = new URLSearchParams(window.location.search);
         const xValue = urlParams.get('x');
 
+        async function waitFor(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function download() {
+            await waitFor(100);
+            location.href = 'https://cdn.modrinth.com/data/NPP0839w/versions/f5NgC7cG/Geode58%27s%20Server%201.1.1.mrpack';
+        }
+
         if (xValue) {
-            location.href = 'https://raw.githubusercontent.com/XDPXI/xdpxi/refs/heads/main/servers/geode58/geode.mrpack';
+            download();
         }
     </script>
 </body>
