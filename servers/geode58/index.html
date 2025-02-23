@@ -240,6 +240,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const xValue = urlParams.get('x');
+
+        if (xValue) {
+            location.href = 'https://raw.githubusercontent.com/XDPXI/xdpxi/refs/heads/main/servers/geode58/geode.mrpack';
+        }
+    </script>
 </body>
 
 </html>
