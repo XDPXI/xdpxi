@@ -211,7 +211,7 @@
         </div>
 
         <div align="center" class="section">
-            <button class="button" onclick="location.href = 'https://raw.githubusercontent.com/XDPXI/xdpxi/refs/heads/main/servers/geode58/geode.mrpack'">Download</button>
+            <button class="button" onclick="download()">Download</button>
             <button class="button" onclick="window.open('https://modrinth.com/modpack/geode58-server', '_blank');">Learn More</button>
         </div>
     </div>
@@ -249,13 +249,17 @@
         const urlParams = new URLSearchParams(window.location.search);
         const xValue = urlParams.get('x');
 
-        async function waitFor(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
+        function download() {
+            const width = 500;
+            const height = 405;
+            const left = (window.screen.width - width) / 2;
+            const top = (window.screen.height - height) / 2;
 
-        async function download() {
-            await waitFor(100);
-            location.href = 'https://cdn.modrinth.com/data/NPP0839w/versions/f5NgC7cG/Geode58%27s%20Server%201.1.1.mrpack';
+            window.open(
+                "https://modrinth.com/modpack/geode58-server#download",
+                "_blank",
+                `width=${width},height=${height},left=${left},top=${top},noopener,noreferrer`
+            );
         }
 
         if (xValue) {
