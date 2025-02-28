@@ -38,12 +38,25 @@
         }
 
         header {
-            background: linear-gradient(45deg, var(--header-gradient-start), var(--header-gradient-mid), var(--header-gradient-end));
-            padding: 30px;
+            position: relative;
+            background: var(--background-dark);
+            padding: 20px;
             text-align: center;
-            border-radius: 10px;
             box-shadow: 0 4px 8px var(--shadow-dark);
             margin-bottom: 40px;
+            border-radius: 17px;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, var(--header-gradient-start), var(--header-gradient-mid), var(--header-gradient-end));
+            z-index: -1;
         }
 
         h1 {
@@ -92,18 +105,6 @@
             box-shadow: 0 4px 10px var(--shadow-dark);
         }
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-
-        .footer a {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-
         .content-wrapper {
             max-width: 1200px;
             margin: 0 auto;
@@ -148,18 +149,6 @@
             outline: none;
         }
 
-        footer {
-            background: linear-gradient(45deg, var(--header-gradient-start), var(--header-gradient-mid), var(--header-gradient-end));
-            border-radius: 10px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 30px;
-            bottom: 30px;
-            right: 30px;
-            left: 30px;
-        }
-
         .footer-content {
             display: flex;
             justify-content: space-between;
@@ -190,14 +179,14 @@
             text-decoration: none;
         }
 
-            .footer-column ul li a:hover {
+        .footer-column ul li a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header role="banner">
+    <header class="element" role="banner">
         <h1>X D P X I</h1>
     </header>
 
@@ -207,7 +196,7 @@
         </div>
     </div>
 
-    <footer style="position: fixed;">
+    <header>
         <div class="footer-content">
             <div class="footer-column">
                 <h3>About</h3>
@@ -234,7 +223,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </header>
 </body>
 
 </html>
