@@ -28,6 +28,23 @@ body {
     box-sizing: border-box;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    image-rendering: pixelated;
+}
+
+.nav-logo span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -56,23 +73,6 @@ body {
     letter-spacing: 2px;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-logo img {
-    width: 40px;
-    height: 40px;
-    image-rendering: pixelated;
-}
-
-.nav-logo span {
-    font-size: 20px;
-    color: #ffffff;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -97,6 +97,10 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
+.image-area:hover {
+    transform: scale(1.1) translateY(-15px);
+}
+
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -107,10 +111,6 @@ body {
     100% {
         transform: translateY(0);
     }
-}
-
-.image-area:hover {
-    transform: scale(1.1) translateY(-15px);
 }
 
 .background {

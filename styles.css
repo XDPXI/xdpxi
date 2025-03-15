@@ -86,7 +86,7 @@ a:hover {
 
 pre {
     background-color: #333;
-    color: #e0e0e0;
+    color: var(--text-light);
     padding: 20px;
     border-radius: 10px;
     overflow-x: auto;
