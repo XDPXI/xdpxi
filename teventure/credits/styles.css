@@ -81,13 +81,30 @@ body {
     gap: 40px;
     padding: 20px;
     max-width: 1200px;
-    margin-top: 80px; /* Adjusted for the fixed navbar */
+    margin-top: 80px;
     flex-wrap: wrap;
 }
 
 .text-area {
     max-width: 600px;
 }
+
+.text-area p, .text-area a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-flex;
+    margin: 10px 0 20px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.text-area a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+
 
 .image-area {
     width: 300px;
