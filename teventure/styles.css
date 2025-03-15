@@ -19,11 +19,11 @@ body {
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    padding: 15px 30px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     border-bottom: 2px solid #007bff;
     box-sizing: border-box;
 }
@@ -44,8 +44,8 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #007bff;
-    font-size: 18px;
-    padding: 6px 12px;
+    font-size: 16px;
+    padding: 5px 10px;
     transition: all 0.3s ease;
     display: inline-block;
 }
@@ -54,24 +54,6 @@ body {
     color: #fff;
     transform: scale(1.1);
     letter-spacing: 2px;
-}
-
-.discord-btn {
-    background-color: #7289da;
-    border-radius: 8px;
-    padding: 8px 16px;
-    color: #ffffff;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.discord-btn:hover {
-    background-color: #5b6eae;
-    transform: scale(1.05);
-    letter-spacing: 1px;
 }
 
 .nav-logo {
@@ -87,19 +69,18 @@ body {
 }
 
 .nav-logo span {
-    font-size: 22px;
+    font-size: 20px;
     color: #ffffff;
-    font-weight: bold;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     padding: 20px;
     max-width: 1200px;
-    margin-top: 80px;
+    margin: 60px auto 0;
 }
 
 .text-area {
@@ -107,13 +88,12 @@ body {
 }
 
 .image-area {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background: url('https://xdpxi.vercel.app/teventure/favicon.png') center/cover no-repeat;
-    border-radius: 12px;
+    border-radius: 8px;
     transition: transform 0.3s ease-in-out;
     animation: float 3s ease-in-out infinite;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes float {
@@ -121,7 +101,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-15px);
     }
     100% {
         transform: translateY(0);
@@ -129,28 +109,40 @@ body {
 }
 
 .image-area:hover {
-    transform: scale(1.1) translateY(-20px);
+    transform: scale(1.1) translateY(-15px);
+}
+
+.background {
+    background: linear-gradient(to top, #1e8cf5, #59b329);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
 }
 
 .button {
     background-color: transparent;
     color: #007bff;
-    padding: 14px 28px;
+    padding: 12px 25px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     border: 4px solid #007bff;
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s ease;
     image-rendering: pixelated;
-    border-radius: 8px;
 }
 
 .button:hover {
@@ -161,12 +153,11 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 48px;
     margin: 20px 0;
 }
 
 p {
-    font-size: 24px;
-    margin: 10px 0 30px;
-    color: #ddd;
+    font-size: 20px;
+    margin: 10px 0 20px;
 }
