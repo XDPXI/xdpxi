@@ -4,7 +4,7 @@ export default function middleware(req) {
   return next({
     headers: {
       'Referrer-Policy': 'origin-when-cross-origin',
-      'X-Frame-Options': 'allow',
+      'X-Frame-Options': 'DENY',
       'X-Content-Type-Options': 'nosniff',
       'X-DNS-Prefetch-Control': 'on',
       'Strict-Transport-Security':
