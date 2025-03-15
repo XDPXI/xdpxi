@@ -136,7 +136,6 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 8px;
-    image-rendering: pixelated;
     transition: transform 0.3s ease-in-out;
     animation: float 3s ease-in-out infinite;
 }
