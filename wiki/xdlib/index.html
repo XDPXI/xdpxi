@@ -24,12 +24,12 @@
 
     <header>
         <div class="footer-content">
-            <div class="footer-column">
+            <div class="footer-column" id="hide1">
                 <h3>About</h3>
                 <img src="https://xdpxi.vercel.app/icon.png" alt="Site Icon" width="32" height="32">
                 <p>&copy; 2025 XDPXI. All rights reserved.</p>
             </div>
-            <div class="footer-column">
+            <div class="footer-column" id="hide2">
                 <h3>Pages</h3>
                 <nav aria-label="Site Navigation">
                     <ul>
@@ -41,7 +41,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-column">
+            <div class="footer-column" id="hide2">
                 <h3>Apps & Games</h3>
                 <nav aria-label="External Links">
                     <ul>
@@ -49,7 +49,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-column">
+            <div class="footer-column" id="hide2">
                 <h3>Links</h3>
                 <nav aria-label="External Links">
                     <ul>
@@ -64,6 +64,31 @@
             </div>
         </div>
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', checkWidth);
+        window.addEventListener('resize', checkWidth);
+    
+        function checkWidth() {
+            const width = window.innerWidth;
+            const hideElement = document.getElementById('hide1');
+            const elements = document.querySelectorAll('#hide2');
+    
+            hideElement.style.transition = 'opacity 0.3s ease';
+            if (width < 800) {
+                hideElement.style.opacity = '0';
+                setTimeout(() => hideElement.style.display = 'none', 300);
+            } else {
+                hideElement.style.display = '';
+                setTimeout(() => hideElement.style.opacity = '1', 10);
+            }
+    
+            elements.forEach(element => {
+                element.style.transition = 'font-size 0.3s ease';
+                element.style.fontSize = (width < 620) ? '11px' : '';
+            });
+        }
+    </script>
 
     <script>
         window.location.href = "https://xdpxi.gitbook.io/xdlib";
