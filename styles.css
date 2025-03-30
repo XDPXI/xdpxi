@@ -38,14 +38,19 @@ header {
 }
 
 header::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -4px;
     left: -4px;
     right: -4px;
     bottom: -4px;
     border-radius: 20px;
-    background: linear-gradient(45deg, var(--header-gradient-start), var(--header-gradient-mid), var(--header-gradient-end));
+    background: linear-gradient(
+        45deg,
+        var(--header-gradient-start),
+        var(--header-gradient-mid),
+        var(--header-gradient-end)
+    );
     z-index: -1;
 }
 
@@ -113,6 +118,18 @@ pre {
     margin-bottom: 15px;
 }
 
+.section ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
 .highlight-text {
     color: var(--highlight);
     font-weight: bold;
@@ -171,4 +188,8 @@ pre {
 
 .footer-column ul li a:hover {
     text-decoration: underline;
+}
+
+b {
+    color: var(--highlight);
 }
