@@ -46,10 +46,10 @@ header::before {
     bottom: -4px;
     border-radius: 20px;
     background: linear-gradient(
-        45deg,
-        var(--header-gradient-start),
-        var(--header-gradient-mid),
-        var(--header-gradient-end)
+            45deg,
+            var(--header-gradient-start),
+            var(--header-gradient-mid),
+            var(--header-gradient-end)
     );
     z-index: -1;
 }
