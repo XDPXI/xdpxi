@@ -6,8 +6,13 @@ const nextConfig = {
   compress: true,
   productionBrowserSourceMaps: false,
   images: {
-    domains: ['xdpxi.vercel.app'],
-    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "xdpxi.vercel.app",
+      },
+    ],
+    formats: ["image/avif", "image/webp"],
   },
   experimental: {
     optimizeCss: true,
