@@ -57,7 +57,6 @@ export default function Home() {
         <title>XDPXI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://xdpxi.vercel.app/icon.png" rel="icon" type="image/png"/>
-        <link href="https://xdpxi.vercel.app/styles.css" rel="stylesheet"/>
       </Head>
 
       <Script
