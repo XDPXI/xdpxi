@@ -13,7 +13,6 @@
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.12.0",
     "@tailwindcss/postcss": "^4.0.17",
-    "@vercel/edge": "^0.1.2",
     "critters": "^0.0.25",
     "next": "^15.2.3",
     "react": "^19.0.0",
