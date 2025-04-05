@@ -1,0 +1,27 @@
+{
+  "name": "xdpxi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev --turbo",
+    "format": "prettier --write \"**/*.{ts,tsx}\" --cache",
+    "preview": "next build && next start",
+    "start": "next start"
+  },
+  "dependencies": {
+    "critters": "^0.0.25",
+    "next": "^15.2.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.14.0",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "autoprefixer": "^10.4.21",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
