@@ -15,16 +15,20 @@
     --link-hover: #ff3b30;
     --shadow-dark: rgba(0, 0, 0, 0.2);
     --shadow-light: rgba(255, 255, 255, 0.1);
+    --border-radius: 15px;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-family);
     background-color: var(--background-dark);
     color: var(--text-light);
     line-height: 1.6;
@@ -38,7 +42,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 8px var(--shadow-dark);
     margin-bottom: 40px;
-    border-radius: 17px;
+    border-radius: calc(var(--border-radius) + 2px);
 }
 
 header::before {
@@ -48,7 +52,7 @@ header::before {
     left: -4px;
     right: -4px;
     bottom: -4px;
-    border-radius: 20px;
+    border-radius: calc(var(--border-radius) + 5px);
     background: linear-gradient(
             45deg,
             var(--header-gradient-start),
@@ -85,7 +89,8 @@ strong {
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease,
+    transform 0.2s ease;
 }
 
 a:hover {
@@ -97,7 +102,7 @@ pre {
     background-color: #333;
     color: var(--text-light);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow-x: auto;
     font-family: 'Courier New', monospace;
     font-size: 1rem;
@@ -145,9 +150,10 @@ pre {
     border: var(--button-color) 3px solid;
     padding: 12px 20px;
     font-size: 1.1rem;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease,
+    transform 0.2s ease;
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
@@ -203,7 +209,7 @@ form {
     margin: 0 auto;
     padding: 20px;
     background-color: #1e1e1e;
-    border-radius: 12px;
+    border-radius: calc(var(--border-radius) - 3px);
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
@@ -214,23 +220,23 @@ label {
     display: block;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     font-size: 1rem;
     border-radius: 8px;
-    border: none;
     outline: none;
-}
-
-input, textarea, select {
     background-color: #2a2a2a;
     color: var(--text-light);
     border: 1px solid #3a3a3a;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border-color: var(--highlight);
     box-shadow: 0 0 0 2px var(--highlight) 66;
 }
