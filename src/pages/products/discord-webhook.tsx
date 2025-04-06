@@ -58,7 +58,7 @@ export default function Home() {
               placeholder="Enter Discord Webhook URL"
               required
               value={webhookURL}
-              onChange={(e) => setWebhookURL(webhookURL.valueOf)}
+              onChange={() => setWebhookURL(webhookURL.valueOf)}
             />
 
             <label htmlFor="titleContent">Title Content:</label>
@@ -67,7 +67,7 @@ export default function Home() {
               id="titleContent"
               placeholder="Enter Message Title"
               value={titleContent}
-              onChange={(e) => setTitleContent(titleContent.valueOf)}
+              onChange={() => setTitleContent(titleContent.valueOf)}
             />
 
             <label htmlFor="embedTitle">Embed Title:</label>
@@ -76,7 +76,7 @@ export default function Home() {
               id="embedTitle"
               placeholder="Enter Embed Title"
               value={embedTitle}
-              onChange={(e) => setEmbedTitle(embedTitle.valueOf)}
+              onChange={() => setEmbedTitle(embedTitle.valueOf)}
             />
 
             <label htmlFor="embedDescription">Embed Description:</label>
@@ -84,14 +84,14 @@ export default function Home() {
               id="embedDescription"
               placeholder="Enter Embed Description"
               value={embedDescription}
-              onChange={(e) => setEmbedDescription(embedDescription.valueOf)}
+              onChange={() => setEmbedDescription(embedDescription.valueOf)}
             />
 
             <label htmlFor="embedColor">Embed Color:</label>
             <select
               id="embedColor"
               value={embedColor}
-              onChange={(e) => setEmbedColor(embedColor.valueOf)}
+              onChange={() => setEmbedColor(embedColor.valueOf)}
             >
               <option value="e74d3c">🔴 Red</option>
               <option value="ff7f00">🟠 Orange</option>
