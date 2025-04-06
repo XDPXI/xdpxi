@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 import React from "react";
+import Title from "~/components/Title";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -23,9 +24,7 @@ export default function Header({ children }: HeaderProps) {
         strategy="lazyOnload"
       />
 
-      <header role="banner">
-        <h1>{children}</h1>
-      </header>
+      <Title>{children}</Title>
     </>
   );
 }
