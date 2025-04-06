@@ -101,10 +101,14 @@ export default function Home() {
               <option value="9370DB">🟣 Purple</option>
             </select>
 
-            <button className="button" type="button" onClick={sendWebhook}
-                    style={{
-                      width: '100%'
-                    }}>
+            <button
+              className="button"
+              type="button"
+              onClick={sendWebhook}
+              style={{
+                width: "100%",
+              }}
+            >
               Send to Discord
             </button>
           </form>
