@@ -54,7 +54,7 @@ export default function Footer() {
         <div className="footer-column" id="hide1" ref={hide1Ref}>
           <h3>About</h3>
           <Image
-            src="/logo-r.png"
+            src="/icon-rounded.png"
             alt="Site Icon"
             width={32}
             height={32}

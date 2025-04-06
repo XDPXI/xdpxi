@@ -10,12 +10,18 @@ export default function Home() {
   const [embedTitle, setEmbedTitle] = React.useState("");
   const [embedDescription, setEmbedDescription] = React.useState("");
   const [embedColor, setEmbedColor] = React.useState("e74d3c");
+  const [loading, setLoading] = React.useState(false);
+  const [success, setSuccess] = React.useState<boolean | null>(null);
 
-  const sendWebhook = () => {
+  const sendWebhook = async () => {
     if (!webhookURL) {
       console.error("Please enter a webhook URL.");
+      setSuccess(false);
       return;
     }
+
+    setLoading(true);
+    setSuccess(null);
 
     const data = {
       content: titleContent || undefined,
@@ -28,22 +34,39 @@ export default function Home() {
       ],
     };
 
-    fetch(webhookURL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Message sent successfully!");
-        } else {
-          console.error("Error sending message:", response.statusText);
-        }
-      })
-      .catch((error) => {
-        console.error("Error sending message:", error);
+    try {
+      const response = await fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
+
+      if (response.ok) {
+        console.log("Message sent successfully!");
+        setSuccess(true);
+      } else {
+        console.error("Error sending message:", response.statusText);
+        setSuccess(false);
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setSuccess(false);
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const handleInputChange =
+    (setState: React.Dispatch<React.SetStateAction<string>>) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setState(e.target.value);
+    };
+
+  const handleSelectChange =
+    (setState: React.Dispatch<React.SetStateAction<string>>) =>
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setState(e.target.value);
+    };
 
   return (
     <>
@@ -58,7 +81,7 @@ export default function Home() {
               placeholder="Enter Discord Webhook URL"
               required
               value={webhookURL}
-              onChange={() => setWebhookURL(webhookURL.valueOf)}
+              onChange={handleInputChange(setWebhookURL)}
             />
 
             <label htmlFor="titleContent">Title Content:</label>
@@ -67,7 +90,7 @@ export default function Home() {
               id="titleContent"
               placeholder="Enter Message Title"
               value={titleContent}
-              onChange={() => setTitleContent(titleContent.valueOf)}
+              onChange={handleInputChange(setTitleContent)}
             />
 
             <label htmlFor="embedTitle">Embed Title:</label>
@@ -76,7 +99,7 @@ export default function Home() {
               id="embedTitle"
               placeholder="Enter Embed Title"
               value={embedTitle}
-              onChange={() => setEmbedTitle(embedTitle.valueOf)}
+              onChange={handleInputChange(setEmbedTitle)}
             />
 
             <label htmlFor="embedDescription">Embed Description:</label>
@@ -84,14 +107,14 @@ export default function Home() {
               id="embedDescription"
               placeholder="Enter Embed Description"
               value={embedDescription}
-              onChange={() => setEmbedDescription(embedDescription.valueOf)}
+              onChange={handleInputChange(setEmbedDescription)}
             />
 
             <label htmlFor="embedColor">Embed Color:</label>
             <select
               id="embedColor"
               value={embedColor}
-              onChange={() => setEmbedColor(embedColor.valueOf)}
+              onChange={handleSelectChange(setEmbedColor)}
             >
               <option value="e74d3c">🔴 Red</option>
               <option value="ff7f00">🟠 Orange</option>
@@ -108,9 +131,35 @@ export default function Home() {
               style={{
                 width: "100%",
               }}
+              disabled={loading}
             >
-              Send to Discord
+              {loading ? "Sending..." : "Send to Discord"}
             </button>
+
+            {success === true && (
+              <p
+                style={{
+                  color: "#2ecc70",
+                  textAlign: "center",
+                }}
+              >
+                <br />
+                Message sent successfully!
+              </p>
+            )}
+            {success === false && (
+              <p
+                style={{
+                  color: "#e64d3c",
+                  textAlign: "center",
+                }}
+              >
+                <br />
+                Failed to send message.
+                <br />
+                Please check the URL and try again.
+              </p>
+            )}
           </form>
         </Section>
       </Content>

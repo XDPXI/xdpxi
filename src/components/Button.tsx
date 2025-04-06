@@ -1,11 +1,11 @@
 import React from "react";
 
-interface ButtomProps {
+interface ButtonProps {
   onClick: () => void;
   children: React.ReactNode;
 }
 
-export default function Button({ children, onClick }: ButtomProps) {
+export default function Button({ children, onClick }: ButtonProps) {
   return (
     <button
       className="button"
