@@ -1,17 +1,19 @@
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Script from "next/script";
+import Content from "~/components/Content";
+import Section from "~/components/Section";
 
 export default function Home() {
   return (
     <>
       <Header>XD's Servers - Request</Header>
 
-      <div className="content-wrapper" role="main">
-        <div className="section">
+      <Content>
+        <Section>
           <h2 style={{ textAlign: "center" }}>Redirecting</h2>
-        </div>
-      </div>
+        </Section>
+      </Content>
 
       <Footer />
 

@@ -4,7 +4,7 @@ interface ContentProps {
   children: React.ReactNode;
 }
 
-export default function Section({ children }: ContentProps) {
+export default function Content({ children }: ContentProps) {
   return (
     <>
       <div className="content-wrapper" role="main">

@@ -73,9 +73,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/servers/policy">
-                  <i aria-hidden="true" className="fa-solid fa-book"></i>{" "}
-                  XD&apos;s Servers Policy
+                <Link href="/servers">
+                  <i aria-hidden="true" className="fa-solid fa-server"></i>{" "}
+                  XD&apos;s Servers
                 </Link>
               </li>
               <li>
