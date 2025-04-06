@@ -13,13 +13,13 @@
   "dependencies": {
     "critters": "^0.0.25",
     "next": "^15.2.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "preact-render-to-string": "^6.5.13",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
   },
   "devDependencies": {
     "@types/node": "22.14.0",
     "@types/react": "19.1.0",
-    "@types/react-dom": "^19.1.1",
     "autoprefixer": "^10.4.21",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
