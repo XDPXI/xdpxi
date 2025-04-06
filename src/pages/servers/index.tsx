@@ -12,7 +12,7 @@ export default function Home() {
         <div className="section" style={{ textAlign: "center" }}>
           <Button
             onClick={() => {
-              window.open("/servers/request", "_blank");
+              window.open("https://docs.google.com/forms/d/e/1FAIpQLSfHGyQCrn_Kg7xW8BhisdnUDbiaZamLzcycNhk7syhG_ohhcg/viewform", "_blank");
             }}
           >
             Request a Server
