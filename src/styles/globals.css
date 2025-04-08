@@ -16,7 +16,9 @@
     --shadow-dark: rgba(0, 0, 0, 0.2);
     --shadow-light: rgba(255, 255, 255, 0.1);
     --border-radius: 15px;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --transition-duration: 0.3s;
+    --transition-easing: ease;
 }
 
 *,
@@ -33,6 +35,8 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     padding: 30px;
+    transition: background-color var(--transition-duration) var(--transition-easing),
+    color var(--transition-duration) var(--transition-easing);
 }
 
 header {
@@ -43,10 +47,12 @@ header {
     box-shadow: 0 4px 8px var(--shadow-dark);
     margin-bottom: 40px;
     border-radius: calc(var(--border-radius) + 2px);
+    transition: background-color var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 header::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -4px;
     left: -4px;
@@ -89,7 +95,7 @@ strong {
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s ease,
+    transition: color var(--transition-duration) var(--transition-easing),
     transform 0.2s ease;
 }
 
@@ -104,9 +110,12 @@ pre {
     padding: 20px;
     border-radius: var(--border-radius);
     overflow-x: auto;
-    font-family: 'Courier New', monospace;
+    font-family: "Courier New", monospace;
     font-size: 1rem;
     box-shadow: 0 4px 10px var(--shadow-dark);
+    transition: background-color var(--transition-duration) var(--transition-easing),
+    color var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 .content-wrapper {
@@ -152,8 +161,8 @@ pre {
     font-size: 1.1rem;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.3s ease,
-    transform 0.2s ease;
+    transition: background-color var(--transition-duration) var(--transition-easing),
+    transform 0.2s ease, box-shadow var(--transition-duration) var(--transition-easing);
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
@@ -194,10 +203,12 @@ pre {
 .footer-column ul li a {
     color: #fff;
     text-decoration: none;
+    transition: all var(--transition-duration) var(--transition-easing),
+    transform 0.2s ease;
 }
 
 .footer-column ul li a:hover {
-    text-decoration: underline;
+    color: var(--highlight);
 }
 
 b {
@@ -211,6 +222,9 @@ form {
     background-color: #1e1e1e;
     border-radius: calc(var(--border-radius) - 3px);
     box-shadow: 0 4px 8px var(--shadow-dark);
+    transition: all var(--transition-duration) var(--transition-easing),
+    color var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 label {
@@ -232,6 +246,10 @@ select {
     background-color: #2a2a2a;
     color: var(--text-light);
     border: 1px solid #3a3a3a;
+    transition: all var(--transition-duration) var(--transition-easing),
+    color var(--transition-duration) var(--transition-easing),
+    border-color var(--transition-duration) var(--transition-easing),
+    box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 input:focus,
