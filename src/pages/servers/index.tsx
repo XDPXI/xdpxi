@@ -12,7 +12,7 @@ export default function Home() {
         <div className="section" style={{ textAlign: "center" }}>
           <Button
             onClick={() => {
-              window.open("https://form.typeform.com/to/cHUBGvvy", "_blank");
+              window.open("/servers/request", "_blank");
             }}
           >
             Request a Minecraft Server
