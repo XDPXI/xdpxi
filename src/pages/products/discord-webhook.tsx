@@ -5,165 +5,165 @@ import Content from "~/components/Content";
 import Section from "~/components/Section";
 
 export default function Home() {
-  const [webhookURL, setWebhookURL] = React.useState("");
-  const [titleContent, setTitleContent] = React.useState("");
-  const [embedTitle, setEmbedTitle] = React.useState("");
-  const [embedDescription, setEmbedDescription] = React.useState("");
-  const [embedColor, setEmbedColor] = React.useState("e74d3c");
-  const [loading, setLoading] = React.useState(false);
-  const [success, setSuccess] = React.useState<boolean | null>(null);
+    const [webhookURL, setWebhookURL] = React.useState("");
+    const [titleContent, setTitleContent] = React.useState("");
+    const [embedTitle, setEmbedTitle] = React.useState("");
+    const [embedDescription, setEmbedDescription] = React.useState("");
+    const [embedColor, setEmbedColor] = React.useState("e74d3c");
+    const [loading, setLoading] = React.useState(false);
+    const [success, setSuccess] = React.useState<boolean | null>(null);
 
-  const sendWebhook = async () => {
-    if (!webhookURL) {
-      console.error("Please enter a webhook URL.");
-      setSuccess(false);
-      return;
-    }
+    const sendWebhook = async () => {
+        if (!webhookURL) {
+            console.error("Please enter a webhook URL.");
+            setSuccess(false);
+            return;
+        }
 
-    setLoading(true);
-    setSuccess(null);
+        setLoading(true);
+        setSuccess(null);
 
-    const data = {
-      content: titleContent || undefined,
-      embeds: [
-        {
-          title: embedTitle || undefined,
-          description: embedDescription || undefined,
-          color: parseInt(embedColor, 16),
-        },
-      ],
+        const data = {
+            content: titleContent || undefined,
+            embeds: [
+                {
+                    title: embedTitle || undefined,
+                    description: embedDescription || undefined,
+                    color: parseInt(embedColor, 16),
+                },
+            ],
+        };
+
+        try {
+            const response = await fetch(webhookURL, {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                console.log("Message sent successfully!");
+                setSuccess(true);
+            } else {
+                console.error("Error sending message:", response.statusText);
+                setSuccess(false);
+            }
+        } catch (error) {
+            console.error("Error sending message:", error);
+            setSuccess(false);
+        } finally {
+            setLoading(false);
+        }
     };
 
-    try {
-      const response = await fetch(webhookURL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    const handleInputChange =
+        (setState: React.Dispatch<React.SetStateAction<string>>) =>
+            (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+                setState(e.target.value);
+            };
 
-      if (response.ok) {
-        console.log("Message sent successfully!");
-        setSuccess(true);
-      } else {
-        console.error("Error sending message:", response.statusText);
-        setSuccess(false);
-      }
-    } catch (error) {
-      console.error("Error sending message:", error);
-      setSuccess(false);
-    } finally {
-      setLoading(false);
-    }
-  };
+    const handleSelectChange =
+        (setState: React.Dispatch<React.SetStateAction<string>>) =>
+            (e: React.ChangeEvent<HTMLSelectElement>) => {
+                setState(e.target.value);
+            };
 
-  const handleInputChange =
-    (setState: React.Dispatch<React.SetStateAction<string>>) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setState(e.target.value);
-    };
+    return (
+        <>
+            <Header>Discord Webhook Sender</Header>
+            <Content>
+                <Section>
+                    <form id="webhookForm">
+                        <label htmlFor="webhookURL">Webhook URL:</label>
+                        <input
+                            type="text"
+                            id="webhookURL"
+                            placeholder="Enter Discord Webhook URL"
+                            required
+                            value={webhookURL}
+                            onChange={handleInputChange(setWebhookURL)}
+                        />
 
-  const handleSelectChange =
-    (setState: React.Dispatch<React.SetStateAction<string>>) =>
-    (e: React.ChangeEvent<HTMLSelectElement>) => {
-      setState(e.target.value);
-    };
+                        <label htmlFor="titleContent">Title Content:</label>
+                        <input
+                            type="text"
+                            id="titleContent"
+                            placeholder="Enter Message Title"
+                            value={titleContent}
+                            onChange={handleInputChange(setTitleContent)}
+                        />
 
-  return (
-    <>
-      <Header>Discord Webhook Sender</Header>
-      <Content>
-        <Section>
-          <form id="webhookForm">
-            <label htmlFor="webhookURL">Webhook URL:</label>
-            <input
-              type="text"
-              id="webhookURL"
-              placeholder="Enter Discord Webhook URL"
-              required
-              value={webhookURL}
-              onChange={handleInputChange(setWebhookURL)}
-            />
+                        <label htmlFor="embedTitle">Embed Title:</label>
+                        <input
+                            type="text"
+                            id="embedTitle"
+                            placeholder="Enter Embed Title"
+                            value={embedTitle}
+                            onChange={handleInputChange(setEmbedTitle)}
+                        />
 
-            <label htmlFor="titleContent">Title Content:</label>
-            <input
-              type="text"
-              id="titleContent"
-              placeholder="Enter Message Title"
-              value={titleContent}
-              onChange={handleInputChange(setTitleContent)}
-            />
+                        <label htmlFor="embedDescription">Embed Description:</label>
+                        <textarea
+                            id="embedDescription"
+                            placeholder="Enter Embed Description"
+                            value={embedDescription}
+                            onChange={handleInputChange(setEmbedDescription)}
+                        />
 
-            <label htmlFor="embedTitle">Embed Title:</label>
-            <input
-              type="text"
-              id="embedTitle"
-              placeholder="Enter Embed Title"
-              value={embedTitle}
-              onChange={handleInputChange(setEmbedTitle)}
-            />
+                        <label htmlFor="embedColor">Embed Color:</label>
+                        <select
+                            id="embedColor"
+                            value={embedColor}
+                            onChange={handleSelectChange(setEmbedColor)}
+                        >
+                            <option value="e74d3c">🔴 Red</option>
+                            <option value="ff7f00">🟠 Orange</option>
+                            <option value="f1c40f">🟡 Yellow</option>
+                            <option value="2ecc70">🟢 Green</option>
+                            <option value="3498db">🔵 Blue</option>
+                            <option value="9370DB">🟣 Purple</option>
+                        </select>
 
-            <label htmlFor="embedDescription">Embed Description:</label>
-            <textarea
-              id="embedDescription"
-              placeholder="Enter Embed Description"
-              value={embedDescription}
-              onChange={handleInputChange(setEmbedDescription)}
-            />
+                        <button
+                            className="button"
+                            type="button"
+                            onClick={sendWebhook}
+                            style={{
+                                width: "100%",
+                            }}
+                            disabled={loading}
+                        >
+                            {loading ? "Sending..." : "Send to Discord"}
+                        </button>
 
-            <label htmlFor="embedColor">Embed Color:</label>
-            <select
-              id="embedColor"
-              value={embedColor}
-              onChange={handleSelectChange(setEmbedColor)}
-            >
-              <option value="e74d3c">🔴 Red</option>
-              <option value="ff7f00">🟠 Orange</option>
-              <option value="f1c40f">🟡 Yellow</option>
-              <option value="2ecc70">🟢 Green</option>
-              <option value="3498db">🔵 Blue</option>
-              <option value="9370DB">🟣 Purple</option>
-            </select>
-
-            <button
-              className="button"
-              type="button"
-              onClick={sendWebhook}
-              style={{
-                width: "100%",
-              }}
-              disabled={loading}
-            >
-              {loading ? "Sending..." : "Send to Discord"}
-            </button>
-
-            {success === true && (
-              <p
-                style={{
-                  color: "#2ecc70",
-                  textAlign: "center",
-                }}
-              >
-                <br />
-                Message sent successfully!
-              </p>
-            )}
-            {success === false && (
-              <p
-                style={{
-                  color: "#e64d3c",
-                  textAlign: "center",
-                }}
-              >
-                <br />
-                Failed to send message.
-                <br />
-                Please check the URL and try again.
-              </p>
-            )}
-          </form>
-        </Section>
-      </Content>
-      <Footer />
-    </>
-  );
+                        {success === true && (
+                            <p
+                                style={{
+                                    color: "#2ecc70",
+                                    textAlign: "center",
+                                }}
+                            >
+                                <br/>
+                                Message sent successfully!
+                            </p>
+                        )}
+                        {success === false && (
+                            <p
+                                style={{
+                                    color: "#e64d3c",
+                                    textAlign: "center",
+                                }}
+                            >
+                                <br/>
+                                Failed to send message.
+                                <br/>
+                                Please check the URL and try again.
+                            </p>
+                        )}
+                    </form>
+                </Section>
+            </Content>
+            <Footer/>
+        </>
+    );
 }

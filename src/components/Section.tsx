@@ -1,13 +1,13 @@
 import React from "react";
 
 interface SectionProps {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }
 
-export default function Section({ children }: SectionProps) {
-  return (
-    <>
-      <div className="section">{children}</div>
-    </>
-  );
+export default function Section({children}: SectionProps) {
+    return (
+        <>
+            <div className="section">{children}</div>
+        </>
+    );
 }
