@@ -246,7 +246,7 @@ select {
     background-color: #2a2a2a;
     color: var(--text-light);
     border: 1px solid #3a3a3a;
-    transition: all var(--transition-duration) var(--transition-easing),
+    transition: border-color,box-shadow var(--transition-duration) var(--transition-easing),
     color var(--transition-duration) var(--transition-easing),
     border-color var(--transition-duration) var(--transition-easing),
     box-shadow var(--transition-duration) var(--transition-easing);
