@@ -106,6 +106,7 @@ export default function Home() {
                         <textarea
                             id="embedDescription"
                             placeholder="Enter Embed Description"
+                            style={{resize: "vertical"}}
                             value={embedDescription}
                             onChange={handleInputChange(setEmbedDescription)}
                         />
