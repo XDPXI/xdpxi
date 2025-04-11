@@ -24,11 +24,11 @@ export default function Home() {
     setSuccess(null);
 
     const data = {
-      content: titleContent || undefined,
+      content: titleContent,
       embeds: [
         {
-          title: embedTitle || undefined,
-          description: embedDescription || undefined,
+          title: embedTitle,
+          description: embedDescription,
           color: parseInt(embedColor, 16),
         },
       ],
