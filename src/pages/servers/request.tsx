@@ -17,9 +17,7 @@ export default function Home() {
       <Footer />
 
       <Script>
-        location.replace("https://form.typeform.com/to/cHUBGvvy"); // Typeform
-        // location.replace("https://forms.gle/1FFC9g9kDd1qdGuDA"); // Google
-        Forms
+        location.replace("https://app.youform.com/forms/nxkv8rfn");
       </Script>
     </>
   );
