@@ -85,12 +85,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/license/app">
-                  <i aria-hidden="true" className="fa-solid fa-book"></i>{" "}
-                  XD&apos;s App License
-                </Link>
-              </li>
-              <li>
                 <a
                   href="https://xdpxi.betteruptime.com/"
                   rel="noopener noreferrer"
