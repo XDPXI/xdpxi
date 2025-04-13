@@ -10,7 +10,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "critters": "^0.0.25",
     "next": "^15.2.3",
     "preact-render-to-string": "^6.5.13",
     "react": "npm:@preact/compat",
@@ -20,6 +19,7 @@
     "@types/node": "22.14.0",
     "@types/react": "19.1.0",
     "autoprefixer": "^10.4.21",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "critters": "^0.0.25"
   }
 }
