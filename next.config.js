@@ -9,6 +9,9 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true,
   },
+  env: {
+    STATSIG_SDK_KEY: process.env.STATSIG_SDK_KEY,
+  },
 };
 
 export default nextConfig;
