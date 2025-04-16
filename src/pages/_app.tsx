@@ -7,13 +7,14 @@ import {StatsigSessionReplayPlugin} from '@statsig/session-replay';
 
 export default function App({Component, pageProps}: AppProps) {
     const {client} = useClientAsyncInit(
-        process.env.STATSIG_SDK_KEY ?? '',
+        'client-XzKBehpfICv80UVUZnVEtKwEYNgkIZU4FY3YkBYThXf',
         {userID: 'a-user'},
-        {plugins: [new StatsigAutoCapturePlugin(), new StatsigSessionReplayPlugin()]},
+        {
+            plugins: [new StatsigAutoCapturePlugin(), new StatsigSessionReplayPlugin()]
+        },
     );
 
     return (
-        <StatsigProvider client={client} loadingComponent={<div>Loading...</div>}>
             <>
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,8 +29,9 @@ export default function App({Component, pageProps}: AppProps) {
                         }}
                     />
                 </Head>
-                <Component {...pageProps} />
+                <StatsigProvider client={client}>
+                    <Component {...pageProps} />
+                </StatsigProvider>
             </>
-        </StatsigProvider>
     );
 }

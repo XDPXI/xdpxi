@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+export default {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
@@ -9,9 +9,4 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true,
   },
-  env: {
-    STATSIG_SDK_KEY: process.env.STATSIG_SDK_KEY,
-  },
 };
-
-export default nextConfig;
