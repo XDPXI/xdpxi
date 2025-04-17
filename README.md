@@ -26,7 +26,7 @@
 ### 🔹 Game Development
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=godot,unity,tauri" />
+  <img src="https://skillicons.dev/icons?i=godot,unity" />
 </p>
 
 ---
