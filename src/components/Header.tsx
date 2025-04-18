@@ -4,27 +4,27 @@ import React from "react";
 import Title from "~/components/Title";
 
 interface HeaderProps {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }
 
-export default function Header({ children }: HeaderProps) {
-  return (
-    <>
-      <Head>
-        <title>{children}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/favicon.ico" rel="icon" type="image/x-icon" />
-        <link rel="preconnect" href="https://kit.fontawesome.com" />
-        <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
-      </Head>
+export default function Header({children}: HeaderProps) {
+    return (
+        <>
+            <Head>
+                <title>{children}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+                <link rel="preconnect" href="https://kit.fontawesome.com"/>
+                <link rel="dns-prefetch" href="https://kit.fontawesome.com"/>
+            </Head>
 
-      <Script
-        src="https://kit.fontawesome.com/7ea2a77467.js"
-        crossOrigin="anonymous"
-        strategy="lazyOnload"
-      />
+            <Script
+                src="https://kit.fontawesome.com/7ea2a77467.js"
+                crossOrigin="anonymous"
+                strategy="lazyOnload"
+            />
 
-      <Title>{children}</Title>
-    </>
-  );
+            <Title>{children}</Title>
+        </>
+    );
 }
