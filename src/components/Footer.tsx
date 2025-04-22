@@ -201,6 +201,19 @@ export default function Footer() {
                                     Modrinth
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="https://discord.gg/8NRaEGKAND"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    <i
+                                        aria-hidden="true"
+                                        className="fa-brands fa-discord"
+                                    ></i>{" "}
+                                    Discord
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
