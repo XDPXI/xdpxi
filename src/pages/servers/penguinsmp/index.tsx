@@ -2,6 +2,7 @@
 import Footer from "~/components/Footer";
 import Content from "~/components/Content";
 import Button from "~/components/Button";
+import Section from "~/components/Section";
 
 export default function Home() {
     return (
@@ -29,6 +30,10 @@ export default function Home() {
                         </h2>
                     </div>
                 </div>
+
+                <Section>
+                    <p>Penguin SMP is a lightweight medieval minecraft server.</p>
+                </Section>
 
                 <div className="section" style={{textAlign: "center"}}>
                     <Button
