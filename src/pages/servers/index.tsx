@@ -12,7 +12,7 @@ export default function Home() {
                 <div className="section" style={{textAlign: "center"}}>
                     <Button
                         onClick={() => {
-                            window.open("/servers/request", "_blank");
+                            window.open("/servers/request?type=mc", "_blank");
                         }}
                     >
                         Request a Minecraft Server
