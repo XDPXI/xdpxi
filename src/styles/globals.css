@@ -12,7 +12,7 @@
     --background-dark: #121212;
     --text-light: #e0e0e0;
     --link-color: #ff6f61;
-    --link-hover: #ff3b30;
+    --link-hover: #ff4a40;
     --shadow-dark: rgba(0, 0, 0, 0.2);
     --shadow-light: rgba(255, 255, 255, 0.1);
     --border-radius: 15px;
@@ -257,4 +257,55 @@ textarea:focus,
 select:focus {
     border-color: var(--highlight);
     box-shadow: 0 0 0 2px var(--highlight) 66;
+}
+
+.warning {
+    border: 1px solid var(--highlight);
+    background-color: #94443c;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px var(--shadow-dark);
+    transition: background-color var(--transition-duration) var(--transition-easing), box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+.warning:hover {
+    background-color: #7a3832;
+    box-shadow: 0 4px 8px var(--shadow-dark);
+}
+
+.warning h2 {
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.warning a {
+    font-size: 1.1rem;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all var(--transition-duration) var(--transition-easing);
+}
+
+.warning a:hover {
+    color: var(--link-hover);
+}
+
+.warning-icon {
+    color: var(--highlight);
+    font-size: 1.5em;
 }
