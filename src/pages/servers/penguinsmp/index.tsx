@@ -26,7 +26,7 @@ export default function Home() {
                             className="fa-solid fa-list-check"
                         ></i></span>
                         <h2>
-                            Status: Setting up modpack...
+                            Status: Setting up server...
                         </h2>
                     </div>
                 </div>
@@ -42,6 +42,13 @@ export default function Home() {
                         }}
                     >
                         Modrinth
+                    </Button>
+                    <Button
+                        onClick={() => {
+                            window.open("https://modrinth.com/modpack/penguin-smp/versions", "_blank");
+                        }}
+                    >
+                        Download
                     </Button>
                 </div>
             </Content>
