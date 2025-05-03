@@ -7,7 +7,7 @@ interface TitleProps {
 export default function Title({children}: TitleProps) {
     return (
         <>
-            <header role="banner">
+            <header className="header" role="banner">
                 <h1>{children}</h1>
             </header>
         </>
