@@ -1,7 +1,6 @@
 ﻿import React from "react";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
-import Content from "~/components/Content";
 import Section from "~/components/Section";
 
 export default function Home() {
@@ -71,7 +70,6 @@ export default function Home() {
     return (
         <>
             <Header>Discord Webhook Sender</Header>
-            <Content>
                 <Section>
                     <form id="webhookForm">
                         <label htmlFor="webhookURL">Webhook URL:</label>
@@ -163,7 +161,6 @@ export default function Home() {
                         )}
                     </form>
                 </Section>
-            </Content>
             <Footer/>
         </>
     );
