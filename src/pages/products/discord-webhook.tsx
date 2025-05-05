@@ -71,7 +71,7 @@ export default function Home() {
         <>
             <Header>Discord Webhook Sender</Header>
                 <Section>
-                    <form id="webhookForm">
+                    <form className="header" id="webhookForm">
                         <label htmlFor="webhookURL">Webhook URL:</label>
                         <input
                             type="text"

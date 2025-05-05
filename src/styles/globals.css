@@ -227,7 +227,7 @@ select {
     font-size: 1rem;
     border-radius: 8px;
     outline: none;
-    background-color: #2a2a2a;
+    background-color: var(--highlight);
     color: var(--text-light);
     border: 1px solid #3a3a3a;
     transition: border-color, box-shadow var(--transition-duration) var(--transition-easing),
