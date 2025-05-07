@@ -31,7 +31,7 @@ importers:
         version: '@preact/compat@18.3.1(preact@10.26.5)'
     devDependencies:
       '@types/node':
-        specifier: 22.15.14
+        specifier: ^22.15.14
         version: 22.15.14
       '@types/react':
         specifier: ^19.1.3
