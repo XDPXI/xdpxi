@@ -127,6 +127,12 @@ export default function Footer() {
                                     Discord Webhook
                                 </Link>
                             </li>
+                            <li>
+                                <a href="https://xds-code.vercel.app/">
+                                    <i aria-hidden="true" className="fa-solid fa-code"></i>{" "}
+                                    XD's Code
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
