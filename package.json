@@ -10,8 +10,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@statsig/session-replay": "^3.16.1",
     "@statsig/react-bindings": "^3.16.1",
-    "@statsig/session-replay": "^3.16.0",
     "@statsig/web-analytics": "^3.16.0",
     "next": "^15.3.2",
     "preact-render-to-string": "^6.5.13",
