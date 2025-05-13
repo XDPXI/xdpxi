@@ -12,8 +12,8 @@ importers:
         specifier: ^3.16.1
         version: 3.16.1(@preact/compat@18.3.1(preact@10.26.5))
       '@statsig/session-replay':
-        specifier: ^3.16.1
-        version: 3.16.1
+        specifier: ^3.16.2
+        version: 3.16.2
       '@statsig/web-analytics':
         specifier: ^3.16.1
         version: 3.16.1
@@ -223,6 +223,9 @@ packages:
   '@statsig/client-core@3.16.1':
     resolution: {integrity: sha512-NXGN1Uajd8cIJx4DzBUV0ox76sScgMlbj3PSVozqP2Dxku1gMWQzteStMeKkiOf2Rozuu2+LhVAcRoZ9sWy1Bw==}
 
+  '@statsig/client-core@3.16.2':
+    resolution: {integrity: sha512-HsLxqL0n7PgH+oTLVMT6DpUmYLWwxi/An9R8YOx3WVMmf39FxaWMx+GHzmgxkwlW0aZ1wMiuQwfOOfXWuQAkFg==}
+
   '@statsig/js-client@3.16.1':
     resolution: {integrity: sha512-pl0x/1dX06fSkI1fcTJZZ65ShB+gwo0OYwkjADXHGHezjPHbv6pA0loSjiqEclfwqhfcmh0lrMhZFBu9E0qz4w==}
 
@@ -231,8 +234,8 @@ packages:
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@statsig/session-replay@3.16.1':
-    resolution: {integrity: sha512-7coujl+jCx8HffxsyO+izl3GgZFN+AtudGUawbRU/kFUBy7m1L3LfH+xn/9XDBFR4p8K0JIMJPf863k6MuVyCw==}
+  '@statsig/session-replay@3.16.2':
+    resolution: {integrity: sha512-F341tkLISfCqB0AjOpjhgpIy2MSkrzw/xT9RowdljZ9ybsMcZNuGmGBhF3aDSqXNHMoVjmhS2vx0Zz2SupXzgA==}
 
   '@statsig/web-analytics@3.16.1':
     resolution: {integrity: sha512-TUsgEb4EuN3nZuH92ApLshXEkyd34VgsjQd+LgDbUzCgqcg9AzYF3T+3aq8XKt229jqqVQA+iTy/mCMWDstoOQ==}
@@ -610,6 +613,8 @@ snapshots:
 
   '@statsig/client-core@3.16.1': {}
 
+  '@statsig/client-core@3.16.2': {}
+
   '@statsig/js-client@3.16.1':
     dependencies:
       '@statsig/client-core': 3.16.1
@@ -620,9 +625,9 @@ snapshots:
       '@statsig/js-client': 3.16.1
       react: '@preact/compat@18.3.1(preact@10.26.5)'
 
-  '@statsig/session-replay@3.16.1':
+  '@statsig/session-replay@3.16.2':
     dependencies:
-      '@statsig/client-core': 3.16.1
+      '@statsig/client-core': 3.16.2
       rrweb: 2.0.0-alpha.14
 
   '@statsig/web-analytics@3.16.1':
