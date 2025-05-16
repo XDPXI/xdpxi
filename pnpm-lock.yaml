@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@statsig/react-bindings':
-        specifier: ^3.16.1
-        version: 3.16.1(@preact/compat@18.3.1(preact@10.26.5))
+        specifier: ^3.17.0
+        version: 3.17.0(@preact/compat@18.3.1(preact@10.26.5))
       '@statsig/session-replay':
         specifier: ^3.16.1
         version: 3.16.1
@@ -223,11 +223,17 @@ packages:
   '@statsig/client-core@3.16.1':
     resolution: {integrity: sha512-NXGN1Uajd8cIJx4DzBUV0ox76sScgMlbj3PSVozqP2Dxku1gMWQzteStMeKkiOf2Rozuu2+LhVAcRoZ9sWy1Bw==}
 
+  '@statsig/client-core@3.17.0':
+    resolution: {integrity: sha512-2P3NGRFGHIwD1BQE4nOMvVK1S7UtdSu04pGf70wEQio3rNxsdaz9tyBWsLk4uQ1FrRn9N8Y1ia5ALrE0DBxsBw==}
+
   '@statsig/js-client@3.16.1':
     resolution: {integrity: sha512-pl0x/1dX06fSkI1fcTJZZ65ShB+gwo0OYwkjADXHGHezjPHbv6pA0loSjiqEclfwqhfcmh0lrMhZFBu9E0qz4w==}
 
-  '@statsig/react-bindings@3.16.1':
-    resolution: {integrity: sha512-eewEOs2HK4yH84weASv8GpY6fJ4AtG/2LXWNxDQ3PzQM/E9NQLUgJm80poSk18fZd/y31Br9YiCq78edzWCQEw==}
+  '@statsig/js-client@3.17.0':
+    resolution: {integrity: sha512-bleYQ29OK6k9cbfLzhqIDsLjQadnvRpkHk3HhiYeWS9xYKpiPltHjOwZNogcox7k9HtgHlhZpzfnT5dXqP4sWg==}
+
+  '@statsig/react-bindings@3.17.0':
+    resolution: {integrity: sha512-+v6ZCfR8tw/Sy+SDSCiHSuBxS3vy9UT7wCo3lKmacVDxi7nPCg9WL5v6Cz2pCSc9khx8jaSNvyRnxEye8hQmWQ==}
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -610,14 +616,20 @@ snapshots:
 
   '@statsig/client-core@3.16.1': {}
 
+  '@statsig/client-core@3.17.0': {}
+
   '@statsig/js-client@3.16.1':
     dependencies:
       '@statsig/client-core': 3.16.1
 
-  '@statsig/react-bindings@3.16.1(@preact/compat@18.3.1(preact@10.26.5))':
+  '@statsig/js-client@3.17.0':
     dependencies:
-      '@statsig/client-core': 3.16.1
-      '@statsig/js-client': 3.16.1
+      '@statsig/client-core': 3.17.0
+
+  '@statsig/react-bindings@3.17.0(@preact/compat@18.3.1(preact@10.26.5))':
+    dependencies:
+      '@statsig/client-core': 3.17.0
+      '@statsig/js-client': 3.17.0
       react: '@preact/compat@18.3.1(preact@10.26.5)'
 
   '@statsig/session-replay@3.16.1':
