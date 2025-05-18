@@ -49,7 +49,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="header">
+        <header className="header">
             <div className="footer-content">
                 <div className="footer-column" id="hide1" ref={hide1Ref}>
                     <h3>About</h3>
@@ -224,6 +224,6 @@ export default function Footer() {
                     </nav>
                 </div>
             </div>
-        </footer>
+        </header>
     );
 }

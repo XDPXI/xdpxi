@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 :root {
-    --header-color: #ffd37a;
-    --highlight: #ffd37a;
-    --button-color: #ffd37a;
-    --button-hover-color: #ffdea8;
+    --header-gradient-start: orange;
+    --header-gradient-mid: red;
+    --header-gradient-end: hotpink;
+    --highlight: #ff6f61;
+    --button-color: #ff6f61;
+    --button-hover-color: #ff3b30;
     --background-dark: #121212;
-    --text-light: #fff;
-    --link-color: #ffd37a;
-    --link-hover: #ffdea8;
+    --text-light: #e0e0e0;
+    --link-color: #ff6f61;
+    --link-hover: #ff4a40;
     --shadow-dark: rgba(0, 0, 0, 0.2);
     --shadow-light: rgba(255, 255, 255, 0.1);
     --border-radius: 15px;
@@ -29,8 +31,7 @@
 
 body {
     font-family: var(--font-family);
-    background-image: url("/bg.png");
-    background-color: var(--header-color);
+    background-color: var(--background-dark);
     color: var(--text-light);
     line-height: 1.6;
     padding: 30px;
@@ -38,18 +39,33 @@ body {
     color var(--transition-duration) var(--transition-easing);
 }
 
-.header {
+header {
     position: relative;
-    background: #dcae4a;
+    background: var(--background-dark);
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px var(--shadow-dark);
     margin-bottom: 40px;
-    margin-top: 40px;
     border-radius: calc(var(--border-radius) + 2px);
     transition: background-color var(--transition-duration) var(--transition-easing),
     box-shadow var(--transition-duration) var(--transition-easing);
-    border: var(--header-color) 5px solid;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: calc(var(--border-radius) + 5px);
+    background: linear-gradient(
+            45deg,
+            var(--header-gradient-start),
+            var(--header-gradient-mid),
+            var(--header-gradient-end)
+    );
+    z-index: -1;
 }
 
 h1 {
@@ -227,7 +243,7 @@ select {
     font-size: 1rem;
     border-radius: 8px;
     outline: none;
-    background-color: var(--highlight);
+    background-color: #2a2a2a;
     color: var(--text-light);
     border: 1px solid #3a3a3a;
     transition: border-color, box-shadow var(--transition-duration) var(--transition-easing),
@@ -245,7 +261,7 @@ select:focus {
 
 .warning {
     border: 1px solid var(--highlight);
-    background-color: #dcae4a;
+    background-color: #94443c;
     padding: 12px 16px;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
@@ -260,7 +276,7 @@ select:focus {
 }
 
 .warning:hover {
-    background-color: #b08d41;
+    background-color: #7a3832;
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
