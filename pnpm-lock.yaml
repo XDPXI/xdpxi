@@ -15,8 +15,8 @@ importers:
         specifier: ^3.17.0
         version: 3.17.0
       '@statsig/web-analytics':
-        specifier: ^3.17.0
-        version: 3.17.0
+        specifier: ^3.17.1
+        version: 3.17.1
       next:
         specifier: ^15.3.2
         version: 15.3.2(@preact/compat@18.3.1(preact@10.26.5))(@preact/compat@18.3.1(preact@10.26.5))
@@ -223,8 +223,14 @@ packages:
   '@statsig/client-core@3.17.0':
     resolution: {integrity: sha512-2P3NGRFGHIwD1BQE4nOMvVK1S7UtdSu04pGf70wEQio3rNxsdaz9tyBWsLk4uQ1FrRn9N8Y1ia5ALrE0DBxsBw==}
 
+  '@statsig/client-core@3.17.1':
+    resolution: {integrity: sha512-e5L9Uea8FyjTrEGJOq0Hvejc+4WgTAr0vTogcEiUtnQ6UAyEaPWq+B+UmMx0S7SbZVjegOkEZTytjvqurTq2fQ==}
+
   '@statsig/js-client@3.17.0':
     resolution: {integrity: sha512-bleYQ29OK6k9cbfLzhqIDsLjQadnvRpkHk3HhiYeWS9xYKpiPltHjOwZNogcox7k9HtgHlhZpzfnT5dXqP4sWg==}
+
+  '@statsig/js-client@3.17.1':
+    resolution: {integrity: sha512-qMi/5GQWT0f6juzoJWzdZHPJ7XfxyWfZtnUTTKItYHRD0FCkLJP0GLh0CIentrfwV/l5FJKTtMlA74uNTYHbEA==}
 
   '@statsig/react-bindings@3.17.0':
     resolution: {integrity: sha512-+v6ZCfR8tw/Sy+SDSCiHSuBxS3vy9UT7wCo3lKmacVDxi7nPCg9WL5v6Cz2pCSc9khx8jaSNvyRnxEye8hQmWQ==}
@@ -234,8 +240,8 @@ packages:
   '@statsig/session-replay@3.17.0':
     resolution: {integrity: sha512-JV7okPcpCNy6r4j0LS/tEGeBIMl/rK5LnGD0Nye0k7ICeZGk+mky5Bhk5UR2a5egx0PFqjm8yba4YEIsR0CixQ==}
 
-  '@statsig/web-analytics@3.17.0':
-    resolution: {integrity: sha512-Zku7wGv/ZZYRsNro40M1qZhkaMCCen98zKq8Im7B55aTzW4xQM5QyLNnd2fFIta81NhjLnXpyYBaN3/DlaMvyw==}
+  '@statsig/web-analytics@3.17.1':
+    resolution: {integrity: sha512-gcUSpktlbwn6BeTNR/G8FxLZJlj/TfFOPLQlyrFbCwqFPghF1TuCx6MGBOsCTcYgKv776VHQbYh4SR8dIgY4ow==}
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
@@ -610,9 +616,15 @@ snapshots:
 
   '@statsig/client-core@3.17.0': {}
 
+  '@statsig/client-core@3.17.1': {}
+
   '@statsig/js-client@3.17.0':
     dependencies:
       '@statsig/client-core': 3.17.0
+
+  '@statsig/js-client@3.17.1':
+    dependencies:
+      '@statsig/client-core': 3.17.1
 
   '@statsig/react-bindings@3.17.0(@preact/compat@18.3.1(preact@10.26.5))':
     dependencies:
@@ -625,10 +637,10 @@ snapshots:
       '@statsig/client-core': 3.17.0
       rrweb: 2.0.0-alpha.14
 
-  '@statsig/web-analytics@3.17.0':
+  '@statsig/web-analytics@3.17.1':
     dependencies:
-      '@statsig/client-core': 3.17.0
-      '@statsig/js-client': 3.17.0
+      '@statsig/client-core': 3.17.1
+      '@statsig/js-client': 3.17.1
 
   '@swc/counter@0.1.3': {}
 
