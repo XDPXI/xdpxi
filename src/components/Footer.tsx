@@ -133,6 +133,12 @@ export default function Footer() {
                                     XD's Code
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://mono-rblx.vercel.app/">
+                                    <i aria-hidden="true" className="fa-solid fa-gamepad"></i>{" "}
+                                    Mono
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
