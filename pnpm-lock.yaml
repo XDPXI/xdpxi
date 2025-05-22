@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@statsig/react-bindings':
-        specifier: ^3.17.0
-        version: 3.17.0(@preact/compat@18.3.1(preact@10.26.5))
+        specifier: ^3.17.1
+        version: 3.17.1(@preact/compat@18.3.1(preact@10.26.5))
       '@statsig/session-replay':
         specifier: ^3.17.1
         version: 3.17.1
@@ -220,20 +220,14 @@ packages:
   '@rrweb/types@2.0.0-alpha.18':
     resolution: {integrity: sha512-iMH3amHthJZ9x3gGmBPmdfim7wLGygC2GciIkw2A6SO8giSn8PHYtRT8OKNH4V+k3SZ6RSnYHcTQxBA7pSWZ3Q==}
 
-  '@statsig/client-core@3.17.0':
-    resolution: {integrity: sha512-2P3NGRFGHIwD1BQE4nOMvVK1S7UtdSu04pGf70wEQio3rNxsdaz9tyBWsLk4uQ1FrRn9N8Y1ia5ALrE0DBxsBw==}
-
   '@statsig/client-core@3.17.1':
     resolution: {integrity: sha512-e5L9Uea8FyjTrEGJOq0Hvejc+4WgTAr0vTogcEiUtnQ6UAyEaPWq+B+UmMx0S7SbZVjegOkEZTytjvqurTq2fQ==}
-
-  '@statsig/js-client@3.17.0':
-    resolution: {integrity: sha512-bleYQ29OK6k9cbfLzhqIDsLjQadnvRpkHk3HhiYeWS9xYKpiPltHjOwZNogcox7k9HtgHlhZpzfnT5dXqP4sWg==}
 
   '@statsig/js-client@3.17.1':
     resolution: {integrity: sha512-qMi/5GQWT0f6juzoJWzdZHPJ7XfxyWfZtnUTTKItYHRD0FCkLJP0GLh0CIentrfwV/l5FJKTtMlA74uNTYHbEA==}
 
-  '@statsig/react-bindings@3.17.0':
-    resolution: {integrity: sha512-+v6ZCfR8tw/Sy+SDSCiHSuBxS3vy9UT7wCo3lKmacVDxi7nPCg9WL5v6Cz2pCSc9khx8jaSNvyRnxEye8hQmWQ==}
+  '@statsig/react-bindings@3.17.1':
+    resolution: {integrity: sha512-2n5LUyI7p7VzHCfYf6IDvU29+UURS3CibPR/BLBwx0LwQqE0BbSVQiXK99BOEqfUYzwJc3C2lJOLV3E2kVuldg==}
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -614,22 +608,16 @@ snapshots:
 
   '@rrweb/types@2.0.0-alpha.18': {}
 
-  '@statsig/client-core@3.17.0': {}
-
   '@statsig/client-core@3.17.1': {}
-
-  '@statsig/js-client@3.17.0':
-    dependencies:
-      '@statsig/client-core': 3.17.0
 
   '@statsig/js-client@3.17.1':
     dependencies:
       '@statsig/client-core': 3.17.1
 
-  '@statsig/react-bindings@3.17.0(@preact/compat@18.3.1(preact@10.26.5))':
+  '@statsig/react-bindings@3.17.1(@preact/compat@18.3.1(preact@10.26.5))':
     dependencies:
-      '@statsig/client-core': 3.17.0
-      '@statsig/js-client': 3.17.0
+      '@statsig/client-core': 3.17.1
+      '@statsig/js-client': 3.17.1
       react: '@preact/compat@18.3.1(preact@10.26.5)'
 
   '@statsig/session-replay@3.17.1':
