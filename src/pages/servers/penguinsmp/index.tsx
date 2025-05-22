@@ -10,27 +10,6 @@ export default function Home() {
             <Header>Penguin SMP</Header>
 
             <Content>
-                <div className="section" style={{textAlign: "center"}}>
-                    <div className="warning">
-                        <span className="warning-icon"><i
-                            aria-hidden="true"
-                            className="fa-solid fa-triangle-exclamation"
-                        ></i></span>
-                        <h2>
-                            This server is still in development!
-                        </h2>
-                    </div>
-                    <div className="warning">
-                        <span className="warning-icon"><i
-                            aria-hidden="true"
-                            className="fa-solid fa-list-check"
-                        ></i></span>
-                        <h2>
-                            Status: Setting up server...
-                        </h2>
-                    </div>
-                </div>
-
                 <Section>
                     <p>Penguin SMP is a lightweight medieval minecraft server.</p>
                 </Section>

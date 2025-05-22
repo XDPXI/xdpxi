@@ -194,7 +194,7 @@ export default function Home() {
                         It is your responsibility to maintain server activity to avoid
                         automatic removal. Regular logins, player activity, or
                         administrative changes will prevent your server from being
-                        classNameified as inactive. The notification is a courtesy; failure
+                        inactive. The notification is a courtesy; failure
                         to receive the notification for any reason does not prevent the
                         server from being deleted according to this policy.
                     </p>
@@ -254,7 +254,7 @@ export default function Home() {
                         <li>Monitoring server logs for suspicious activity.</li>
                     </ul>
                     <p>
-                        We are not responsible for{" "}
+                        We are not responsible for
                         <b>compromised accounts or data breaches</b>
                         resulting from your failure to implement adequate security measures.
                         You are liable for all consequences resulting from unauthorized
@@ -310,7 +310,7 @@ export default function Home() {
                     <h2>6. Policy Modifications</h2>
                     <p>
                         We reserve the right to modify this policy at any time. We will make
-                        reasonable efforts to notify users of <b>significant changes</b>{" "}
+                        reasonable efforts to notify users of <b>significant changes</b>
                         that may materially affect their services, such as changes to the
                         server deletion policy or resource allocation. Notification will
                         typically be provided via email to the server owner's registered
