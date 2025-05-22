@@ -12,8 +12,8 @@ importers:
         specifier: ^3.17.0
         version: 3.17.0(@preact/compat@18.3.1(preact@10.26.5))
       '@statsig/session-replay':
-        specifier: ^3.17.0
-        version: 3.17.0
+        specifier: ^3.17.1
+        version: 3.17.1
       '@statsig/web-analytics':
         specifier: ^3.17.1
         version: 3.17.1
@@ -237,8 +237,8 @@ packages:
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@statsig/session-replay@3.17.0':
-    resolution: {integrity: sha512-JV7okPcpCNy6r4j0LS/tEGeBIMl/rK5LnGD0Nye0k7ICeZGk+mky5Bhk5UR2a5egx0PFqjm8yba4YEIsR0CixQ==}
+  '@statsig/session-replay@3.17.1':
+    resolution: {integrity: sha512-pke7kUmWgZk1XxHgn/MG39v5Ipbs3JO15sJrkUtDtfSOyNFVRjmz7M1ibHMLb9yt1FPyPse912WRZe+kJhbM6w==}
 
   '@statsig/web-analytics@3.17.1':
     resolution: {integrity: sha512-gcUSpktlbwn6BeTNR/G8FxLZJlj/TfFOPLQlyrFbCwqFPghF1TuCx6MGBOsCTcYgKv776VHQbYh4SR8dIgY4ow==}
@@ -632,9 +632,9 @@ snapshots:
       '@statsig/js-client': 3.17.0
       react: '@preact/compat@18.3.1(preact@10.26.5)'
 
-  '@statsig/session-replay@3.17.0':
+  '@statsig/session-replay@3.17.1':
     dependencies:
-      '@statsig/client-core': 3.17.0
+      '@statsig/client-core': 3.17.1
       rrweb: 2.0.0-alpha.14
 
   '@statsig/web-analytics@3.17.1':
