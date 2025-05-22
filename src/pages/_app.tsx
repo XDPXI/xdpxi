@@ -4,11 +4,32 @@ import Head from "next/head";
 import {StatsigProvider, useClientAsyncInit} from '@statsig/react-bindings';
 import {StatsigAutoCapturePlugin} from '@statsig/web-analytics';
 import {StatsigSessionReplayPlugin} from '@statsig/session-replay';
+import {useEffect, useState} from "react";
+
+const useSession = () => {
+    const [userID, setUserID] = useState<string>('');
+
+    useEffect(() => {
+        const storedUserID = localStorage.getItem('userID');
+
+        if (storedUserID) {
+            setUserID(storedUserID);
+        } else {
+            const newUserID = 'user-' + Math.random().toString(36).substring(2, 15);
+            localStorage.setItem('userID', newUserID);
+            setUserID(newUserID);
+        }
+    }, []);
+
+    return { userID };
+};
 
 export default function App({Component, pageProps}: AppProps) {
+    const {userID} = useSession();
+
     const {client} = useClientAsyncInit(
         'client-XzKBehpfICv80UVUZnVEtKwEYNgkIZU4FY3YkBYThXf',
-        {userID: 'a-user'},
+        {userID: userID},
         {
             plugins: [new StatsigAutoCapturePlugin(), new StatsigSessionReplayPlugin()]
         },
