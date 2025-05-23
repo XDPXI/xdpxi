@@ -15,7 +15,9 @@ const useSession = () => {
         if (storedUserID) {
             setUserID(storedUserID);
         } else {
-            const newUserID = 'user-' + Math.random().toString(36).substring(2, 15);
+            const array = new Uint8Array(16);
+            window.crypto.getRandomValues(array);
+            const newUserID = 'user-' + Array.from(array, byte => byte.toString(36)).join('').substring(0, 13);
             localStorage.setItem('userID', newUserID);
             setUserID(newUserID);
         }
