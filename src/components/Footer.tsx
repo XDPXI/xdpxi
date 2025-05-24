@@ -139,6 +139,12 @@ export default function Footer() {
                                     Mono
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://drawium.vercel.app/">
+                                    <i aria-hidden="true" className="fa-solid fa-pen"></i>{" "}
+                                    Drawium
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
