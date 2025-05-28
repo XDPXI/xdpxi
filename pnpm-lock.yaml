@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@statsig/react-bindings':
-        specifier: ^3.17.1
-        version: 3.17.1(react@19.1.0)
+        specifier: ^3.17.2
+        version: 3.17.2(react@19.1.0)
       '@statsig/session-replay':
         specifier: ^3.17.1
-        version: 3.17.1
+        version: 3.17.2
       '@statsig/web-analytics':
         specifier: ^3.17.1
-        version: 3.17.1
+        version: 3.17.2
       next:
         specifier: ^15.3.2
         version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -29,10 +29,10 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^22.15.21
-        version: 22.15.21
+        version: 22.15.23
       '@types/react':
         specifier: ^19.1.5
-        version: 19.1.5
+        version: 19.1.6
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
@@ -218,22 +218,22 @@ packages:
   '@rrweb/types@2.0.0-alpha.18':
     resolution: {integrity: sha512-iMH3amHthJZ9x3gGmBPmdfim7wLGygC2GciIkw2A6SO8giSn8PHYtRT8OKNH4V+k3SZ6RSnYHcTQxBA7pSWZ3Q==}
 
-  '@statsig/client-core@3.17.1':
-    resolution: {integrity: sha512-e5L9Uea8FyjTrEGJOq0Hvejc+4WgTAr0vTogcEiUtnQ6UAyEaPWq+B+UmMx0S7SbZVjegOkEZTytjvqurTq2fQ==}
+  '@statsig/client-core@3.17.2':
+    resolution: {integrity: sha512-7jq4H2SinknR4L51lzaI2VodGR6BfO5paRRPAKubqGIG35NjwQ0Z0MozPCuR94aL0SV+VvwMsys3zavtdLV9Ng==}
 
-  '@statsig/js-client@3.17.1':
-    resolution: {integrity: sha512-qMi/5GQWT0f6juzoJWzdZHPJ7XfxyWfZtnUTTKItYHRD0FCkLJP0GLh0CIentrfwV/l5FJKTtMlA74uNTYHbEA==}
+  '@statsig/js-client@3.17.2':
+    resolution: {integrity: sha512-wKlo0FA/h8TrNt+kJc9nHRIMcgHrpdgMrsQlK19gMy8wRDD0Xs5VIKnVN8MNP7JRNvQgEGaoXLR5eXyPQ8h3RA==}
 
-  '@statsig/react-bindings@3.17.1':
-    resolution: {integrity: sha512-2n5LUyI7p7VzHCfYf6IDvU29+UURS3CibPR/BLBwx0LwQqE0BbSVQiXK99BOEqfUYzwJc3C2lJOLV3E2kVuldg==}
+  '@statsig/react-bindings@3.17.2':
+    resolution: {integrity: sha512-0SmWPAhq28hGk0VUnVoUGRNIH9Al050tPFeBS3GZtjO8IuMyeK1p1AP9jl/JZeW/8KZyju/sbB8yLn13UzuYGA==}
     peerDependencies:
       react: ^16.6.3 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@statsig/session-replay@3.17.1':
-    resolution: {integrity: sha512-pke7kUmWgZk1XxHgn/MG39v5Ipbs3JO15sJrkUtDtfSOyNFVRjmz7M1ibHMLb9yt1FPyPse912WRZe+kJhbM6w==}
+  '@statsig/session-replay@3.17.2':
+    resolution: {integrity: sha512-x+3KKVm2ZZR+fRWHnTRv2SQRO+ufN2qTbAaNCBaytBpihSK9ga/gXBZzU5sIrx+jQviNbOBZru7zm2w/uTBBMg==}
 
-  '@statsig/web-analytics@3.17.1':
-    resolution: {integrity: sha512-gcUSpktlbwn6BeTNR/G8FxLZJlj/TfFOPLQlyrFbCwqFPghF1TuCx6MGBOsCTcYgKv776VHQbYh4SR8dIgY4ow==}
+  '@statsig/web-analytics@3.17.2':
+    resolution: {integrity: sha512-KghlPkkemCf5hJ7C9C/UfBzPkdsh/L7/0SupRA5y1k+gGh777EgZBa/u7gfz12CFFx0NEG6EOGNHSAVI1JmCWw==}
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
@@ -244,11 +244,11 @@ packages:
   '@types/css-font-loading-module@0.0.7':
     resolution: {integrity: sha512-nl09VhutdjINdWyXxHWN/w9zlNCfr60JUqJbd24YXUuCwgeL0TpFSdElCwb6cxfB6ybE19Gjj4g0jsgkXxKv1Q==}
 
-  '@types/node@22.15.21':
-    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
+  '@types/node@22.15.23':
+    resolution: {integrity: sha512-7Ec1zaFPF4RJ0eXu1YT/xgiebqwqoJz8rYPDi/O2BcZ++Wpt0Kq9cl0eg6NN6bYbPnR67ZLo7St5Q3UK0SnARw==}
 
-  '@types/react@19.1.5':
-    resolution: {integrity: sha512-piErsCVVbpMMT2r7wbawdZsq4xMvIAhQuac2gedQHysu1TZYEigE6pnFfgZT+/jQnrRuF5r+SHzuehFjfRjr4g==}
+  '@types/react@19.1.6':
+    resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
 
   '@xstate/fsm@1.6.5':
     resolution: {integrity: sha512-b5o1I6aLNeYlU/3CPlj/Z91ybk1gUsKT+5NAJI+2W4UjvS5KLG28K9v5UvNoFVjHV8PajVZ00RH3vnjyQO7ZAw==}
@@ -609,27 +609,27 @@ snapshots:
 
   '@rrweb/types@2.0.0-alpha.18': {}
 
-  '@statsig/client-core@3.17.1': {}
+  '@statsig/client-core@3.17.2': {}
 
-  '@statsig/js-client@3.17.1':
+  '@statsig/js-client@3.17.2':
     dependencies:
-      '@statsig/client-core': 3.17.1
+      '@statsig/client-core': 3.17.2
 
-  '@statsig/react-bindings@3.17.1(react@19.1.0)':
+  '@statsig/react-bindings@3.17.2(react@19.1.0)':
     dependencies:
-      '@statsig/client-core': 3.17.1
-      '@statsig/js-client': 3.17.1
+      '@statsig/client-core': 3.17.2
+      '@statsig/js-client': 3.17.2
       react: 19.1.0
 
-  '@statsig/session-replay@3.17.1':
+  '@statsig/session-replay@3.17.2':
     dependencies:
-      '@statsig/client-core': 3.17.1
+      '@statsig/client-core': 3.17.2
       rrweb: 2.0.0-alpha.14
 
-  '@statsig/web-analytics@3.17.1':
+  '@statsig/web-analytics@3.17.2':
     dependencies:
-      '@statsig/client-core': 3.17.1
-      '@statsig/js-client': 3.17.1
+      '@statsig/client-core': 3.17.2
+      '@statsig/js-client': 3.17.2
 
   '@swc/counter@0.1.3': {}
 
@@ -639,11 +639,11 @@ snapshots:
 
   '@types/css-font-loading-module@0.0.7': {}
 
-  '@types/node@22.15.21':
+  '@types/node@22.15.23':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react@19.1.5':
+  '@types/react@19.1.6':
     dependencies:
       csstype: 3.1.3
 
