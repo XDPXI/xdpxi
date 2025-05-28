@@ -15,7 +15,7 @@ importers:
         specifier: ^3.17.1
         version: 3.17.2
       '@statsig/web-analytics':
-        specifier: ^3.17.1
+        specifier: ^3.17.2
         version: 3.17.2
       next:
         specifier: ^15.3.2
