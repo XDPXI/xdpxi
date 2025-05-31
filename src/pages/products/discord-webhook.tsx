@@ -2,6 +2,7 @@
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Section from "~/components/Section";
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function Home() {
     const [webhookURL, setWebhookURL] = React.useState("");
@@ -11,6 +12,7 @@ export default function Home() {
     const [embedColor, setEmbedColor] = React.useState("e74d3c");
     const [loading, setLoading] = React.useState(false);
     const [success, setSuccess] = React.useState<boolean | null>(null);
+    const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean | null>(null);
 
     const sendWebhook = async () => {
         if (!webhookURL) {
@@ -66,6 +68,11 @@ export default function Home() {
             (e: React.ChangeEvent<HTMLSelectElement>) => {
                 setState(e.target.value);
             };
+
+    function handleVerificationSuccess(token: string, ekey: string) {
+        console.log("Verification successful:", token, ekey);
+        setCaptchaSuccess(true);
+    }
 
     return (
         <>
@@ -123,6 +130,14 @@ export default function Home() {
                             <option value="9370DB">🟣 Purple</option>
                         </select>
 
+                        <div style={{ display: "flex", justifyContent: "center", marginTop: "5px", marginBottom: "15px" }}>
+                            <HCaptcha
+                                sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058"
+                                theme="dark"
+                                onVerify={(token, ekey) => handleVerificationSuccess(token, ekey)}
+                            />
+                        </div>
+
                         <button
                             className="button"
                             type="button"
@@ -130,7 +145,7 @@ export default function Home() {
                             style={{
                                 width: "100%",
                             }}
-                            disabled={loading}
+                            disabled={loading || !captchaSuccess}
                         >
                             {loading ? "Sending..." : "Send to Discord"}
                         </button>

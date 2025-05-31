@@ -166,6 +166,17 @@ pre {
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
+.button:disabled {
+    border: #be584e 3px solid;
+    color: #D3D3D3;
+    transform: scale(0.95);
+}
+
+.button:disabled:hover {
+    background-color: transparent;
+    transform: scale(0.95);
+}
+
 .button:hover {
     background-color: var(--button-color);
     transform: scale(1.05);
