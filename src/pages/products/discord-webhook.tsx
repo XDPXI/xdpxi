@@ -70,7 +70,6 @@ export default function Home() {
             };
 
     function handleVerificationSuccess(token: string, ekey: string) {
-        console.log("Verification successful:", token, ekey);
         setCaptchaSuccess(true);
     }
 
