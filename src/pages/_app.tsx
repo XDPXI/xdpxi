@@ -23,7 +23,7 @@ const useSession = () => {
         }
     }, []);
 
-    return { userID };
+    return {userID};
 };
 
 export default function App({Component, pageProps}: AppProps) {

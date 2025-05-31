@@ -1,7 +1,7 @@
 ﻿import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Content from "~/components/Content";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function Home() {
@@ -34,7 +34,8 @@ export default function Home() {
                     ) : null}
 
                     {!captchaSuccess ? (
-                        <div style={{display: "flex", justifyContent: "center", marginTop: "5px", marginBottom: "15px"}}>
+                        <div
+                            style={{display: "flex", justifyContent: "center", marginTop: "5px", marginBottom: "15px"}}>
                             <HCaptcha
                                 sitekey="9558f5e2-c30c-41a8-9f18-2ad8cc0e7d92"
                                 theme="dark"
