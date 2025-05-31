@@ -173,6 +173,7 @@ pre {
 }
 
 .button:disabled:hover {
+    cursor: not-allowed;
     background-color: transparent;
     transform: scale(0.95);
 }
