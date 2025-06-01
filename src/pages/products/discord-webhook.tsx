@@ -3,6 +3,7 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Section from "~/components/Section";
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import Captcha from "~/components/Captcha";
 
 export default function Home() {
     const [webhookURL, setWebhookURL] = React.useState("");
@@ -129,13 +130,7 @@ export default function Home() {
                         <option value="9370DB">🟣 Purple</option>
                     </select>
 
-                    <div style={{display: "flex", justifyContent: "center", marginTop: "5px", marginBottom: "15px"}}>
-                        <HCaptcha
-                            sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058"
-                            theme="dark"
-                            onVerify={(token, ekey) => handleVerificationSuccess(token, ekey)}
-                        />
-                    </div>
+                    <Captcha sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058" onVerify={handleVerificationSuccess}/>
 
                     <button
                         className="button"
