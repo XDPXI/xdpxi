@@ -1,1 +1,5 @@
 User-agent: *
+Disallow: /license/mc
+Disallow: /servers/policy
+Disallow: /servers/penguinsmp
+Disallow: /servers/ue
