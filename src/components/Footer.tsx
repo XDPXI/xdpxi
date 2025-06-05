@@ -104,7 +104,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://bangbrave.vercel.app/"
+                                    href="/products/bangbrave"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -116,9 +116,16 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://modrinth.com/plugin/xdlib">
-                                    <i aria-hidden="true" className="fa-solid fa-gear"></i>{" "}
-                                    XD&apos;s Library
+                                <a
+                                    href="/products/xdlib"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    <i
+                                        aria-hidden="true"
+                                        className="fa-solid fa-gear"
+                                    ></i>{" "}
+                                    XD's Library
                                 </a>
                             </li>
                             <li>
@@ -128,20 +135,28 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://xds-code.vercel.app/">
-                                    <i aria-hidden="true" className="fa-solid fa-code"></i>{" "}
+                                <a
+                                    href="/products/xdcode"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    <i
+                                        aria-hidden="true"
+                                        className="fa-solid fa-code"
+                                    ></i>{" "}
                                     XD's Code
                                 </a>
                             </li>
                             <li>
-                                <a href="https://mono-rblx.vercel.app/">
-                                    <i aria-hidden="true" className="fa-solid fa-gamepad"></i>{" "}
-                                    Mono
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://drawium.vercel.app/">
-                                    <i aria-hidden="true" className="fa-solid fa-pen"></i>{" "}
+                                <a
+                                    href="/products/drawium"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                >
+                                    <i
+                                        aria-hidden="true"
+                                        className="fa-solid fa-pen"
+                                    ></i>{" "}
                                     Drawium
                                 </a>
                             </li>
@@ -155,7 +170,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://www.youtube.com/@xdpxi"
+                                    href="/redirect/youtube"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -165,7 +180,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://www.twitch.tv/xdpxi"
+                                    href="/redirect/twitch"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -175,7 +190,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://kick.com/xdpxi"
+                                    href="/redirect/kick"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -188,7 +203,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://xdpxi.itch.io/"
+                                    href="/redirect/itch"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -198,7 +213,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/XDPXI/"
+                                    href="/redirect/github"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -208,7 +223,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://modrinth.com/user/XDPXI"
+                                    href="/redirect/modrinth"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -221,7 +236,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://discord.gg/8NRaEGKAND"
+                                    href="/redirect/discord"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >

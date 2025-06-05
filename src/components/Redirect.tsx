@@ -1,15 +1,22 @@
-﻿import React, {useState} from "react";
+﻿import React, {useEffect, useState} from "react";
 import Content from "~/components/Content";
 import Captcha from "~/components/Captcha";
 
 interface RedirectProps {
-    sitekey: string;
+    sitekey: string | null;
     redirectSite: string;
 }
 
 export default function Redirect({sitekey, redirectSite}: RedirectProps) {
     const [redirectMessage, setRedirectMessage] = useState("Awaiting for hCaptcha");
     const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean>(false);
+
+    useEffect(() => {
+        if (sitekey == null) {
+            setRedirectMessage("Redirecting...");
+            window.location.replace(redirectSite);
+        }
+    })
 
     function handleVerificationSuccess(token: string, ekey: string) {
         setRedirectMessage("Redirecting...");
@@ -22,11 +29,11 @@ export default function Redirect({sitekey, redirectSite}: RedirectProps) {
     return (
         <Content>
             <div className="section" style={{textAlign: "center"}}>
-                {captchaSuccess ? (
+                {captchaSuccess || sitekey == null ? (
                     <h2>{redirectMessage}</h2>
                 ) : null}
 
-                {!captchaSuccess ? (
+                {!captchaSuccess && sitekey ? (
                     <Captcha sitekey={sitekey} onVerify={handleVerificationSuccess}/>
                 ) : null}
             </div>
