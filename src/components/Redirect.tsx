@@ -12,7 +12,7 @@ export default function Redirect({sitekey, redirectSite}: RedirectProps) {
     const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean>(false);
 
     useEffect(() => {
-        if (sitekey == null) {
+        if (!sitekey) {
             setRedirectMessage("Redirecting...");
             window.location.replace(redirectSite);
         }
@@ -29,7 +29,7 @@ export default function Redirect({sitekey, redirectSite}: RedirectProps) {
     return (
         <Content>
             <div className="section" style={{textAlign: "center"}}>
-                {captchaSuccess || sitekey == null ? (
+                {captchaSuccess || !sitekey ? (
                     <h2>{redirectMessage}</h2>
                 ) : null}
 
