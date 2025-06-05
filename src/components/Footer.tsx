@@ -104,7 +104,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="/products/bangbrave"
+                                    href="https://bangbrave.vercel.app/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -117,7 +117,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/products/xdlib"
+                                    href="https://xdlib.vercel.app/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -136,7 +136,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/products/xdcode"
+                                    href="https://xds-code.vercel.app/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -149,7 +149,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/products/drawium"
+                                    href="https://drawium.vercel.app/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -170,7 +170,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="/redirect/youtube"
+                                    href="https://youtube.com/@xdpxi"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -180,7 +180,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/twitch"
+                                    href="https://twitch.tv/xdpxi"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -190,7 +190,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/kick"
+                                    href="https://kick.com/xdpxi"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -203,7 +203,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/itch"
+                                    href="https://xdpxi.itch.io"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -213,7 +213,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/github"
+                                    href="https://github.com/xdpxi"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -223,7 +223,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/modrinth"
+                                    href="https://modrinth.com/user/xdpxi"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -236,7 +236,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/redirect/discord"
+                                    href="https://discord.gg/qRm6yYDswK"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
