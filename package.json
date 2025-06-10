@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "^22.15.30",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.1.6",
     "critters": "^0.0.25",
     "typescript": "^5.8.3"
