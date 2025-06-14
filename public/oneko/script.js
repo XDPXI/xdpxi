@@ -1,5 +1,6 @@
 ﻿(function oneko() {
   const isReducedMotion =
+    // @ts-ignore
     window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
     window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
@@ -15,6 +16,7 @@
 
   let frameCount = 0;
   let idleTime = 0;
+  // @ts-ignore
   let idleAnimation = null;
   let idleAnimationFrame = 0;
 
@@ -84,6 +86,7 @@
 
   function init() {
     nekoEl.id = "oneko";
+    // @ts-ignore
     nekoEl.ariaHidden = true;
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
@@ -91,6 +94,7 @@
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
+    // @ts-ignore
     nekoEl.style.zIndex = 2147483647;
 
     let nekoFile = "https://xdpxi.vercel.app/oneko/sprites.gif"
@@ -110,12 +114,15 @@
     window.requestAnimationFrame(onAnimationFrame);
   }
 
+  // @ts-ignore
   let lastFrameTimestamp;
 
+  // @ts-ignore
   function onAnimationFrame(timestamp) {
     if (!nekoEl.isConnected) {
       return;
     }
+    // @ts-ignore
     if (!lastFrameTimestamp) {
       lastFrameTimestamp = timestamp;
     }
@@ -126,7 +133,9 @@
     window.requestAnimationFrame(onAnimationFrame);
   }
 
+  // @ts-ignore
   function setSprite(name, frame) {
+    // @ts-ignore
     const sprite = spriteSets[name][frame % spriteSets[name].length];
     nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${sprite[1] * 32}px`;
   }
@@ -143,6 +152,7 @@
     if (
       idleTime > 10 &&
       Math.floor(Math.random() * 200) === 0 &&
+        // @ts-ignore
       idleAnimation == null
     ) {
       let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
@@ -164,6 +174,7 @@
         ];
     }
 
+    // @ts-ignore
     switch (idleAnimation) {
       case "sleeping":
         if (idleAnimationFrame < 8) {
@@ -180,6 +191,7 @@
       case "scratchWallE":
       case "scratchWallW":
       case "scratchSelf":
+        // @ts-ignore
         setSprite(idleAnimation, idleAnimationFrame);
         if (idleAnimationFrame > 9) {
           resetIdleAnimation();
