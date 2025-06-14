@@ -143,33 +143,27 @@
     idleAnimationFrame = 0;
   }
 
+  function getAvailableIdleAnimations() {
+    const animations = ["sleeping", "scratchSelf"];
+    
+    if (nekoPosX < 32) animations.push("scratchWallW");
+    if (nekoPosY < 32) animations.push("scratchWallN");
+    if (nekoPosX > window.innerWidth - 32) animations.push("scratchWallE");
+    if (nekoPosY > window.innerHeight - 32) animations.push("scratchWallS");
+    
+    return animations;
+  }
+
+  function shouldStartNewIdleAnimation() {
+    return idleTime > 10 && Math.floor(Math.random() * 200) === 0 && idleAnimation === null;
+  }
+
   function idle() {
     idleTime += 1;
 
-    // every ~ 20 seconds
-    if (
-      idleTime > 10 &&
-      Math.floor(Math.random() * 200) === 0 &&
-        // @ts-ignore
-      idleAnimation == null
-    ) {
-      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
-      if (nekoPosX < 32) {
-        avalibleIdleAnimations.push("scratchWallW");
-      }
-      if (nekoPosY < 32) {
-        avalibleIdleAnimations.push("scratchWallN");
-      }
-      if (nekoPosX > window.innerWidth - 32) {
-        avalibleIdleAnimations.push("scratchWallE");
-      }
-      if (nekoPosY > window.innerHeight - 32) {
-        avalibleIdleAnimations.push("scratchWallS");
-      }
-      idleAnimation =
-        avalibleIdleAnimations[
-          Math.floor(Math.random() * avalibleIdleAnimations.length)
-        ];
+    if (shouldStartNewIdleAnimation()) {
+      const availableAnimations = getAvailableIdleAnimations();
+      idleAnimation = availableAnimations[Math.floor(Math.random() * availableAnimations.length)];
     }
 
     // @ts-ignore
