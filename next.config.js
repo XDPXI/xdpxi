@@ -8,8 +8,5 @@ export default {
     experimental: {
         optimizeCss: true,
         scrollRestoration: true,
-    },
-    babel: {
-        plugins: ['babel-plugin-react-compiler'],
-    },
+    }
 };
