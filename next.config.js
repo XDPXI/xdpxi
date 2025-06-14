@@ -9,4 +9,7 @@ export default {
         optimizeCss: true,
         scrollRestoration: true,
     },
+    babel: {
+        plugins: ['babel-plugin-react-compiler'],
+    },
 };
