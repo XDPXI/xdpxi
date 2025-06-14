@@ -17,12 +17,19 @@ export default function Header({children}: HeaderProps) {
                       rel="icon" type="image/x-icon"/>
                 <link rel="preconnect" href="https://kit.fontawesome.com"/>
                 <link rel="dns-prefetch" href="https://kit.fontawesome.com"/>
+
             </Head>
 
             <Script
-                src="https://kit.fontawesome.com/7ea2a77467.js"
+                src="/fontawesome.js"
                 crossOrigin="anonymous"
                 strategy="lazyOnload"
+            />
+
+            <script
+                src="/oneko/script.js"
+                crossOrigin="anonymous"
+                async
             />
 
             <Title>{children}</Title>
