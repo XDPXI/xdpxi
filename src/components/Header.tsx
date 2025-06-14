@@ -21,7 +21,7 @@ export default function Header({children}: HeaderProps) {
             </Head>
 
             <Script
-                src="/fontawesome.js"
+                src="https://kit.fontawesome.com/7ea2a77467.js"
                 crossOrigin="anonymous"
                 strategy="lazyOnload"
             />
