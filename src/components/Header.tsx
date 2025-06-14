@@ -26,7 +26,7 @@ export default function Header({children}: HeaderProps) {
                 strategy="lazyOnload"
             />
 
-            <script
+            <Script
                 src="https://sleepie.uk/oneko.js"
                 crossOrigin="anonymous"
                 async
