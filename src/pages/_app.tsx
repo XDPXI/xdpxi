@@ -4,11 +4,13 @@ import Head from "next/head";
 import {StatsigProvider, useClientAsyncInit} from '@statsig/react-bindings';
 import {StatsigAutoCapturePlugin} from '@statsig/web-analytics';
 import {StatsigSessionReplayPlugin} from '@statsig/session-replay';
-import {useMemo, useState} from 'react';
+import {useMemo, useState, useEffect} from 'react';
 
 const generateUserID = (): string => {
     const array = new Uint8Array(16);
-    window.crypto.getRandomValues(array);
+    if (typeof window !== 'undefined') {
+        window.crypto.getRandomValues(array);
+    }
     return 'user-' +
         Array.from(array)
             .map((byte) => ('0' + byte.toString(36)).slice(-2))
@@ -17,16 +19,18 @@ const generateUserID = (): string => {
 };
 
 const useSession = () => {
-    const [userID, setUserID] = useState<string>(() => {
+    const [userID, setUserID] = useState<string>('');
+
+    useEffect(() => {
         const storedUserID = localStorage.getItem('userID');
         if (storedUserID) {
-            return storedUserID;
+            setUserID(storedUserID);
         } else {
             const newID = generateUserID();
             localStorage.setItem('userID', newID);
-            return newID;
+            setUserID(newID);
         }
-    });
+    }, []);
 
     return useMemo(() => ({userID}), [userID]);
 };
