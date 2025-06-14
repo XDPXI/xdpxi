@@ -202,6 +202,38 @@
     idleAnimationFrame += 1;
   }
 
+  function handleIdleAnimation() {
+    if (idleTime > 1) {
+      setSprite("alert", 0);
+      idleTime = Math.min(idleTime, 7);
+      idleTime -= 1;
+      return true;
+    }
+    return false;
+  }
+
+  // @ts-ignore
+  function calculateDirection(diffX, diffY, distance) {
+    let direction = "";
+    direction += diffY / distance > 0.5 ? "N" : "";
+    direction += diffY / distance < -0.5 ? "S" : "";
+    direction += diffX / distance > 0.5 ? "W" : "";
+    direction += diffX / distance < -0.5 ? "E" : "";
+    return direction;
+  }
+
+  // @ts-ignore
+  function updateNekoPosition(diffX, diffY, distance) {
+    nekoPosX -= (diffX / distance) * nekoSpeed;
+    nekoPosY -= (diffY / distance) * nekoSpeed;
+
+    nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
+    nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
+
+    nekoEl.style.left = `${nekoPosX - 16}px`;
+    nekoEl.style.top = `${nekoPosY - 16}px`;
+  }
+
   function frame() {
     frameCount += 1;
     const diffX = nekoPosX - mousePosX;
@@ -216,28 +248,14 @@
     idleAnimation = null;
     idleAnimationFrame = 0;
 
-    if (idleTime > 1) {
-      setSprite("alert", 0);
-      idleTime = Math.min(idleTime, 7);
-      idleTime -= 1;
+    if (handleIdleAnimation()) {
       return;
     }
 
-    let direction;
-    direction = diffY / distance > 0.5 ? "N" : "";
-    direction += diffY / distance < -0.5 ? "S" : "";
-    direction += diffX / distance > 0.5 ? "W" : "";
-    direction += diffX / distance < -0.5 ? "E" : "";
+    const direction = calculateDirection(diffX, diffY, distance);
     setSprite(direction, frameCount);
 
-    nekoPosX -= (diffX / distance) * nekoSpeed;
-    nekoPosY -= (diffY / distance) * nekoSpeed;
-
-    nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
-    nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
-
-    nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
+    updateNekoPosition(diffX, diffY, distance);
   }
 
   init();
