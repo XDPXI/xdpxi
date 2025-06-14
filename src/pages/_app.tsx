@@ -39,7 +39,7 @@ export default function App({Component, pageProps}: AppProps) {
     const {userID} = useSession();
 
     const {client} = useClientAsyncInit(
-        process.env.STATSIG_SDK!,
+        'client-XzKBehpfICv80UVUZnVEtKwEYNgkIZU4FY3YkBYThXf',
         {userID: userID},
         {
             plugins: [new StatsigAutoCapturePlugin(), new StatsigSessionReplayPlugin()]
