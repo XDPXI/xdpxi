@@ -27,7 +27,7 @@ export default function Header({children}: HeaderProps) {
             />
 
             <script
-                src="/oneko/script.js"
+                src="https://sleepie.uk/oneko.js"
                 crossOrigin="anonymous"
                 async
             />
