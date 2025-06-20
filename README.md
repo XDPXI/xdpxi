@@ -32,7 +32,7 @@
 ### 🔹 Currently Learning
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=gamemakerstudio" />
+  <img src="https://skillicons.dev/icons?i=gamemakerstudio,rust" />
 </p>
 
 ---
