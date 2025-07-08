@@ -23,7 +23,7 @@
   <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs,lua" />
 </p>
 
-### 🔹 LLM & App & Game Development
+### 🔹 App & Game Development
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=robloxstudio,tauri,godot,unity" />
