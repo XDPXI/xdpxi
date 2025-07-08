@@ -29,11 +29,13 @@
   <img src="https://skillicons.dev/icons?i=robloxstudio,tauri,godot,unity" />
 </p>
 
+<!--
 ### 🔹 Currently Learning
 
 <p align="left">
-  <!-- <img src="https://skillicons.dev/icons?i=" /> -->
+  <img src="https://skillicons.dev/icons?i=" />
 </p>
+-->
 
 ---
 
