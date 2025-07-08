@@ -20,10 +20,10 @@
 ### 🔹 Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs" />
+  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs,lua" />
 </p>
 
-### 🔹 App & Game Development
+### 🔹 LLM & App & Game Development
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=robloxstudio,tauri,godot,unity" />
@@ -32,7 +32,7 @@
 ### 🔹 Currently Learning
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=gamemakerstudio,lua" />
+  <img src="https://skillicons.dev/icons?i=gamemakerstudio,llm" />
 </p>
 
 ---
