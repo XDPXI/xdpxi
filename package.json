@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.12.0",
-    "@statsig/react-bindings": "^3.18.0",
-    "@statsig/session-replay": "^3.18.0",
-    "@statsig/web-analytics": "^3.18.0",
-    "next": "^15.3.3",
+    "@statsig/react-bindings": "^3.18.2",
+    "@statsig/session-replay": "^3.18.2",
+    "@statsig/web-analytics": "^3.18.2",
+    "next": "^15.3.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "^24.0.1",
+    "@types/node": "^24.0.12",
     "@types/react": "^19.1.8",
     "critters": "^0.0.25",
     "typescript": "^5.8.3"
