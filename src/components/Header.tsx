@@ -30,14 +30,6 @@ export default function Header({children}: HeaderProps) {
                 strategy="lazyOnload"
             />
 
-            <Script
-                src="https://sleepie.uk/oneko.js"
-                strategy="lazyOnload"
-                async
-            />
-
-            {/* <Banner /> */}
-
             <Title>{children}</Title>
         </>
     );
