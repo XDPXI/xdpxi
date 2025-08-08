@@ -19,7 +19,7 @@ export default function Home() {
                     </p>
                     <p>
                         You are permitted to use these Mods in modpacks, and you are allowed
-                        to edit and fork these Mods, subject to the conditions outlined
+                        to edit and fork (Clone the code) these Mods, subject to the conditions outlined
                         below. Your use of the Mods constitutes your full acceptance of
                         these terms and conditions.
                     </p>
@@ -28,7 +28,7 @@ export default function Home() {
                 <Section>
                     <h2>1. Revenue Sharing</h2>
                     <p>
-                        If you fork, modify, or reuse substantial code from these Mods and
+                        If you fork (Clone the code), modify, or reuse substantial code (Entire classes, files or code blocks) from these Mods and
                         upload it to CurseForge, Modrinth, or similar sites with
                         monetization features,{" "}
                         <span className="highlight-text">
@@ -134,7 +134,7 @@ export default function Home() {
                 </Section>
 
                 <Section>
-                    <h2 className="ncap">Can I fork this mod?</h2>
+                    <h2 className="ncap">Can I fork (Clone the code) this mod?</h2>
                     <p>
                         Yes, you don’t need permission, but you must split 50% of the
                         revenue with the original author. You may not relicense the
