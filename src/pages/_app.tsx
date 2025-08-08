@@ -4,7 +4,7 @@ import Head from "next/head";
 import {StatsigProvider, useClientAsyncInit} from '@statsig/react-bindings';
 import {StatsigAutoCapturePlugin} from '@statsig/web-analytics';
 import {StatsigSessionReplayPlugin} from '@statsig/session-replay';
-import {useMemo, useState, useEffect} from 'react';
+import {useEffect, useMemo, useState} from 'react';
 
 const generateUserID = (): string => {
     const array = new Uint8Array(16);

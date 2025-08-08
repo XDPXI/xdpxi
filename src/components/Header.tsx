@@ -2,7 +2,6 @@ import Head from "next/head";
 import Script from "next/script";
 import React from "react";
 import Title from "~/components/Title";
-import Banner from "~/components/Banner";
 
 interface HeaderProps {
     children: React.ReactNode;
@@ -20,8 +19,8 @@ export default function Header({children}: HeaderProps) {
                     rel="icon"
                     type="image/x-icon"
                 />
-                <link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous" />
-                <link rel="preconnect" href="https://sleepie.uk" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous"/>
+                <link rel="preconnect" href="https://sleepie.uk" crossOrigin="anonymous"/>
             </Head>
 
             <Script
