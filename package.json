@@ -10,19 +10,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "@hcaptcha/react-hcaptcha": "^1.12.0",
-    "@statsig/react-bindings": "^3.18.2",
-    "@statsig/session-replay": "^3.18.2",
-    "@statsig/web-analytics": "^3.18.2",
-    "next": "^15.3.5",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@hcaptcha/react-hcaptcha": "^1.12.1",
+    "@statsig/react-bindings": "^3.21.1",
+    "@statsig/session-replay": "^3.21.1",
+    "@statsig/web-analytics": "^3.21.1",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "^24.0.12",
-    "@types/react": "^19.1.8",
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
     "critters": "^0.0.25",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
