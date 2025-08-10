@@ -54,7 +54,7 @@ export default function Footer() {
                 <div className="footer-column" id="hide1" ref={hide1Ref}>
                     <h3>About</h3>
                     <Image
-                        src="/icon-rounded.png"
+                        src="/imgs/icon-rounded.png"
                         alt="Site Icon"
                         width={32}
                         height={32}
@@ -86,7 +86,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://xdpxi.betteruptime.com/"
+                                    href="https://status.xdpxi.dev/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -104,7 +104,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://bangbrave.vercel.app/"
+                                    href="https://bangbrave.xdpxi.dev/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -117,7 +117,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://xdlib.vercel.app/"
+                                    href="https://xdlib.xdpxi.dev/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >

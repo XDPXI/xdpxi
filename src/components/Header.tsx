@@ -13,21 +13,8 @@ export default function Header({children}: HeaderProps) {
             <Head>
                 <title>{children}</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link
-                    href="https://raw.githubusercontent.com/XDPXI/xdpxi/main/public/favicon.ico"
-                    sizes="32x32"
-                    rel="icon"
-                    type="image/x-icon"
-                />
-                <link rel="preconnect" href="https://kit.fontawesome.com" crossOrigin="anonymous"/>
-                <link rel="preconnect" href="https://sleepie.uk" crossOrigin="anonymous"/>
+                <link href="/imgs/favicon.ico" sizes="32x32" rel="icon" type="image/x-icon"/>
             </Head>
-
-            <Script
-                src="https://kit.fontawesome.com/7ea2a77467.js"
-                crossOrigin="anonymous"
-                strategy="lazyOnload"
-            />
 
             <Title>{children}</Title>
         </>
