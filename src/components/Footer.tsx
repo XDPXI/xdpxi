@@ -136,7 +136,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://xds-code.vercel.app/"
+                                    href="https://xds-code.xdpxi.dev/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
@@ -149,7 +149,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://drawium.vercel.app/"
+                                    href="https://drawium.xdpxi.dev/"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                 >
