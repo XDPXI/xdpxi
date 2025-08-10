@@ -28,7 +28,8 @@ export default function Home() {
                 <Section>
                     <h2>1. Revenue Sharing</h2>
                     <p>
-                        If you fork (Clone the code), modify, or reuse substantial code (Entire classes, files or code blocks) from these Mods and
+                        If you fork (Clone the code), modify, or reuse substantial code (Entire classes, files or code
+                        blocks) from these Mods and
                         upload it to CurseForge, Modrinth, or similar sites with
                         monetization features,{" "}
                         <span className="highlight-text">
