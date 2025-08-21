@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.12.1",
-    "@statsig/react-bindings": "^3.24.0",
-    "@statsig/session-replay": "^3.24.0",
-    "@statsig/web-analytics": "^3.24.0",
+    "@statsig/react-bindings": "^3.24.1",
+    "@statsig/session-replay": "^3.24.1",
+    "@statsig/web-analytics": "^3.24.1",
     "next": "^15.5.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
