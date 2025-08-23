@@ -60,7 +60,7 @@ export default function Footer() {
                         height={32}
                         loading="lazy"
                     />
-                    <p>&copy; 2025 XDPXI. All rights reserved.</p>
+                    <p>&copy; 2024-2025 XDPXI. All rights reserved.</p>
                 </div>
 
                 <div className="footer-column" id="hide2" ref={addToHide2Refs}>
