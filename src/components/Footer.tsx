@@ -187,13 +187,23 @@ export default function Footer() {
                     <nav aria-label="Site Navigation">
                         <ul>
                             <li>
-                                <Link href="/license/servers">
+                                <Link href="/legal/servers">
                                     <i aria-hidden="true" className="fa-solid fa-book"></i> XD's Servers Policy
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/license/mc">
+                                <Link href="/legal/mc">
                                     <i aria-hidden="true" className="fa-solid fa-book"></i> XD's MC License
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/legal/tos">
+                                    <i aria-hidden="true" className="fa-solid fa-book"></i> Terms of Service
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/legal/privacy">
+                                    <i aria-hidden="true" className="fa-solid fa-book"></i> Privacy Policy
                                 </Link>
                             </li>
                         </ul>
