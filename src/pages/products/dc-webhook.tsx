@@ -129,7 +129,9 @@ export default function Home() {
                         <option value="9370DB">🟣 Purple</option>
                     </select>
 
-                    <Captcha sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058" onVerify={handleVerificationSuccess}/>
+                    {!captchaSuccess && (
+                        <Captcha sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058" onVerify={handleVerificationSuccess}/>
+                    )}
 
                     <button
                         className="button"
