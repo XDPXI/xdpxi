@@ -2,6 +2,7 @@ import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Content from "~/components/Content";
 import Button from "~/components/Button";
+import Section from "~/components/Section";
 
 export default function Home() {
     return (
@@ -9,6 +10,12 @@ export default function Home() {
             <Header>XD's Servers</Header>
 
             <Content>
+                <Section>
+                    <p>
+
+                    </p>
+                </Section>
+
                 <div className="section" style={{textAlign: "center"}}>
                     <Button
                         onClick={() => {
@@ -16,13 +23,6 @@ export default function Home() {
                         }}
                     >
                         Request a Minecraft Server
-                    </Button>
-                    <Button
-                        onClick={() => {
-                            window.location.href = "/license/servers";
-                        }}
-                    >
-                        View the Policy
                     </Button>
                 </div>
             </Content>
