@@ -14,7 +14,7 @@ export default function Home() {
                     <p>
                         Last Updated: 2025-08-23<br/>
                         Version: 2.1.0<br/>
-                        Download: <a href="https://cdn.xdpxi.dev/license/mc/2.1.0/LICENSE">LICENSE</a> or <a href="https://cdn.xdpxi.dev/license/mc/2.1.0/LICENSE.txt">LICENSE.txt</a><br/>
+                        Download: <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE">LICENSE</a> or <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE.txt">LICENSE.txt</a><br/>
                         Copyright: © 2024–2025 XDPXI. All rights reserved.
                     </p>
                 </Section>
