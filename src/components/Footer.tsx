@@ -188,7 +188,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <Link href="/legal/servers">
-                                    <i aria-hidden="true" className="fa-solid fa-book"></i> XD's Servers Policy
+                                    <i aria-hidden="true" className="fa-solid fa-book"></i> XD's Servers
                                 </Link>
                             </li>
                             <li>
@@ -197,13 +197,8 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legal/tos">
-                                    <i aria-hidden="true" className="fa-solid fa-book"></i> Terms of Service
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/legal/privacy">
-                                    <i aria-hidden="true" className="fa-solid fa-book"></i> Privacy Policy
+                                <Link href="/legal/xdac">
+                                    <i aria-hidden="true" className="fa-solid fa-shield-halved"></i> XD's AntiCheat
                                 </Link>
                             </li>
                         </ul>
