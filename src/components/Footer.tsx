@@ -188,7 +188,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <Link href="/legal/servers">
-                                    <i aria-hidden="true" className="fa-solid fa-book"></i> XD's Servers
+                                    <i aria-hidden="true" className="fa-solid fa-server"></i> XD's Servers
                                 </Link>
                             </li>
                             <li>
