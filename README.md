@@ -20,13 +20,13 @@
 ### 🔹 Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs,lua,react,swift" />
+  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs" />
 </p>
 
 ### 🔹 App & Game Development
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=robloxstudio,tauri,godot,unity" />
+  <img src="https://skillicons.dev/icons?i=tauri,godot,unity" />
 </p>
 
 <!--
