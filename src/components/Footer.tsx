@@ -59,11 +59,11 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://bangbrave.xdpxi.dev/"
+                                    href="https://fastbangs.xdpxi.dev/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <i aria-hidden="true" className="fa-solid fa-magnifying-glass"></i> Bang Brave
+                                    <i aria-hidden="true" className="fa-solid fa-magnifying-glass"></i> FastBangs
                                 </a>
                             </li>
                             <li>
