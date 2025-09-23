@@ -154,7 +154,7 @@ export default function Home() {
                     <h2>7. Contact Information</h2>
                     <p>
                         If you have any questions about this policy, please contact us at
-                        <span className="highlight-text">xdpxi@proton.me</span>.
+                        <span className="highlight-text">contact@xdpxi.dev</span>.
                     </p>
                 </Section>
             </Content>
