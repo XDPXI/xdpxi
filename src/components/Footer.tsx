@@ -98,6 +98,15 @@ export default function Footer() {
                                     <i aria-hidden="true" className="fa-solid fa-arrow-pointer"></i> XD's AutoClicker
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="https://xdpxi.itch.io/mono"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i aria-hidden="true" className="fa-solid fa-gamepad"></i> Mono
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
