@@ -5,7 +5,7 @@ import Redirect from "~/components/Redirect";
 export default function Home() {
     return (
         <>
-            <Header>XD's Servers</Header>
+            <Header>XD's MC License</Header>
 
             <Redirect sitekey="" redirectSite="/legal/mc"/>
 
