@@ -27,11 +27,6 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/servers">
-                                    <i aria-hidden="true" className="fa-solid fa-server"></i> XD's Servers
-                                </Link>
-                            </li>
-                            <li>
                                 <a
                                     href="https://docs.xdpxi.dev/"
                                     target="_blank"
@@ -195,11 +190,6 @@ export default function Footer() {
                     <h3>Legal</h3>
                     <nav aria-label="Site Navigation">
                         <ul>
-                            <li>
-                                <Link href="/legal/servers">
-                                    <i aria-hidden="true" className="fa-solid fa-server"></i> XD's Servers
-                                </Link>
-                            </li>
                             <li>
                                 <Link href="/legal/mc">
                                     <i aria-hidden="true" className="fa-solid fa-book"></i> XD's MC License
