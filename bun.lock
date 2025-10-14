@@ -4,7 +4,7 @@
     "": {
       "name": "xdpxi",
       "dependencies": {
-        "@databuddy/sdk": "^2.1.77",
+        "@databuddy/sdk": "^2.1.78",
         "@hcaptcha/react-hcaptcha": "^1.12.1",
         "next": "^15.5.5",
         "react": "^19.2.0",
@@ -21,7 +21,7 @@
   "packages": {
     "@babel/runtime": ["@babel/runtime@7.27.4", "", {}, "sha512-t3yaEOuGu9NlIZ+hIeGbBjFtZT7j2cb2tg0fuaJKeGotchRjjLfrBA9Kwf8quhpP1EUuxModQg04q/mBwyg8uA=="],
 
-    "@databuddy/sdk": ["@databuddy/sdk@2.1.77", "", { "dependencies": { "jotai": ">=2.0.0" }, "peerDependencies": { "react": ">=18", "vue": ">=3" }, "optionalPeers": ["react", "vue"] }, "sha512-aTJqXvj7LZUEwZdLJzcNIMlw/2NI/uKwBjB9CUHYIuj4MxfylihIx+hgqNorlX32vD1jXj4QCWM8Yk8rwhy/dA=="],
+    "@databuddy/sdk": ["@databuddy/sdk@2.1.78", "", { "dependencies": { "jotai": ">=2.0.0" }, "peerDependencies": { "react": ">=18", "vue": ">=3" }, "optionalPeers": ["react", "vue"] }, "sha512-KZJuOIjC/PBlZQMLDdHSFiTrnMZ71FlP/aMXAepqf3lanfE10JEVxg3Mafpf3DhH0a4Wk3TO7ztLP2T8F/a6rw=="],
 
     "@emnapi/runtime": ["@emnapi/runtime@1.4.5", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg=="],
 

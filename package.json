@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@databuddy/sdk": "^2.1.77",
+    "@databuddy/sdk": "^2.1.78",
     "@hcaptcha/react-hcaptcha": "^1.12.1",
     "next": "^15.5.5",
     "react": "^19.2.0",
