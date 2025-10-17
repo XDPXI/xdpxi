@@ -37,8 +37,10 @@ export default function Home() {
                     <p>
                         <span className="highlight-text">Software:</span>{" "} The XD's AntiCheat software created and
                         maintained by XDPXI.<br/>
-                        <span className="highlight-text">You:</span>{" "} Any user, developer, or entity using the Software.<br/>
-                        <span className="highlight-text">License:</span>{" "} A limited, non-exclusive, non-transferable, revocable right to use the Software as defined below.
+                        <span className="highlight-text">You:</span>{" "} Any user, developer, or entity using the
+                        Software.<br/>
+                        <span className="highlight-text">License:</span>{" "} A limited, non-exclusive,
+                        non-transferable, revocable right to use the Software as defined below.
                     </p>
                 </Section>
 
@@ -46,9 +48,12 @@ export default function Home() {
                     <h2>2. License Grant & Permitted Use</h2>
                     <p>
                         Subject to compliance with these terms, XDPXI grants you a {" "}
-                        <span className="highlight-text">limited, non-exclusive, non-transferable, revocable license</span>
-                        to use the Software solely for the purpose of preventing cheating and unauthorized modifications in your own applications or games.
-                        Commercial use is permitted provided the Software is embedded within your application or service.
+                        <span
+                            className="highlight-text">limited, non-exclusive, non-transferable, revocable license</span>
+                        to use the Software solely for the purpose of preventing cheating and unauthorized modifications
+                        in your own applications or games.
+                        Commercial use is permitted provided the Software is embedded within your application or
+                        service.
                     </p>
                 </Section>
 
@@ -56,9 +61,13 @@ export default function Home() {
                     <h2>3. Restrictions</h2>
                     <ul>
                         <li>You may not reverse engineer, decompile, modify, or tamper with the Software.</li>
-                        <li>You may not distribute, rent, lease, sublicense, or resell the Software without prior written permission.</li>
+                        <li>You may not distribute, rent, lease, sublicense, or resell the Software without prior
+                            written permission.
+                        </li>
                         <li>You may not use the Software in illegal, malicious, or unethical ways.</li>
-                        <li>You may not remove or alter any copyright, trademark, or legal notices within the Software.</li>
+                        <li>You may not remove or alter any copyright, trademark, or legal notices within the
+                            Software.
+                        </li>
                     </ul>
                 </Section>
 
@@ -74,7 +83,8 @@ export default function Home() {
                 <Section>
                     <h2>5. Data Collection</h2>
                     <p>
-                        See the <span className="highlight-text">Privacy Policy</span> below for details on what data is collected and why.
+                        See the <span className="highlight-text">Privacy Policy</span> below for details on what data is
+                        collected and why.
                         By using this Software, you agree to such collection and processing.
                     </p>
                 </Section>
@@ -90,7 +100,8 @@ export default function Home() {
                 <Section>
                     <h2>7. Disclaimer of Warranty</h2>
                     <p>
-                        The Software is provided <span className="highlight-text">“as is”</span> without warranties of any kind, express or implied.
+                        The Software is provided <span className="highlight-text">“as is”</span> without warranties of
+                        any kind, express or implied.
                         XDPXI does not guarantee uninterrupted or error-free operation.
                         Use of the Software is at your own risk.
                     </p>
@@ -99,15 +110,18 @@ export default function Home() {
                 <Section>
                     <h2>8. Limitation of Liability</h2>
                     <p>
-                        To the maximum extent permitted by law, XDPXI shall not be liable for any indirect, incidental, special, or consequential damages,
-                        including but not limited to lost profits, business interruption, or data loss, arising from the use or inability to use the Software.
+                        To the maximum extent permitted by law, XDPXI shall not be liable for any indirect, incidental,
+                        special, or consequential damages,
+                        including but not limited to lost profits, business interruption, or data loss, arising from the
+                        use or inability to use the Software.
                     </p>
                 </Section>
 
                 <Section>
                     <h2>9. Indemnification</h2>
                     <p>
-                        You agree to indemnify, defend, and hold harmless XDPXI from any claims, damages, or liabilities arising from your misuse of the Software.
+                        You agree to indemnify, defend, and hold harmless XDPXI from any claims, damages, or liabilities
+                        arising from your misuse of the Software.
                     </p>
                 </Section>
 
@@ -153,9 +167,13 @@ export default function Home() {
                     <h2>2. Why We Collect It</h2>
                     <ul>
                         <li><span className="highlight-text">Compliance</span> with geo-restrictions and local laws</li>
-                        <li><span className="highlight-text">Improvement</span> of performance, stability, and reliability</li>
+                        <li><span className="highlight-text">Improvement</span> of performance, stability, and
+                            reliability
+                        </li>
                         <li><span className="highlight-text">Debugging</span> issues and fixing crashes faster</li>
-                        <li><span className="highlight-text">Enforcement</span> of bans, cheating flags, or abuse prevention</li>
+                        <li><span className="highlight-text">Enforcement</span> of bans, cheating flags, or abuse
+                            prevention
+                        </li>
                     </ul>
                 </Section>
 
@@ -187,7 +205,8 @@ export default function Home() {
                 <Section>
                     <h2>6. Cross-Border Data</h2>
                     <p>
-                        Your data may be transferred and processed in countries outside your region, including servers operated in Australia or other jurisdictions.
+                        Your data may be transferred and processed in countries outside your region, including servers
+                        operated in Australia or other jurisdictions.
                         By using the Software, you consent to such transfers.
                     </p>
                 </Section>
@@ -209,7 +228,7 @@ export default function Home() {
                 </Section>
             </Content>
 
-            <Footer />
+            <Footer/>
         </>
     );
 }

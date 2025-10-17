@@ -14,16 +14,19 @@ export default function Home() {
                     <p>
                         Last Updated: 2025-08-23<br/>
                         Version: 2.1.0<br/>
-                        Download: <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE">LICENSE</a> or <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE.txt">LICENSE.txt</a><br/>
+                        Download: <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE">LICENSE</a> or <a
+                        href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE.txt">LICENSE.txt</a><br/>
                         Copyright: © 2024–2025 XDPXI. All rights reserved.
                     </p>
                 </Section>
 
                 <Section>
                     <p>
-                        This license governs your use of {" "}<span className="highlight-text">XDPXI's Minecraft Mods</span>{" "} (the
+                        This license governs your use of {" "}<span
+                        className="highlight-text">XDPXI's Minecraft Mods</span>{" "} (the
                         "Mods"). By using these Mods, you agree to follow the terms outlined
-                        here. This is a legal agreement between you and {" "}<span className="highlight-text">XDPXI</span>. You are free
+                        here. This is a legal agreement between you and {" "}<span
+                        className="highlight-text">XDPXI</span>. You are free
                         to use these Mods in modpacks and to edit or fork them, but only
                         under the conditions set out below. Using the Mods means you accept
                         these terms in full.
@@ -33,8 +36,10 @@ export default function Home() {
                 <Section>
                     <h2>Definitions</h2>
                     <p>
-                        {" "}<span className="highlight-text">Mods:</span>{" "} The Minecraft mods or modifications to the game created and maintained by XDPXI.<br/>
-                        {" "}<span className="highlight-text">Fork:</span>{" "} Any derivative or modified version of the Mods, including clones, edits, or substantial reuse.<br/>
+                        {" "}<span className="highlight-text">Mods:</span>{" "} The Minecraft mods or modifications to
+                        the game created and maintained by XDPXI.<br/>
+                        {" "}<span className="highlight-text">Fork:</span>{" "} Any derivative or modified version of
+                        the Mods, including clones, edits, or substantial reuse.<br/>
                         {" "}<span className="highlight-text">You:</span>{" "} Any person or entity using the Mods.
                     </p>
                 </Section>
@@ -44,13 +49,16 @@ export default function Home() {
                     <p>
                         If you fork, modify, or reuse significant portions of these Mods
                         (entire classes, files, or large code blocks) and upload them to
-                        platforms like {" "}<span className="highlight-text">CurseForge, Modrinth</span>{" "} or similar sites that allow
-                        monetization, you must share {" "}<span className="highlight-text">50% of the revenue</span>{" "} with the original
+                        platforms like {" "}<span className="highlight-text">CurseForge, Modrinth</span>{" "} or similar
+                        sites that allow
+                        monetization, you must share {" "}<span
+                        className="highlight-text">50% of the revenue</span>{" "} with the original
                         author (XDPXI).
                     </p>
                     <ul>
                         <li>Contact the original author before monetizing your fork.</li>
-                        <li>If asked, provide proof of revenue sharing. Failure to do so is a breach of this license.</li>
+                        <li>If asked, provide proof of revenue sharing. Failure to do so is a breach of this license.
+                        </li>
                     </ul>
                     <p>
                         1. You must share 50% of all revenue with the Author.<br/>
@@ -65,7 +73,8 @@ export default function Home() {
                     <p>
                         You may not reupload these Mods to hosting sites that do not offer
                         compensation to authors or maintain adequate control over
-                        redistribution, such as {" "}<span className="highlight-text">PlanetMinecraft</span>. Unauthorized uploads may
+                        redistribution, such as {" "}<span className="highlight-text">PlanetMinecraft</span>.
+                        Unauthorized uploads may
                         be treated as copyright infringement.
                     </p>
                 </Section>
@@ -75,7 +84,8 @@ export default function Home() {
                     <p>
                         Do not override the JAR files of these Mods directly in modpacks. The
                         Mods should always be downloaded from official sources, such as
-                        {" "}<span className="highlight-text">CurseForge or Modrinth</span>. This ensures users receive up-to-date and
+                        {" "}<span className="highlight-text">CurseForge or Modrinth</span>. This ensures users receive
+                        up-to-date and
                         safe versions.
                     </p>
                 </Section>
@@ -129,8 +139,10 @@ export default function Home() {
                     <h2>9. Governing Law and Jurisdiction</h2>
                     <p>
                         This license is governed by the laws of {" "}<span className="highlight-text">New South Wales, Australia</span>.
-                        Any disputes will be handled exclusively in the courts of New South Wales and is intended to be enforceable worldwide.
-                        Disputes will first attempt resolution under these laws, but the Author reserves the right to enforce copyright and revenue-sharing rights internationally.
+                        Any disputes will be handled exclusively in the courts of New South Wales and is intended to be
+                        enforceable worldwide.
+                        Disputes will first attempt resolution under these laws, but the Author reserves the right to
+                        enforce copyright and revenue-sharing rights internationally.
                     </p>
                 </Section>
 
@@ -140,7 +152,9 @@ export default function Home() {
                         The author can enforce this license worldwide by:
                     </p>
                     <ul>
-                        <li>Sending {" "}<span className="highlight-text">DMCA</span>{" "} or equivalent takedown notices on hosting platforms</li>
+                        <li>Sending {" "}<span className="highlight-text">DMCA</span>{" "} or equivalent takedown
+                            notices on hosting platforms
+                        </li>
                         <li>Seeking recovery of revenue</li>
                         <li>Taking legal action under copyright law</li>
                     </ul>
@@ -161,8 +175,10 @@ export default function Home() {
                 <Section>
                     <h2 className="ncap">Can I fork (Clone the code) this mod?</h2>
                     <p>
-                        Yes, you don’t need permission, but you must split {" "}<span className="highlight-text">50% of the revenue</span>{" "} with the original author. You may not relicense the
-                        software, and you may not reupload it to other sites besides {" "}<span className="highlight-text">Curseforge or Modrinth</span>.
+                        Yes, you don’t need permission, but you must split {" "}<span className="highlight-text">50% of the revenue</span>{" "} with
+                        the original author. You may not relicense the
+                        software, and you may not reupload it to other sites besides {" "}<span
+                        className="highlight-text">Curseforge or Modrinth</span>.
                     </p>
                 </Section>
 
@@ -189,7 +205,7 @@ export default function Home() {
                 </Section>
             </Content>
 
-            <Footer />
+            <Footer/>
         </>
     );
 }
