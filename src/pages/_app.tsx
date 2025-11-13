@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "../styles/fontawesome.css";
 import type {AppProps} from "next/app";
 import Head from "next/head";
-import {Databuddy} from '@databuddy/sdk';
+import {Databuddy} from "@databuddy/sdk/react";
 
 export default function App({Component, pageProps}: AppProps) {
     return (
