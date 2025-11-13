@@ -20,7 +20,7 @@
 ### 🔹 Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs" />
+  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs,swift" />
 </p>
 
 ### 🔹 App & Game Development
