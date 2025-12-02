@@ -4,7 +4,7 @@
     "": {
       "name": "xdpxi",
       "dependencies": {
-        "@databuddy/sdk": "^2.2.12",
+        "@databuddy/sdk": "^2.3.0",
         "@hcaptcha/react-hcaptcha": "^1.16.0",
         "jotai": "^2.15.1",
         "next": "^16.0.6",
@@ -22,7 +22,7 @@
   "packages": {
     "@babel/runtime": ["@babel/runtime@7.27.4", "", {}, "sha512-t3yaEOuGu9NlIZ+hIeGbBjFtZT7j2cb2tg0fuaJKeGotchRjjLfrBA9Kwf8quhpP1EUuxModQg04q/mBwyg8uA=="],
 
-    "@databuddy/sdk": ["@databuddy/sdk@2.2.12", "", { "dependencies": { "jotai": "^2.15.1" }, "peerDependencies": { "@ai-sdk/provider": "^2.0.0", "ai": "^5.0.51", "msw": "^2.11.5", "react": ">=18", "tokenlens": "^2.0.0-alpha.3", "vue": ">=3" }, "optionalPeers": ["@ai-sdk/provider", "ai", "msw", "react", "tokenlens", "vue"] }, "sha512-Zs0aN7bXzQquQhVZ/B9FzzXGqLveGrAug/8MPKEJpsCyp4e++fU+6rv3LukHUB74Ncr2PHeXpt3yudlRDd3mhw=="],
+    "@databuddy/sdk": ["@databuddy/sdk@2.3.0", "", { "dependencies": { "jotai": "^2.15.1" }, "peerDependencies": { "@ai-sdk/provider": "^2.0.0", "ai": "^5.0.51", "msw": "^2.11.5", "react": ">=18", "tokenlens": "^2.0.0-alpha.3", "vue": ">=3" }, "optionalPeers": ["@ai-sdk/provider", "ai", "msw", "react", "tokenlens", "vue"] }, "sha512-gyjNkFHB1r5lDZ/iaE/tTP5qxAWPBKJR+MbhrjT89SYkTxOgwcVEras4qEH5KvneaDLmAjntnn2A/X4GwZkcEA=="],
 
     "@emnapi/runtime": ["@emnapi/runtime@1.6.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-obtUmAHTMjll499P+D9A3axeJFlhdjOWdKUNs/U6QIGT7V5RjcUW1xToAzjvmgTSQhDbYn/NwfTRoJcQ2rNBxA=="],
 
