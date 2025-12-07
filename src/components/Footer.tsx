@@ -121,7 +121,7 @@ export default function Footer() {
                         <ul>
                             <li>
                                 <a
-                                    href="https://youtube.com/@xdpxi"
+                                    href="https://youtube.com/@xdpxi2"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
