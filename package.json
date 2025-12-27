@@ -10,15 +10,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@databuddy/sdk": "^2.3.0",
-    "@hcaptcha/react-hcaptcha": "^1.16.0",
-    "jotai": "^2.15.2",
-    "react-dom": "^19.2.1",
-    "next": "^16.0.7",
-    "react": "^19.2.1"
+    "@databuddy/sdk": "^2.3.2",
+    "@hcaptcha/react-hcaptcha": "^1.17.2",
+    "jotai": "^2.16.1",
+    "react-dom": "^19.2.3",
+    "next": "^16.1.1",
+    "react": "^19.2.3"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.10.4",
     "@types/react": "^19.2.7",
     "typescript": "^5.9.3",
     "critters": "^0.0.25"
