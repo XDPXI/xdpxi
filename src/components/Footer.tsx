@@ -14,7 +14,7 @@ export default function Footer() {
                         height={32}
                         loading="lazy"
                     />
-                    <p>&copy; 2024-2025 XDPXI. All rights reserved.</p>
+                    <p>&copy; 2026 XDPXI. All rights reserved.</p>
                 </div>
 
                 <div className="footer-column">
