@@ -10,16 +10,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@databuddy/sdk": "^2.3.2",
-    "@hcaptcha/react-hcaptcha": "^1.17.2",
-    "jotai": "^2.16.1",
-    "react-dom": "^19.2.3",
-    "next": "^16.1.1",
-    "react": "^19.2.3"
+    "@databuddy/sdk": "^2.3.29",
+    "@hcaptcha/react-hcaptcha": "^1.17.4",
+    "jotai": "^2.17.0",
+    "react-dom": "^19.2.4",
+    "next": "^16.1.6",
+    "react": "^19.2.4"
   },
   "devDependencies": {
-    "@types/node": "^24.10.4",
-    "@types/react": "^19.2.7",
+    "@types/node": "^24.10.10",
+    "@types/react": "^19.2.10",
     "typescript": "^5.9.3",
     "critters": "^0.0.25"
   }
