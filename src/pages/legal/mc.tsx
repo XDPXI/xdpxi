@@ -17,11 +17,11 @@ export default function Home() {
             Version: 2.1.0
             <br />
             Download:{" "}
-            <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE">
+            <a href="http://cdn.xdpxi.net:8716/xdpxi/license/mc/2.1.0/LICENSE">
               LICENSE
             </a>{" "}
             or{" "}
-            <a href="https://cdn.xdpxi.dev/xdpxi/license/mc/2.1.0/LICENSE.txt">
+            <a href="http://cdn.xdpxi.net:8716/xdpxi/license/mc/2.1.0/LICENSE.txt">
               LICENSE.txt
             </a>
             <br />
