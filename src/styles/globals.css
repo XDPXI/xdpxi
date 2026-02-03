@@ -95,7 +95,7 @@ a {
     text-decoration: none;
     transition:
         color var(--transition-duration) var(--transition-easing),
-        transform 0.2s ease;
+        transform 0.1s ease;
 }
 
 a:hover {
