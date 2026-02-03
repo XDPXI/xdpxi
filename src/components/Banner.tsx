@@ -1,7 +1,3 @@
 ﻿export default function Banner() {
-    return (
-        <header className="header">
-
-        </header>
-    );
+  return <header className="header"></header>;
 }

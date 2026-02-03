@@ -1,42 +1,42 @@
-﻿import React, {useEffect, useState} from "react";
+﻿import React, { useEffect, useState } from "react";
 import Content from "~/components/Content";
 import Captcha from "~/components/Captcha";
 
 interface RedirectProps {
-    sitekey: string | null;
-    redirectSite: string;
+  sitekey: string | null;
+  redirectSite: string;
 }
 
-export default function Redirect({sitekey, redirectSite}: RedirectProps) {
-    const [redirectMessage, setRedirectMessage] = useState("Awaiting for hCaptcha");
-    const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean>(false);
+export default function Redirect({ sitekey, redirectSite }: RedirectProps) {
+  const [redirectMessage, setRedirectMessage] = useState(
+    "Awaiting for hCaptcha",
+  );
+  const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean>(false);
 
-    useEffect(() => {
-        if (!sitekey) {
-            setRedirectMessage("Redirecting...");
-            window.location.replace(redirectSite);
-        }
-    })
-
-    function handleVerificationSuccess(token: string, ekey: string) {
-        setRedirectMessage("Redirecting...");
-        setTimeout(() => {
-            setCaptchaSuccess(true);
-            window.location.replace(redirectSite);
-        }, 1000);
+  useEffect(() => {
+    if (!sitekey) {
+      setRedirectMessage("Redirecting...");
+      window.location.replace(redirectSite);
     }
+  });
 
-    return (
-        <Content>
-            <div className="section" style={{textAlign: "center"}}>
-                {captchaSuccess || !sitekey ? (
-                    <h2>{redirectMessage}</h2>
-                ) : null}
+  function handleVerificationSuccess(token: string, ekey: string) {
+    setRedirectMessage("Redirecting...");
+    setTimeout(() => {
+      setCaptchaSuccess(true);
+      window.location.replace(redirectSite);
+    }, 1000);
+  }
 
-                {!captchaSuccess && sitekey ? (
-                    <Captcha sitekey={sitekey} onVerify={handleVerificationSuccess}/>
-                ) : null}
-            </div>
-        </Content>
-    )
+  return (
+    <Content>
+      <div className="section" style={{ textAlign: "center" }}>
+        {captchaSuccess || !sitekey ? <h2>{redirectMessage}</h2> : null}
+
+        {!captchaSuccess && sitekey ? (
+          <Captcha sitekey={sitekey} onVerify={handleVerificationSuccess} />
+        ) : null}
+      </div>
+    </Content>
+  );
 }

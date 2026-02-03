@@ -31,8 +31,9 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     padding: 30px;
-    transition: background-color var(--transition-duration) var(--transition-easing),
-    color var(--transition-duration) var(--transition-easing);
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        color var(--transition-duration) var(--transition-easing);
 }
 
 header {
@@ -43,8 +44,9 @@ header {
     box-shadow: 0 4px 8px var(--shadow-dark);
     margin-bottom: 40px;
     border-radius: calc(var(--border-radius) + 2px);
-    transition: background-color var(--transition-duration) var(--transition-easing),
-    box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 header::before {
@@ -56,10 +58,10 @@ header::before {
     bottom: -4px;
     border-radius: calc(var(--border-radius) + 5px);
     background: linear-gradient(
-            45deg,
-            var(--header-gradient-start),
-            var(--header-gradient-mid),
-            var(--header-gradient-end)
+        45deg,
+        var(--header-gradient-start),
+        var(--header-gradient-mid),
+        var(--header-gradient-end)
     );
     z-index: -1;
 }
@@ -91,8 +93,9 @@ strong {
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color var(--transition-duration) var(--transition-easing),
-    transform 0.2s ease;
+    transition:
+        color var(--transition-duration) var(--transition-easing),
+        transform 0.2s ease;
 }
 
 a:hover {
@@ -109,9 +112,10 @@ pre {
     font-family: "Courier New", monospace;
     font-size: 1rem;
     box-shadow: 0 4px 10px var(--shadow-dark);
-    transition: background-color var(--transition-duration) var(--transition-easing),
-    color var(--transition-duration) var(--transition-easing),
-    box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 .content-wrapper {
@@ -157,14 +161,16 @@ pre {
     font-size: 1.1rem;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color var(--transition-duration) var(--transition-easing),
-    transform 0.2s ease, box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        transform 0.2s ease,
+        box-shadow var(--transition-duration) var(--transition-easing);
     box-shadow: 0 4px 8px var(--shadow-dark);
 }
 
 .button:disabled {
     border: #be584e 3px solid;
-    color: #D3D3D3;
+    color: #d3d3d3;
     transform: scale(0.95);
 }
 
@@ -211,8 +217,9 @@ pre {
 .footer-column ul li a {
     color: #fff;
     text-decoration: none;
-    transition: all var(--transition-duration) var(--transition-easing),
-    transform 0.2s ease;
+    transition:
+        all var(--transition-duration) var(--transition-easing),
+        transform 0.2s ease;
 }
 
 .footer-column ul li a:hover {
@@ -230,9 +237,10 @@ form {
     background-color: #1e1e1e;
     border-radius: calc(var(--border-radius) - 3px);
     box-shadow: 0 4px 8px var(--shadow-dark);
-    transition: all var(--transition-duration) var(--transition-easing),
-    color var(--transition-duration) var(--transition-easing),
-    box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        all var(--transition-duration) var(--transition-easing),
+        color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 label {
@@ -254,10 +262,12 @@ select {
     background-color: #2a2a2a;
     color: var(--text-light);
     border: 1px solid #3a3a3a;
-    transition: border-color, box-shadow var(--transition-duration) var(--transition-easing),
-    color var(--transition-duration) var(--transition-easing),
-    border-color var(--transition-duration) var(--transition-easing),
-    box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        border-color,
+        box-shadow var(--transition-duration) var(--transition-easing),
+        color var(--transition-duration) var(--transition-easing),
+        border-color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 input:focus,
@@ -280,7 +290,9 @@ select:focus {
     min-height: 50px;
     box-sizing: border-box;
     box-shadow: 0 2px 5px var(--shadow-dark);
-    transition: background-color var(--transition-duration) var(--transition-easing), box-shadow var(--transition-duration) var(--transition-easing);
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        box-shadow var(--transition-duration) var(--transition-easing);
 }
 
 .warning:hover {
