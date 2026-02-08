@@ -125,6 +125,16 @@ export default function Footer() {
                   SwiftMC
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://cloud.xdpxi.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-cloud"></i> XD's
+                  Cloud
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
