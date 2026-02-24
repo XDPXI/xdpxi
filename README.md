@@ -20,7 +20,7 @@
 ### 🔹 Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,ts,js,html,css,python,cs,swift,rust" />
+  <img src="https://skillicons.dev/icons?i=java,ts,python,cs,swift,rust" />
 </p>
 
 ### 🔹 App & Game Development
@@ -42,7 +42,7 @@
 ## 🌐 Connect
 
 <p align="left">
-  <a href="https://youtube.com/@xdpxi" target="_blank" rel="noreferrer">
+  <a href="https://youtube.com/@xdpxi2" target="_blank" rel="noreferrer">
     <img
       src="https://img.shields.io/static/v1?message=YouTube&logo=youtube&label=&color=FF0000&logoColor=white&style=for-the-badge"
       height="35"
