@@ -7,7 +7,7 @@ export default function XDAC() {
     <>
       <Header>XD's AntiCheat License & Policy</Header>
 
-      <Redirect sitekey="" redirectSite="/legal/xdac" />
+      <Redirect sitekey="" redirectSite="/legal/xdac-terms-of-service" />
 
       <Footer />
     </>

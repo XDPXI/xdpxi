@@ -244,12 +244,21 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/legal/xdac">
+                <Link href="/legal/xdac-terms-of-service">
                   <i
                     aria-hidden="true"
                     className="fa-solid fa-shield-halved"
                   ></i>{" "}
-                  XD's AntiCheat
+                  XD's AntiCheat - Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal/xdac-privacy-policy">
+                  <i
+                    aria-hidden="true"
+                    className="fa-solid fa-shield-halved"
+                  ></i>{" "}
+                  XD's AntiCheat - Privacy Policy
                 </Link>
               </li>
             </ul>
