@@ -4,7 +4,7 @@ import Footer from "~/components/Footer";
 import Section from "~/components/Section";
 import Captcha from "~/components/Captcha";
 
-export default function Home() {
+export default function DcWebhook() {
   const [webhookURL, setWebhookURL] = React.useState("");
   const [titleContent, setTitleContent] = React.useState("");
   const [embedTitle, setEmbedTitle] = React.useState("");

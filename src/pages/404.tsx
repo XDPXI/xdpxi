@@ -3,7 +3,7 @@ import Footer from "~/components/Footer";
 import Button from "~/components/Button";
 import Content from "~/components/Content";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <>
       <Header>404 - Not found!</Header>

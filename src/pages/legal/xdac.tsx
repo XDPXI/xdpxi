@@ -4,7 +4,7 @@ import Title from "~/components/Title";
 import Content from "~/components/Content";
 import Section from "~/components/Section";
 
-export default function Home() {
+export default function XDAC() {
   return (
     <>
       <Header>XD's AntiCheat License & Policy</Header>

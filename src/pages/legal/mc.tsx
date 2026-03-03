@@ -4,7 +4,7 @@ import Title from "~/components/Title";
 import Content from "~/components/Content";
 import Section from "~/components/Section";
 
-export default function Home() {
+export default function Mc() {
   return (
     <>
       <Header>XD's MC License</Header>
