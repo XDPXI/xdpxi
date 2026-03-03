@@ -1,18 +1,14 @@
 :root {
-    --header-gradient-start: orange;
-    --header-gradient-mid: red;
-    --header-gradient-end: hotpink;
-    --highlight: #ff6f61;
-    --button-color: #ff6f61;
-    --button-hover-color: #ff3b30;
-    --background-dark: #121212;
-    --text-light: #e0e0e0;
-    --link-color: #ff6f61;
-    --link-hover: #ff4a40;
-    --shadow-dark: rgba(0, 0, 0, 0.2);
-    --shadow-light: rgba(255, 255, 255, 0.1);
+    --header-border-color: #c9a342;
+    --highlight: #c9a342;
+    --button-color: #c9a342;
+    --button-hover-color: #f2b315;
+    --background-dark: #1e2021;
+    --text-light: #f9f5d7;
+    --link-color: #c9a342;
+    --link-hover: #f2b315;
     --border-radius: 15px;
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-family: "Bree Serif", serif;
     --transition-duration: 0.3s;
     --transition-easing: ease;
 }
@@ -57,12 +53,7 @@ header::before {
     right: -4px;
     bottom: -4px;
     border-radius: calc(var(--border-radius) + 5px);
-    background: linear-gradient(
-        45deg,
-        var(--header-gradient-start),
-        var(--header-gradient-mid),
-        var(--header-gradient-end)
-    );
+    background: var(--header-border-color);
     z-index: -1;
 }
 
@@ -169,7 +160,7 @@ pre {
 }
 
 .button:disabled {
-    border: #be584e 3px solid;
+    border: var(--header-border-color) 3px solid;
     color: #d3d3d3;
     transform: scale(0.95);
 }
@@ -234,8 +225,9 @@ form {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: transparent;
     border-radius: calc(var(--border-radius) - 3px);
+    border: 3px solid var(--header-border-color);
     box-shadow: 0 4px 8px var(--shadow-dark);
     transition:
         all var(--transition-duration) var(--transition-easing),

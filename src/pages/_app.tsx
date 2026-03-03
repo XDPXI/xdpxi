@@ -40,12 +40,19 @@ export default function App({ Component, pageProps }: AppProps) {
           type="image/x-icon"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+          rel="stylesheet"
+        />
+
         <meta name="color-scheme" content="dark" />
         <style
           dangerouslySetInnerHTML={{
             __html: `
                 body {
-                  background-color: #121212;
+                  background-color: #1e2021;
                 }
               `,
           }}
