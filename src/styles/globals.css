@@ -34,27 +34,12 @@ body {
 
 header {
     position: relative;
-    background: var(--background-dark);
+    background: transparent;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px var(--shadow-dark);
     margin-bottom: 40px;
     border-radius: calc(var(--border-radius) + 2px);
-    transition:
-        background-color var(--transition-duration) var(--transition-easing),
-        box-shadow var(--transition-duration) var(--transition-easing);
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border-radius: calc(var(--border-radius) + 5px);
-    background: var(--header-border-color);
-    z-index: -1;
+    border: 5px solid var(--header-border-color);
 }
 
 h1 {
