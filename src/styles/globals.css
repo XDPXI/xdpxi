@@ -163,15 +163,18 @@ pre {
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
+    gap: 20px;
 }
 
 .footer-column {
-    flex: 1;
+    flex: 1 1 150px;
     padding: 0 10px;
+    min-width: 200px;
 }
 
 .footer-column h3 {
