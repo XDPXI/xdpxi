@@ -28,12 +28,23 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="http://projects.xdpxi.net:57548/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-code"></i> Source
+                  Code <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://docs.xdpxi.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-book"></i>{" "}
-                  Documentation
+                  Documentation{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -43,7 +54,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-signal"></i>{" "}
-                  Status
+                  Status <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
             </ul>
@@ -51,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-column">
-          <h3>Products</h3>
+          <h3>Projects</h3>
           <nav aria-label="External Links">
             <ul>
               <li>
@@ -64,11 +75,11 @@ export default function Footer() {
                     aria-hidden="true"
                     className="fa-solid fa-magnifying-glass"
                   ></i>{" "}
-                  FastBangs
+                  FastBangs <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
-                <Link href="/products/dc-webhook">
+                <Link href="/projects/dc-webhook">
                   <i aria-hidden="true" className="fa-brands fa-discord"></i>{" "}
                   Discord Webhook
                 </Link>
@@ -80,7 +91,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-code"></i> XD's
-                  Code
+                  Code <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -89,7 +100,8 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i aria-hidden="true" className="fa-solid fa-pen"></i> Drawium
+                  <i aria-hidden="true" className="fa-solid fa-pen"></i> Drawium{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -102,7 +114,8 @@ export default function Footer() {
                     aria-hidden="true"
                     className="fa-solid fa-arrow-pointer"
                   ></i>{" "}
-                  XD's AutoClicker
+                  XD's AutoClicker{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -112,7 +125,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-gamepad"></i>{" "}
-                  Mono
+                  Mono <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -122,7 +135,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-cube"></i>{" "}
-                  SwiftMC
+                  SwiftMC <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -132,7 +145,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-cloud"></i> XD's
-                  Cloud
+                  Cloud <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
             </ul>
@@ -150,7 +163,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-brands fa-youtube"></i>{" "}
-                  YouTube
+                  YouTube <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -160,7 +173,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-brands fa-twitch"></i>{" "}
-                  Twitch
+                  Twitch <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -173,7 +186,7 @@ export default function Footer() {
                     aria-hidden="true"
                     className="fa-brands fa-kickstarter-k"
                   ></i>{" "}
-                  Kick
+                  Kick <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -183,7 +196,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-brands fa-itch-io"></i>{" "}
-                  Itch.io
+                  Itch.io <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -193,7 +206,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-brands fa-github"></i>{" "}
-                  GitHub
+                  GitHub <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -206,7 +219,7 @@ export default function Footer() {
                     aria-hidden="true"
                     className="fa-solid fa-puzzle-piece"
                   ></i>{" "}
-                  Modrinth
+                  Modrinth <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -216,7 +229,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-brands fa-discord"></i>{" "}
-                  Discord
+                  Discord <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
@@ -226,7 +239,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-robot"></i>{" "}
-                  Ollama
+                  Ollama <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
             </ul>
