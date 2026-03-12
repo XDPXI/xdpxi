@@ -1,7 +1,7 @@
 /*!
- * Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2025 Fonticons, Inc.
+ * Copyright 2026 Fonticons, Inc.
  */
 .fa-solid,
 .fa-regular,
@@ -40,10 +40,23 @@
     .fa-classic,
     .fa
 )::before {
-    content: var(--fa);
     content: var(--fa) / "";
 }
 
+@supports not (content: ""/"") {
+    :is(
+        .fas,
+        .far,
+        .fab,
+        .fa-solid,
+        .fa-regular,
+        .fa-brands,
+        .fa-classic,
+        .fa
+    )::before {
+        content: var(--fa);
+    }
+}
 .fa-1x {
     font-size: 1em;
 }
@@ -170,7 +183,6 @@
     margin-inline-start: var(--fa-li-margin, 2.5em);
     padding-inline-start: 0;
 }
-
 .fa-ul > li {
     position: relative;
 }
@@ -313,7 +325,6 @@
         transition: none !important;
     }
 }
-
 @keyframes fa-beat {
     0%,
     90% {
@@ -323,7 +334,6 @@
         transform: scale(var(--fa-beat-scale, 1.25));
     }
 }
-
 @keyframes fa-bounce {
     0% {
         transform: scale(1, 1) translateY(0);
@@ -359,13 +369,11 @@
         transform: scale(1, 1) translateY(0);
     }
 }
-
 @keyframes fa-fade {
     50% {
         opacity: var(--fa-fade-opacity, 0.4);
     }
 }
-
 @keyframes fa-beat-fade {
     0%,
     100% {
@@ -377,7 +385,6 @@
         transform: scale(var(--fa-beat-fade-scale, 1.125));
     }
 }
-
 @keyframes fa-flip {
     50% {
         transform: rotate3d(
@@ -388,7 +395,6 @@
         );
     }
 }
-
 @keyframes fa-shake {
     0% {
         transform: rotate(-15deg);
@@ -421,7 +427,6 @@
         transform: rotate(0deg);
     }
 }
-
 @keyframes fa-spin {
     0% {
         transform: rotate(0deg);
@@ -430,7 +435,6 @@
         transform: rotate(360deg);
     }
 }
-
 .fa-rotate-90 {
     transform: rotate(90deg);
 }
@@ -471,10 +475,11 @@
 
 .fa-stack-1x,
 .fa-stack-2x {
-    left: 0;
+    --fa-width: 100%;
+    inset: 0;
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: var(--fa-width);
     z-index: var(--fa-stack-z-index, auto);
 }
 
@@ -931,6 +936,10 @@
 
 .fa-clapperboard {
     --fa: "\e131";
+}
+
+.fa-closed-captioning-slash {
+    --fa: "\e135";
 }
 
 .fa-clover {
@@ -2213,6 +2222,10 @@
     --fa: "\e80a";
 }
 
+.fa-picture-in-picture {
+    --fa: "\e80b";
+}
+
 .fa-mobile-vibrate {
     --fa: "\e816";
 }
@@ -2235,6 +2248,54 @@
 
 .fa-heptagon {
     --fa: "\e820";
+}
+
+.fa-aquarius {
+    --fa: "\e845";
+}
+
+.fa-aries {
+    --fa: "\e846";
+}
+
+.fa-cancer {
+    --fa: "\e847";
+}
+
+.fa-capricorn {
+    --fa: "\e848";
+}
+
+.fa-gemini {
+    --fa: "\e849";
+}
+
+.fa-leo {
+    --fa: "\e84a";
+}
+
+.fa-libra {
+    --fa: "\e84b";
+}
+
+.fa-pisces {
+    --fa: "\e84c";
+}
+
+.fa-sagittarius {
+    --fa: "\e84d";
+}
+
+.fa-scorpio {
+    --fa: "\e84e";
+}
+
+.fa-taurus {
+    --fa: "\e84f";
+}
+
+.fa-virgo {
+    --fa: "\e850";
 }
 
 .fa-martini-glass-empty {
@@ -7537,6 +7598,14 @@
     --fa: "\f6a7";
 }
 
+.fa-volume {
+    --fa: "\f6a8";
+}
+
+.fa-volume-medium {
+    --fa: "\f6a8";
+}
+
 .fa-volume-xmark {
     --fa: "\f6a9";
 }
@@ -8428,7 +8497,6 @@
 .fa-caravan {
     --fa: "\f8ff";
 }
-
 :root,
 :host {
     --fa-family-brands: "Font Awesome 7 Brands";
@@ -8440,9 +8508,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("../../public/webfonts/fa-brands-400.woff2");
+    src: url("/webfonts/fa-brands-400.woff2");
 }
-
 .fab,
 .fa-brands,
 .fa-classic.fa-brands {
@@ -8828,6 +8895,158 @@
 
 .fa-duolingo {
     --fa: "\e812";
+}
+
+.fa-supportnow {
+    --fa: "\e833";
+}
+
+.fa-tor-browser {
+    --fa: "\e838";
+}
+
+.fa-typescript {
+    --fa: "\e840";
+}
+
+.fa-square-deskpro {
+    --fa: "\e844";
+}
+
+.fa-circle-zulip {
+    --fa: "\e851";
+}
+
+.fa-julia {
+    --fa: "\e852";
+}
+
+.fa-zulip {
+    --fa: "\e853";
+}
+
+.fa-unison {
+    --fa: "\e854";
+}
+
+.fa-board-game-geek {
+    --fa: "\e855";
+}
+
+.fa-bgg {
+    --fa: "\e855";
+}
+
+.fa-ko-fi {
+    --fa: "\e856";
+}
+
+.fa-kubernetes {
+    --fa: "\e857";
+}
+
+.fa-postgresql {
+    --fa: "\e858";
+}
+
+.fa-scaleway {
+    --fa: "\e859";
+}
+
+.fa-venmo {
+    --fa: "\e85a";
+}
+
+.fa-venmo-v {
+    --fa: "\e85b";
+}
+
+.fa-unreal-engine {
+    --fa: "\e85c";
+}
+
+.fa-globaleaks {
+    --fa: "\e85d";
+}
+
+.fa-solana {
+    --fa: "\e85e";
+}
+
+.fa-threema {
+    --fa: "\e85f";
+}
+
+.fa-forgejo {
+    --fa: "\e860";
+}
+
+.fa-claude {
+    --fa: "\e861";
+}
+
+.fa-gitee {
+    --fa: "\e863";
+}
+
+.fa-xmpp {
+    --fa: "\e864";
+}
+
+.fa-fediverse {
+    --fa: "\e865";
+}
+
+.fa-tailwind-css {
+    --fa: "\e866";
+}
+
+.fa-arch-linux {
+    --fa: "\e867";
+}
+
+.fa-svelte {
+    --fa: "\e868";
+}
+
+.fa-hugging-face {
+    --fa: "\e869";
+}
+
+.fa-leetcode {
+    --fa: "\e86a";
+}
+
+.fa-openstreetmap {
+    --fa: "\e86b";
+}
+
+.fa-ultralytics {
+    --fa: "\e86d";
+}
+
+.fa-ultralytics-hub {
+    --fa: "\e86e";
+}
+
+.fa-ultralytics-yolo {
+    --fa: "\e86f";
+}
+
+.fa-obsidian {
+    --fa: "\e879";
+}
+
+.fa-zoom {
+    --fa: "\e87b";
+}
+
+.fa-vim {
+    --fa: "\e88a";
+}
+
+.fa-symfonycasts {
+    --fa: "\e8ab";
 }
 
 .fa-square-twitter {
@@ -10645,7 +10864,6 @@
 .fa-umbraco {
     --fa: "\f8e8";
 }
-
 :root,
 :host {
     --fa-family-classic: "Font Awesome 7 Free";
@@ -10659,9 +10877,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("../../public/webfonts/fa-regular-400.woff2");
+    src: url("/webfonts/fa-regular-400.woff2");
 }
-
 .far {
     --fa-family: var(--fa-family-classic);
     --fa-style: 400;
@@ -10674,7 +10891,6 @@
 .fa-regular {
     --fa-style: 400;
 }
-
 :root,
 :host {
     --fa-family-classic: "Font Awesome 7 Free";
@@ -10688,9 +10904,8 @@
     font-style: normal;
     font-weight: 900;
     font-display: block;
-    src: url("../../public/webfonts/fa-solid-900.woff2");
+    src: url("/webfonts/fa-solid-900.woff2");
 }
-
 .fas {
     --fa-family: var(--fa-family-classic);
     --fa-style: 900;
@@ -10703,44 +10918,38 @@
 .fa-solid {
     --fa-style: 900;
 }
-
 @font-face {
     font-family: "Font Awesome 5 Brands";
     font-display: block;
     font-weight: 400;
-    src: url("../../public/webfonts/fa-brands-400.woff2") format("woff2");
+    src: url("/webfonts/fa-brands-400.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Font Awesome 5 Free";
     font-display: block;
     font-weight: 900;
-    src: url("../../public/webfonts/fa-solid-900.woff2") format("woff2");
+    src: url("/webfonts/fa-solid-900.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "Font Awesome 5 Free";
     font-display: block;
     font-weight: 400;
-    src: url("../../public/webfonts/fa-regular-400.woff2") format("woff2");
+    src: url("/webfonts/fa-regular-400.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
-    src: url("../../public/webfonts/fa-solid-900.woff2") format("woff2");
+    src: url("/webfonts/fa-solid-900.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
-    src: url("../../public/webfonts/fa-brands-400.woff2") format("woff2");
+    src: url("/webfonts/fa-brands-400.woff2") format("woff2");
 }
-
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
-    src: url("../../public/webfonts/fa-regular-400.woff2") format("woff2");
+    src: url("/webfonts/fa-regular-400.woff2") format("woff2");
     unicode-range:
         U+F003, U+F006, U+F014, U+F016-F017, U+F01A-F01B, U+F01D, U+F022,
         U+F03E, U+F044, U+F046, U+F05C-F05D, U+F06E, U+F070, U+F087-F088,
@@ -10753,11 +10962,10 @@
         U+F29C, U+F2B5, U+F2B7, U+F2BA, U+F2BC, U+F2BE, U+F2C0-F2C1, U+F2C3,
         U+F2D0, U+F2D2, U+F2D4, U+F2DC;
 }
-
 @font-face {
     font-family: "FontAwesome";
     font-display: block;
-    src: url("../../public/webfonts/fa-v4compatibility.woff2") format("woff2");
+    src: url("/webfonts/fa-v4compatibility.woff2") format("woff2");
     unicode-range:
         U+F041, U+F047, U+F065-F066, U+F07D-F07E, U+F080, U+F08B, U+F08E,
         U+F090, U+F09A, U+F0AC, U+F0AE, U+F0B2, U+F0D0, U+F0D6, U+F0E4, U+F0EC,
