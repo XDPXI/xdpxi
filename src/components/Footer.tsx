@@ -28,16 +28,6 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="http://projects.xdpxi.net:57548/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-code"></i> Source
-                  Code <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://docs.xdpxi.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
