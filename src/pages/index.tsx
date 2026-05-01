@@ -81,6 +81,13 @@ export default function Home() {
 
       <Content>
         <Section>
+          <h2>May 1, 2026</h2>
+          <a href="/blogs/upgrading-the-servers" style={{ fontSize: 20 }}>
+            Upgrading the Servers
+          </a>
+        </Section>
+
+        <Section>
           <h2>Feb 8, 2026</h2>
           <a href="/blogs/my-own-cloud-service" style={{ fontSize: 20 }}>
             My Own Cloud Service
