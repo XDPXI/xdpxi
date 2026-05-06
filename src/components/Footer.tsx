@@ -52,6 +52,24 @@ export default function Footer() {
         </div>
 
         <div className="footer-column">
+          <h3>Affiliates</h3>
+          <nav aria-label="Site Navigation">
+            <ul>
+              <li>
+                <a
+                  href="https://www.xdpxi.dev/shopify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-brands fa-shopify"></i>{" "}
+                  Shopify <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="footer-column">
           <h3>Projects</h3>
           <nav aria-label="External Links">
             <ul>
