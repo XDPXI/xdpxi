@@ -21,6 +21,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--background-dark);
@@ -30,6 +38,11 @@ body {
     transition:
         background-color var(--transition-duration) var(--transition-easing),
         color var(--transition-duration) var(--transition-easing);
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
