@@ -3,6 +3,7 @@ import "../styles/fontawesome.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Databuddy } from "@databuddy/sdk/react";
+import ColorBars from "~/components/ColorBars";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -58,6 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       </Head>
+      <ColorBars />
       <Databuddy clientId="Ky1wMKg8zxAgolZ7xDHKv" enableBatching={true} />
       <Component {...pageProps} />
     </>
