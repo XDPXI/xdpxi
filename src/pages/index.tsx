@@ -76,6 +76,13 @@ export default function Home() {
           </p>
         </Section>
       </Content>
+      <Section>
+        <h2>Animations</h2>
+        <p>I have made a few animations</p>
+
+        <a href="/animations/donut">Donut!</a>
+        <a href="/animations/the-great-heist">The Great Heist</a>
+      </Section>
 
       <Title>Blogs</Title>
 
