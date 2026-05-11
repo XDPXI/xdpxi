@@ -3,6 +3,7 @@ import Footer from "~/components/Footer";
 import Content from "~/components/Content";
 import Section from "~/components/Section";
 import Title from "~/components/Title";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -78,10 +79,14 @@ export default function Home() {
       </Content>
       <Section>
         <h2>Animations</h2>
-        <p>I have made a few animations</p>
+        <p>
+          I have made a few animations over time, primarily for school projects.
+          This includes:
+        </p>
 
-        <a href="/animations/donut">Donut!</a>
-        <a href="/animations/the-great-heist">The Great Heist</a>
+        <Link href="/animations/donut">Donut!</Link>
+        <br />
+        <Link href="/animations/the-great-heist">The Great Heist</Link>
       </Section>
 
       <Title>Blogs</Title>
