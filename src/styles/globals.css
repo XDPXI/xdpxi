@@ -308,6 +308,7 @@ select:focus {
     z-index: 9999;
     transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     left: 0;
+    opacity: 1;
 }
 
 .colorBarsContainer.left {
@@ -325,14 +326,50 @@ select:focus {
 }
 
 .colorBarsContainer.collapsing {
-    transition:
-        width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
-        left 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
-        right 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.colorBarsContainer.hovering {
+    width: 30px;
+    cursor: pointer;
+}
+
+.colorBarsContainer.disabled {
+    opacity: 0.5;
 }
 
 .colorBar {
     flex: 1;
     width: 100%;
     height: calc(100vh / 6);
+}
+
+.colorBarsText {
+    position: fixed;
+    top: 50%;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10000;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.colorBarsText.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.colorBarsContainer.left .colorBarsText {
+    left: 15px;
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+    transform-origin: center center;
+}
+
+.colorBarsContainer.right .colorBarsText {
+    right: 15px;
+    transform: translateY(-50%) translateX(50%) rotate(90deg);
+    transform-origin: center center;
 }

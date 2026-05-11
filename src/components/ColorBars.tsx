@@ -15,14 +15,18 @@ export default function ColorBars() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isCollapsing, setIsCollapsing] = useState(false);
   const [side, setSide] = useState<"left" | "right">("left");
+  const [isHovering, setIsHovering] = useState(false);
+  const [transitionsEnabled, setTransitionsEnabled] = useState(true);
 
   useEffect(() => {
     const handleRouteChangeStart = () => {
+      if (!transitionsEnabled) return;
       setIsCollapsing(false);
       setIsExpanded(true);
     };
 
     const handleRouteChangeComplete = () => {
+      if (!transitionsEnabled) return;
       setIsCollapsing(true);
       setTimeout(() => {
         setSide(side === "left" ? "right" : "left");
@@ -38,11 +42,16 @@ export default function ColorBars() {
       router.events.off("routeChangeStart", handleRouteChangeStart);
       router.events.off("routeChangeComplete", handleRouteChangeComplete);
     };
-  }, [router, side]);
+  }, [router, side, transitionsEnabled]);
+
+  const isAnimating = isExpanded || isCollapsing;
 
   return (
     <div
-      className={`colorBarsContainer ${side} ${isExpanded ? "expanded" : ""} ${isCollapsing ? "collapsing" : ""}`}
+      className={`colorBarsContainer ${side} ${isExpanded ? "expanded" : ""} ${isCollapsing ? "collapsing" : ""} ${isHovering && !isAnimating ? "hovering" : ""} ${!transitionsEnabled ? "disabled" : ""}`}
+      onMouseEnter={() => !isAnimating && setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+      onClick={() => !isAnimating && setTransitionsEnabled(!transitionsEnabled)}
     >
       {COLORS.map((color, index) => (
         <div
@@ -51,6 +60,9 @@ export default function ColorBars() {
           style={{ backgroundColor: color }}
         />
       ))}
+      <div className={`colorBarsText ${isHovering ? "visible" : ""}`}>
+        Click me to toggle page transitions
+      </div>
     </div>
   );
 }
