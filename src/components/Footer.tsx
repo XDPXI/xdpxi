@@ -27,6 +27,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/projects">
+                  <i aria-hidden="true" className="fa-solid fa-list"></i>{" "}
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="/animations">
+                  <i aria-hidden="true" className="fa-solid fa-film"></i>{" "}
+                  Animations
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://docs.xdpxi.dev/"
                   target="_blank"
@@ -63,97 +75,6 @@ export default function Footer() {
                 >
                   <i aria-hidden="true" className="fa-brands fa-shopify"></i>{" "}
                   Shopify <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div className="footer-column">
-          <h3>Projects</h3>
-          <nav aria-label="External Links">
-            <ul>
-              <li>
-                <a
-                  href="https://fastbangs.xdpxi.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="fa-solid fa-magnifying-glass"
-                  ></i>{" "}
-                  FastBangs <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <Link href="/projects/dc-webhook">
-                  <i aria-hidden="true" className="fa-brands fa-discord"></i>{" "}
-                  Discord Webhook
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://xds-code.xdpxi.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-code"></i> XD's
-                  Code <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://drawium.xdpxi.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-pen"></i> Drawium{" "}
-                  <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/XDPXI/XDAutoClicker"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="fa-solid fa-arrow-pointer"
-                  ></i>{" "}
-                  XD's AutoClicker{" "}
-                  <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://xdpxi.itch.io/mono"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-gamepad"></i>{" "}
-                  Mono <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://swiftmc.xdpxi.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-cube"></i>{" "}
-                  SwiftMC <i className="fa-solid fa-external-link-alt"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://cloud.xdpxi.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i aria-hidden="true" className="fa-solid fa-cloud"></i> XD's
-                  Cloud <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
             </ul>
@@ -281,6 +202,28 @@ export default function Footer() {
                   ></i>{" "}
                   XD's AntiCheat - Privacy Policy
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://cloud.xdpxi.dev/legal/terms-of-service"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-cloud"></i> XD's
+                  Cloud - Terms of Service{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://cloud.xdpxi.dev/legal/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-cloud"></i> XD's
+                  Cloud - Privacy Policy{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
+                </a>
               </li>
             </ul>
           </nav>
