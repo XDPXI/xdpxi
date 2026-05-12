@@ -21,7 +21,7 @@ export default function Donut() {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/whmXRQrQA6M"
               title="Donut"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -30,7 +30,17 @@ export default function Donut() {
           </div>
 
           <h2>About This Animation</h2>
-          <p></p>
+          <p>
+            I made this Animation using Blender from Blender Guru's tutorial{" "}
+            <a
+              href="https://www.youtube.com/watch?v=-tbSCMbJA6o&list=PLjEaoINr3zgGUwGwXlj9kBe7TrVWNjkyv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blender Donut Tutorial (2025){" "}
+              <i className="fa-solid fa-external-link-alt"></i>
+            </a>
+          </p>
         </Section>
       </Content>
 
