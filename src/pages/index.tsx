@@ -88,21 +88,21 @@ export default function Home() {
             <span className="highlight-text">contact@xdpxi.dev</span>!
           </p>
         </Section>
-      </Content>
-      <Section>
-        <h2>Animations</h2>
-        <p>
-          I have made a few animations over time, primarily for school projects.
-          This includes:
-        </p>
+        <Section>
+          <h2>Animations</h2>
+          <p>
+            I have made a few animations over time, primarily for school
+            projects. This includes:
+          </p>
 
-        <Link href="/animations/donut">Donut!</Link>
-        <br />
-        <Link href="/animations/the-great-heist">The Great Heist</Link>
-        <br />
-        <br />
-        <Link href="/animations">Explore full list</Link>
-      </Section>
+          <Link href="/animations/donut">Donut!</Link>
+          <br />
+          <Link href="/animations/the-great-heist">The Great Heist</Link>
+          <br />
+          <br />
+          <Link href="/animations">Explore full list</Link>
+        </Section>
+      </Content>
 
       <Title>Blogs</Title>
 
