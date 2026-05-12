@@ -26,12 +26,24 @@ export default function Home() {
             projects, ranging from Minecraft mods to full-stack applications.
           </p>
 
+          <Link href="/projects">Explore my notable projects</Link>
+          <br />
+          <br />
           <a
             href="https://github.com/xdpxi/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Explore my GitHub <i className="fa-solid fa-external-link-alt"></i>
+          </a>
+          <br />
+          <a
+            href="http://projects.xdpxi.net/explore/repos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore some other source code{" "}
+            <i className="fa-solid fa-external-link-alt"></i>
           </a>
         </Section>
         <Section>
@@ -87,6 +99,9 @@ export default function Home() {
         <Link href="/animations/donut">Donut!</Link>
         <br />
         <Link href="/animations/the-great-heist">The Great Heist</Link>
+        <br />
+        <br />
+        <Link href="/animations">Explore full list</Link>
       </Section>
 
       <Title>Blogs</Title>
