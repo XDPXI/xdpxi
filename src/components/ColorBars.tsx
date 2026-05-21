@@ -54,6 +54,86 @@ const COLOR_BARS = {
     name: "Non-binary",
     colors: ["#ffff00", "#ffffff", "#9c4dff", "#000000"],
   },
+  pansexual: {
+    name: "Pansexual",
+    colors: ["#ff218c", "#ffd800", "#21b1ff"],
+  },
+  genderfluid: {
+    name: "Genderfluid",
+    colors: ["#ff75a2", "#ffffff", "#be18d6", "#000000", "#333ebd"],
+  },
+  agender: {
+    name: "Agender",
+    colors: [
+      "#000000",
+      "#b9b9b9",
+      "#ffffff",
+      "#b8f483",
+      "#ffffff",
+      "#b9b9b9",
+      "#000000",
+    ],
+  },
+  aromantic: {
+    name: "Aromantic",
+    colors: ["#3aa63f", "#a8d47a", "#ffffff", "#ababab", "#000000"],
+  },
+  polysexual: {
+    name: "Polysexual",
+    colors: ["#f61cb9", "#07d569", "#1c92f6"],
+  },
+  omnisexual: {
+    name: "Omnisexual",
+    colors: ["#ff9ccd", "#ff53bf", "#1f1f1f", "#675fff", "#8ea6ff"],
+  },
+  genderqueer: {
+    name: "Genderqueer",
+    colors: ["#b57edc", "#ffffff", "#4a8123"],
+  },
+  intersex: {
+    name: "Intersex",
+    colors: ["#ffd800", "#ffd800", "#7a01aa", "#ffd800", "#ffd800"],
+  },
+  bear: {
+    name: "Bear",
+    colors: ["#623804", "#d56300", "#fedd63", "#f6f6f6", "#555555", "#000000"],
+  },
+  demiboy: {
+    name: "Demiboy",
+    colors: [
+      "#7f7f7f",
+      "#c4c4c4",
+      "#9ad9eb",
+      "#ffffff",
+      "#9ad9eb",
+      "#c4c4c4",
+      "#7f7f7f",
+    ],
+  },
+  demigirl: {
+    name: "Demigirl",
+    colors: [
+      "#7f7f7f",
+      "#c4c4c4",
+      "#f7b1cc",
+      "#ffffff",
+      "#f7b1cc",
+      "#c4c4c4",
+      "#7f7f7f",
+    ],
+  },
+  bigender: {
+    name: "Bigender",
+    colors: ["#c479a2", "#eda5cd", "#d6c7e8", "#ffffff", "#9ac7e8", "#6d82d1"],
+  },
+  abrosexual: {
+    name: "Abrosexual",
+    colors: ["#46d294", "#a8e4a0", "#ffffff", "#f78bb3", "#ee1766"],
+  },
+  aroace: {
+    name: "AroAce",
+    colors: ["#e28c00", "#eccd00", "#ffffff", "#62aedc", "#203856"],
+  },
 };
 
 const COLOR_BARS_KEYS = Object.keys(COLOR_BARS);
