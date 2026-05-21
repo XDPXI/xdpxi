@@ -60,7 +60,13 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ColorBars />
-      <Databuddy clientId="Ky1wMKg8zxAgolZ7xDHKv" enableBatching={true} />
+      <Databuddy
+        clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID || ""}
+        trackAttributes={true}
+        trackOutgoingLinks={true}
+        trackInteractions={true}
+        trackErrors={true}
+      />
       <Component {...pageProps} />
     </>
   );
