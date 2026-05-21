@@ -41,13 +41,6 @@ export default function App({ Component, pageProps }: AppProps) {
           type="image/x-icon"
         />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-          rel="stylesheet"
-        />
-
         <meta name="color-scheme" content="dark" />
         <style
           dangerouslySetInnerHTML={{
@@ -60,13 +53,15 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ColorBars />
-      <Databuddy
-        clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID || ""}
-        trackAttributes={true}
-        trackOutgoingLinks={true}
-        trackInteractions={true}
-        trackErrors={true}
-      />
+      {process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID && (
+        <Databuddy
+          clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID}
+          trackAttributes={true}
+          trackOutgoingLinks={true}
+          trackInteractions={true}
+          trackErrors={true}
+        />
+      )}
       <Component {...pageProps} />
     </>
   );
