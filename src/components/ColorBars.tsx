@@ -155,13 +155,13 @@ function getWeightedRandomFlag(): string {
 
   const percentages: Record<string, string> = {};
   for (const flag of COLOR_BARS_KEYS) {
-    const percentage = ((weights[flag] / totalWeight) * 100).toFixed(2);
+    const percentage = ((weights[flag]! / totalWeight) * 100).toFixed(2);
     percentages[flag] = percentage;
   }
 
   let random = Math.random() * totalWeight;
   for (const flag of COLOR_BARS_KEYS) {
-    random -= weights[flag];
+    random -= weights[flag]!;
     if (random <= 0) {
       lastSeen[flag] = now;
       localStorage.setItem(lastSeenKey, JSON.stringify(lastSeen));
@@ -169,7 +169,7 @@ function getWeightedRandomFlag(): string {
     }
   }
 
-  return COLOR_BARS_KEYS[0];
+  return COLOR_BARS_KEYS[0]!;
 }
 
 export default function ColorBars() {
