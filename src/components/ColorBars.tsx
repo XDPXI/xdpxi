@@ -138,6 +138,40 @@ const COLOR_BARS = {
 
 const COLOR_BARS_KEYS = Object.keys(COLOR_BARS);
 
+function getWeightedRandomFlag(): string {
+  const lastSeenKey = "colorBarsLastSeen";
+  const lastSeen = JSON.parse(localStorage.getItem(lastSeenKey) || "{}");
+  const now = Date.now();
+
+  const weights: Record<string, number> = {};
+  let totalWeight = 0;
+
+  for (const flag of COLOR_BARS_KEYS) {
+    const timeSinceLastSeen = now - (lastSeen[flag] || 0);
+    const weight = Math.pow(timeSinceLastSeen / 1000 + 1, 1.5);
+    weights[flag] = weight;
+    totalWeight += weight;
+  }
+
+  const percentages: Record<string, string> = {};
+  for (const flag of COLOR_BARS_KEYS) {
+    const percentage = ((weights[flag] / totalWeight) * 100).toFixed(2);
+    percentages[flag] = percentage;
+  }
+
+  let random = Math.random() * totalWeight;
+  for (const flag of COLOR_BARS_KEYS) {
+    random -= weights[flag];
+    if (random <= 0) {
+      lastSeen[flag] = now;
+      localStorage.setItem(lastSeenKey, JSON.stringify(lastSeen));
+      return flag;
+    }
+  }
+
+  return COLOR_BARS_KEYS[0];
+}
+
 export default function ColorBars() {
   const router = useRouter();
   const [isExpanded, setIsExpanded] = useState(false);
@@ -148,8 +182,7 @@ export default function ColorBars() {
   const [selectedBars, setselectedBars] = useState<string>("rainbow");
 
   useEffect(() => {
-    const randomBars =
-      COLOR_BARS_KEYS[Math.floor(Math.random() * COLOR_BARS_KEYS.length)];
+    const randomBars = getWeightedRandomFlag();
     setselectedBars(randomBars);
   }, []);
 
@@ -158,9 +191,10 @@ export default function ColorBars() {
       if (!transitionsEnabled) return;
       setIsCollapsing(false);
       setIsExpanded(true);
-      const randomBars =
-        COLOR_BARS_KEYS[Math.floor(Math.random() * COLOR_BARS_KEYS.length)];
-      setselectedBars(randomBars);
+      setTimeout(() => {
+        const randomBars = getWeightedRandomFlag();
+        setselectedBars(randomBars);
+      }, 175);
     };
 
     const handleRouteChangeComplete = () => {
