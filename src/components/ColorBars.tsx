@@ -191,10 +191,8 @@ export default function ColorBars() {
       if (!transitionsEnabled) return;
       setIsCollapsing(false);
       setIsExpanded(true);
-      setTimeout(() => {
-        const randomBars = getWeightedRandomFlag();
-        setselectedBars(randomBars);
-      }, 175);
+      const randomBars = getWeightedRandomFlag();
+      setselectedBars(randomBars);
     };
 
     const handleRouteChangeComplete = () => {
