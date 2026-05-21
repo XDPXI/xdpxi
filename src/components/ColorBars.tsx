@@ -1,14 +1,62 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const COLORS = [
-  "#f26f70",
-  "#faa75d",
-  "#fdf27e",
-  "#94cf9a",
-  "#6c84c2",
-  "#a782bb",
-];
+const COLOR_BARS = {
+  rainbow: {
+    name: "Rainbow",
+    colors: ["#f26f70", "#faa75d", "#fdf27e", "#94cf9a", "#6c84c2", "#a782bb"],
+  },
+  trans: {
+    name: "Trans",
+    colors: ["#5bcefa", "#f5a9d0", "#ffffff", "#f5a9d0", "#5bcefa"],
+  },
+  bi: {
+    name: "Bi",
+    colors: ["#d0036d", "#d0036d", "#964d92", "#0038a8", "#0038a8"],
+  },
+  lesbian: {
+    name: "Lesbian",
+    colors: ["#cd2500", "#ff9654", "#ffffff", "#d162a4", "#9b005c"],
+  },
+  gay: {
+    name: "Gay",
+    colors: [
+      "#089276",
+      "#2bd0ae",
+      "#9de9c3",
+      "#f1f0fe",
+      "#81b0e4",
+      "#564fd0",
+      "#431e7e",
+    ],
+  },
+  femboy: {
+    name: "Femboy",
+    colors: [
+      "#d260a5",
+      "#e4afcd",
+      "#ffffff",
+      "#57cef8",
+      "#ffffff",
+      "#e4afcd",
+      "#d260a5",
+    ],
+  },
+  asexual: {
+    name: "Asexual",
+    colors: ["#000000", "#a3a3a3", "#ffffff", "#810081"],
+  },
+  demisexual: {
+    name: "Demisexual",
+    colors: ["#3e3e3e", "#8c8c8c", "#d4d4d4", "#810081", "#3e3e3e"],
+  },
+  nonbinary: {
+    name: "Non-binary",
+    colors: ["#ffff00", "#ffffff", "#9c4dff", "#000000"],
+  },
+};
+
+const COLOR_BARS_KEYS = Object.keys(COLOR_BARS);
 
 export default function ColorBars() {
   const router = useRouter();
@@ -17,12 +65,22 @@ export default function ColorBars() {
   const [side, setSide] = useState<"left" | "right">("left");
   const [isHovering, setIsHovering] = useState(false);
   const [transitionsEnabled, setTransitionsEnabled] = useState(true);
+  const [selectedBars, setselectedBars] = useState<string>("rainbow");
+
+  useEffect(() => {
+    const randomBars =
+      COLOR_BARS_KEYS[Math.floor(Math.random() * COLOR_BARS_KEYS.length)];
+    setselectedBars(randomBars);
+  }, []);
 
   useEffect(() => {
     const handleRouteChangeStart = () => {
       if (!transitionsEnabled) return;
       setIsCollapsing(false);
       setIsExpanded(true);
+      const randomBars =
+        COLOR_BARS_KEYS[Math.floor(Math.random() * COLOR_BARS_KEYS.length)];
+      setselectedBars(randomBars);
     };
 
     const handleRouteChangeComplete = () => {
@@ -53,13 +111,15 @@ export default function ColorBars() {
       onMouseLeave={() => setIsHovering(false)}
       onClick={() => !isAnimating && setTransitionsEnabled(!transitionsEnabled)}
     >
-      {COLORS.map((color, index) => (
-        <div
-          key={index}
-          className="colorBar"
-          style={{ backgroundColor: color }}
-        />
-      ))}
+      {COLOR_BARS[selectedBars as keyof typeof COLOR_BARS].colors.map(
+        (color, index) => (
+          <div
+            key={index}
+            className="colorBar"
+            style={{ backgroundColor: color }}
+          />
+        ),
+      )}
       <div className={`colorBarsText ${isHovering ? "visible" : ""}`}>
         Click me to toggle page transitions
       </div>
