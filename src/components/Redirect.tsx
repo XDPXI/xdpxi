@@ -22,10 +22,8 @@ export default function Redirect({ sitekey, redirectSite }: RedirectProps) {
 
   function handleVerificationSuccess(token: string, ekey: string) {
     setRedirectMessage("Redirecting...");
-    setTimeout(() => {
-      setCaptchaSuccess(true);
-      window.location.replace(redirectSite);
-    }, 1000);
+    setCaptchaSuccess(true);
+    window.location.replace(redirectSite);
   }
 
   return (
