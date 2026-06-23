@@ -97,6 +97,16 @@ export default function Footer() {
                   Shopify <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.xdpxi.dev/neyhost"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-server"></i>{" "}
+                  NeyHost <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
