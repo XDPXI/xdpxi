@@ -51,6 +51,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://maven.xdpxi.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-solid fa-list"></i> Maven{" "}
+                  <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://status.xdpxi.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
