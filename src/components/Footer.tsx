@@ -56,7 +56,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                 >
                   <i aria-hidden="true" className="fa-solid fa-list"></i>{" "}
-                  Projects <i className="fa-solid fa-external-link-alt"></i>
+                  Repositories <i className="fa-solid fa-external-link-alt"></i>
                 </a>
               </li>
               <li>
