@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://projects.xdpxi.net/"
+                  href="https://git.xdpxi.net/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
