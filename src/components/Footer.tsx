@@ -212,7 +212,13 @@ export default function Footer() {
               <li>
                 <Link href="/legal/mc">
                   <i aria-hidden="true" className="fa-solid fa-book"></i> XD's
-                  MC License
+                  MC License v2.1
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal/open-mc-v3">
+                  <i aria-hidden="true" className="fa-solid fa-book"></i> XD's
+                  Open MC License v3
                 </Link>
               </li>
               <li>
