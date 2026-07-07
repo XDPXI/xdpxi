@@ -17,11 +17,11 @@ export default function Mc() {
             Version: 2.1.0
             <br />
             Download:{" "}
-            <a href="http://cdn.xdpxi.net:8716/xdpxi/license/mc/2.1.0/LICENSE">
+            <a href="http://cdn.xdpxi.net/xdpxi/license/mc/2.1.0/LICENSE">
               LICENSE
             </a>{" "}
             or{" "}
-            <a href="http://cdn.xdpxi.net:8716/xdpxi/license/mc/2.1.0/LICENSE.txt">
+            <a href="http://cdn.xdpxi.net/xdpxi/license/mc/2.1.0/LICENSE.txt">
               LICENSE.txt
             </a>
             <br />
