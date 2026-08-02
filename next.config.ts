@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
     experimental: {
         optimizeCss: true,
         scrollRestoration: true,
+        useTypeScriptCli: true,
     },
     async headers() {
         return [
