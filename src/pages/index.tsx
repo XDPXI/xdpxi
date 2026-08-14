@@ -75,12 +75,14 @@ export default function Home() {
             Ember's Mod <i className="fa-solid fa-external-link-alt"></i>
           </a>
           <br />
-          <a
-            href="https://modrinth.com/mod/halexmod"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Halex's Mod <i className="fa-solid fa-external-link-alt"></i>
+          <a>
+            <span
+              className="privatised-project"
+              title="Project has been privatised by owner."
+            >
+              Halex's Mod{" "}
+              <i className="fa-solid fa-external-link-alt"></i>
+            </span>
           </a>
           <p style={{ marginTop: "10px" }}>
             If you would like me to create a project for you, please feel free

@@ -475,3 +475,15 @@ select:focus {
 .animation-card:hover .animation-title {
     color: #c9a342;
 }
+
+.privatised-project {
+    display: inline-block;
+    margin: 0 -6px;
+    padding: 0 6px;
+    opacity: 0.5;
+    cursor: help;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 55%;
+}
