@@ -6,18 +6,6 @@ export default function Footer() {
     <header className="header">
       <div className="footer-content">
         <div className="footer-column">
-          <h3>About</h3>
-          <Image
-            src="/imgs/icon-rounded.png"
-            alt="Site Icon"
-            width={32}
-            height={32}
-            loading="lazy"
-          />
-          <p>&copy; 2026 XDPXI. All rights reserved.</p>
-        </div>
-
-        <div className="footer-column">
           <h3>Pages</h3>
           <nav aria-label="Site Navigation">
             <ul>
@@ -205,7 +193,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="footer-column">
+        <div className="footer-column footer-column-wide">
           <h3>Legal</h3>
           <nav aria-label="Site Navigation">
             <ul>
@@ -269,6 +257,26 @@ export default function Footer() {
               </li>
             </ul>
           </nav>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="footer-bottom-left">
+          <Image
+            src="/imgs/icon-rounded.png"
+            alt="Site Icon"
+            width={32}
+            height={32}
+            loading="lazy"
+          />
+          <p>&copy; 2026 XDPXI. All rights reserved.</p>
+        </div>
+        <div className="footer-bottom-right">
+          <p>
+            Made with{" "}
+            <i aria-hidden="true" className="fa-solid fa-heart heart-icon"></i>{" "}
+            by XDPXI!
+          </p>
         </div>
       </div>
     </header>
