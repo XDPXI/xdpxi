@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-column">
-          <h3>Links</h3>
+          <h3>Accounts</h3>
           <nav aria-label="External Links">
             <ul>
               <li>
