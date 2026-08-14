@@ -7,7 +7,7 @@ export default function MC() {
     <>
       <Header>XD's MC License</Header>
 
-      <Redirect sitekey="" redirectSite="/legal/mc" />
+      <Redirect redirectSite="/legal/mc" />
 
       <Footer />
     </>

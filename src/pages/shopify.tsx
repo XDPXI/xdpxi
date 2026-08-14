@@ -13,7 +13,7 @@ export default function Shopify() {
     <>
       <Header>Shopify</Header>
 
-      <Redirect sitekey="" redirectSite="https://shopify.pxf.io/xdpxi" />
+      <Redirect redirectSite="https://shopify.pxf.io/xdpxi" />
 
       <Footer />
     </>

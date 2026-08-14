@@ -1,11 +1,10 @@
-﻿import HCaptcha from "@hcaptcha/react-hcaptcha";
+﻿import { Turnstile } from "@marsidev/react-turnstile";
 
 interface CaptchaProps {
-  sitekey: string;
-  onVerify: (token: string, ekey: string) => void;
+  onVerify: (token: string) => void;
 }
 
-export default function Captcha({ sitekey, onVerify }: CaptchaProps) {
+export default function Captcha({ onVerify }: CaptchaProps) {
   return (
     <div
       style={{
@@ -15,10 +14,10 @@ export default function Captcha({ sitekey, onVerify }: CaptchaProps) {
         marginBottom: "15px",
       }}
     >
-      <HCaptcha
-        sitekey={sitekey}
-        theme="dark"
-        onVerify={(token, ekey) => onVerify(token, ekey)}
+      <Turnstile
+        siteKey="0x4AAAAAAEQAK7KWf9n_-aa_"
+        options={{ theme: "dark" }}
+        onSuccess={(token) => onVerify(token)}
       />
     </div>
   );

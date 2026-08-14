@@ -3,24 +3,16 @@ import Content from "~/components/Content";
 import Captcha from "~/components/Captcha";
 
 interface RedirectProps {
-  sitekey: string | null;
   redirectSite: string;
 }
 
-export default function Redirect({ sitekey, redirectSite }: RedirectProps) {
+export default function Redirect({ redirectSite }: RedirectProps) {
   const [redirectMessage, setRedirectMessage] = useState(
-    "Awaiting for hCaptcha",
+    "Awaiting for Turnstile",
   );
   const [captchaSuccess, setCaptchaSuccess] = React.useState<boolean>(false);
 
-  useEffect(() => {
-    if (!sitekey) {
-      setRedirectMessage("Redirecting...");
-      window.location.replace(redirectSite);
-    }
-  });
-
-  function handleVerificationSuccess(token: string, ekey: string) {
+  function handleVerificationSuccess(token: string) {
     setRedirectMessage("Redirecting...");
     setCaptchaSuccess(true);
     window.location.replace(redirectSite);
@@ -29,10 +21,10 @@ export default function Redirect({ sitekey, redirectSite }: RedirectProps) {
   return (
     <Content>
       <div className="section" style={{ textAlign: "center" }}>
-        {captchaSuccess || !sitekey ? <h2>{redirectMessage}</h2> : null}
+        {captchaSuccess ? <h2>{redirectMessage}</h2> : null}
 
-        {!captchaSuccess && sitekey ? (
-          <Captcha sitekey={sitekey} onVerify={handleVerificationSuccess} />
+        {!captchaSuccess ? (
+          <Captcha onVerify={handleVerificationSuccess} />
         ) : null}
       </div>
     </Content>

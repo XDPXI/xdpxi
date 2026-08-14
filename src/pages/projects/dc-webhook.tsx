@@ -71,7 +71,7 @@ export default function DcWebhook() {
       setState(e.target.value);
     };
 
-  function handleVerificationSuccess(token: string, ekey: string) {
+  function handleVerificationSuccess(token: string) {
     setCaptchaSuccess(true);
   }
 
@@ -131,12 +131,9 @@ export default function DcWebhook() {
             <option value="9370DB">🟣 Purple</option>
           </select>
 
-          {!captchaSuccess && (
-            <Captcha
-              sitekey="3978b8c8-5892-4f32-97ee-8914de7ae058"
-              onVerify={handleVerificationSuccess}
-            />
-          )}
+          <Captcha
+            onVerify={handleVerificationSuccess}
+          />
 
           <button
             className="button"

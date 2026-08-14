@@ -13,7 +13,7 @@ export default function Shopify() {
     <>
       <Header>NeyHost</Header>
 
-      <Redirect sitekey="" redirectSite="https://www.neyhost.com/?ref=XDPXI" />
+      <Redirect redirectSite="https://www.neyhost.com/?ref=XDPXI" />
 
       <Footer />
     </>
