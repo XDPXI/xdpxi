@@ -14,9 +14,9 @@ export default function Home() {
         <Section>
           <h2>About Me</h2>
           <p>
-            Hi, I'm XDPXI or Xavier Perri, I am a developer and artist. I mainly
-            work on personal projects, but I also enjoy collaborating with
-            others and taking up commissions.
+            Heya! I'm Xavier Perri (or as you would know me, XDPXI), I'm a
+            developer and artist. I mainly work on personal projects but I
+            love to work with other people such as collaborations or commisions.
           </p>
         </Section>
         <Section>
