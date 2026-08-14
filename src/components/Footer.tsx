@@ -77,7 +77,7 @@ export default function Footer() {
             <ul>
               <li>
                 <a
-                  href="https://www.xdpxi.dev/shopify"
+                  href="/shopify"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.xdpxi.dev/neyhost"
+                  href="/neyhost"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
