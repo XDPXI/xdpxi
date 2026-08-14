@@ -115,6 +115,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://www.tiktok.com/@xdpxi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fa-brands fa-tiktok"></i>{" "}
+                  TikTok <i className="fa-solid fa-external-link-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://twitch.tv/xdpxi"
                   target="_blank"
                   rel="noopener noreferrer"
