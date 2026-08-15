@@ -208,6 +208,15 @@ export default function Footer() {
           <nav aria-label="Site Navigation">
             <ul>
               <li>
+                <Link href="/legal/privacy-policy">
+                  <i
+                    aria-hidden="true"
+                    className="fa-solid fa-lock"
+                  ></i>{" "}
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
                 <Link href="/legal/mc">
                   <i aria-hidden="true" className="fa-solid fa-book"></i> XD's
                   MC License v2.1
