@@ -3,7 +3,20 @@ import "../styles/fontawesome.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Databuddy } from "@databuddy/sdk/react";
+import { Turnstile } from "@marsidev/react-turnstile";
 import ColorBars from "~/components/ColorBars";
+
+async function verifyBackgroundTurnstileToken(token: string) {
+  try {
+    await fetch("/api/verify-background-turnstile", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    });
+  } catch {
+    // ignorr
+  }
+}
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -53,6 +66,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ColorBars />
+      <Turnstile
+        siteKey="0x4AAAAAAEQdaa7Lozsyh3UJ"
+        options={{ size: "invisible" }}
+        onSuccess={(token) => void verifyBackgroundTurnstileToken(token)}
+      />
       {process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID && (
         <Databuddy
           clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID}
