@@ -9,13 +9,13 @@ export default function NotFound() {
       <Header>404 - Not found!</Header>
 
       <Content>
-        <div className="section" style={{ textAlign: "center" }}>
+        <div className="section s-404">
           <Button onClick={() => (window.location.href = "/")}>
-            <i className="fa-solid fa-house"></i> Home
+            Home
           </Button>
 
           <Button onClick={() => window.history.back()}>
-            <i className="fa-solid fa-arrow-left"></i> Go Back
+            &laquo; Go Back
           </Button>
         </div>
       </Content>

@@ -2,14 +2,13 @@ import React from "react";
 
 interface TitleProps {
   children: React.ReactNode;
+  id?: string;
 }
 
-export default function Title({ children }: TitleProps) {
+export default function Title({ children, id }: TitleProps) {
   return (
-    <>
-      <header className="header" role="banner">
-        <h1>{children}</h1>
-      </header>
-    </>
+    <div className="titlebar" id={id}>
+      <h1>{children}</h1>
+    </div>
   );
 }

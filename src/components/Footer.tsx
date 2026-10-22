@@ -1,9 +1,87 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CHOOSE_EVENT } from "~/components/DesignPicker";
 
 export default function Footer() {
   return (
-    <header className="header">
+    <>
+    <footer className="footer footer-retro" role="contentinfo">
+      <nav className="footer-legal" aria-label="Legal">
+        <h3>Legal stuff (the boring part)</h3>
+        <ul>
+          <li>
+            <Link href="/legal/privacy-policy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link href="/legal/mc">XD's MC License v2.1</Link>
+          </li>
+          <li>
+            <Link href="/legal/open-mc-v3">XD's Open MC License v3</Link>
+          </li>
+          <li>
+            <Link href="/legal/closed-mc-v1">XD's Closed MC License v1</Link>
+          </li>
+          <li>
+            <Link href="/legal/xdac-terms-of-service">
+              XD's AntiCheat - Terms of Service
+            </Link>
+          </li>
+          <li>
+            <Link href="/legal/xdac-privacy-policy">
+              XD's AntiCheat - Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://cloud.xdpxi.dev/legal/terms-of-service"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              XD's Cloud - Terms of Service
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://cloud.xdpxi.dev/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              XD's Cloud - Privacy Policy
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="footer-bottom">
+        <Image
+          src="/imgs/icon-rounded.png"
+          alt="Site Icon"
+          width={32}
+          height={32}
+          loading="lazy"
+        />
+        <p>
+          &copy; 2026 XDPXI. All rights reserved.
+          <br />
+          Made with{" "}
+          <img
+            src="/imgs/web/heart.svg"
+            alt="love"
+            width={14}
+            height={12}
+            className="heart-icon"
+          />{" "}
+          by XDPXI! <a href="#top">[back to top]</a>{" "}
+          <a
+            href="#top"
+            onClick={() => window.dispatchEvent(new Event(CHOOSE_EVENT))}
+          >
+            [change design]
+          </a>
+        </p>
+      </div>
+    </footer>
+    <footer className="footer-modern" role="contentinfo">
       <div className="footer-content">
         <div className="footer-column">
           <h3>Pages</h3>
@@ -18,12 +96,6 @@ export default function Footer() {
                 <Link href="/projects">
                   <i aria-hidden="true" className="fa-solid fa-list"></i>{" "}
                   Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/animations">
-                  <i aria-hidden="true" className="fa-solid fa-film"></i>{" "}
-                  Animations
                 </Link>
               </li>
               <li>
@@ -294,10 +366,17 @@ export default function Footer() {
           <p>
             Made with{" "}
             <i aria-hidden="true" className="fa-solid fa-heart heart-icon"></i>{" "}
-            by XDPXI!
+            by XDPXI!{" "}
+            <a
+              href="#top"
+              onClick={() => window.dispatchEvent(new Event(CHOOSE_EVENT))}
+            >
+              Change design
+            </a>
           </p>
         </div>
       </div>
-    </header>
+    </footer>
+    </>
   );
 }

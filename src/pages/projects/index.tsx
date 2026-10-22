@@ -25,6 +25,12 @@ const projects: Project[] = [
     external: true,
   },
   {
+    name: "Flora",
+    description: "Every Minecraft setup, in one launcher",
+    href: "https://flora.xdpxi.dev/",
+    external: true,
+  },
+  {
     name: "XD's Code",
     description: "XD's Code is a code editor that is insipred by VSC.",
     href: "https://github.com/XDPXI/XDs-Code",

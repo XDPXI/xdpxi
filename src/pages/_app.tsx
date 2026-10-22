@@ -1,10 +1,14 @@
-import "../styles/globals.css";
 import "../styles/fontawesome.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Databuddy } from "@databuddy/sdk/react";
 import { Turnstile } from "@marsidev/react-turnstile";
+import { useRouter } from "next/router";
 import ColorBars from "~/components/ColorBars";
+import Banner from "~/components/Banner";
+import SideNav from "~/components/SideNav";
+import SideLinks from "~/components/SideLinks";
+import DesignPicker from "~/components/DesignPicker";
 
 async function verifyBackgroundTurnstileToken(token: string) {
   try {
@@ -19,6 +23,10 @@ async function verifyBackgroundTurnstileToken(token: string) {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { pathname } = useRouter();
+  const theme = pathname.split("/")[1] || "home";
+  const wide = ["legal", "license"].includes(theme) || pathname === "/projects/dc-webhook";
+
   return (
     <>
       <Head>
@@ -54,17 +62,8 @@ export default function App({ Component, pageProps }: AppProps) {
           type="image/x-icon"
         />
 
-        <meta name="color-scheme" content="dark" />
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-                body {
-                  background-color: #1e2021;
-                }
-              `,
-          }}
-        />
       </Head>
+      <DesignPicker />
       <ColorBars />
       <Turnstile
         siteKey="0x4AAAAAAEQdaa7Lozsyh3UJ"
@@ -80,7 +79,16 @@ export default function App({ Component, pageProps }: AppProps) {
           trackErrors={true}
         />
       )}
-      <Component {...pageProps} />
+      <div className="shell" data-theme={theme} id="top">
+        <Banner />
+        <div className={wide ? "page page-wide" : "page"}>
+          <SideNav />
+          <main className="main">
+            <Component {...pageProps} />
+          </main>
+          {!wide && <SideLinks />}
+        </div>
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Content from "~/components/Content";
 import Captcha from "~/components/Captcha";
 
@@ -20,7 +20,7 @@ export default function Redirect({ redirectSite }: RedirectProps) {
 
   return (
     <Content>
-      <div className="section" style={{ textAlign: "center" }}>
+      <div className="section s-redirect">
         {captchaSuccess ? <h2>{redirectMessage}</h2> : null}
 
         {!captchaSuccess ? (

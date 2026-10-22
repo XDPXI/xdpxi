@@ -7,7 +7,7 @@ interface ContentProps {
 export default function Content({ children }: ContentProps) {
   return (
     <>
-      <div className="content-wrapper header" role="main">
+      <div className="content-wrapper">
         {children}
       </div>
     </>

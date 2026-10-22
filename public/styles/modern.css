@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
 :root {
     --header-border-color: #c9a342;
     --highlight: #c9a342;
@@ -45,7 +47,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-header {
+header,
+.footer-modern {
     position: relative;
     background: transparent;
     padding: 20px;
@@ -486,4 +489,146 @@ select:focus {
     background-size: 100% 3px;
     background-repeat: no-repeat;
     background-position: 0 55%;
+}
+
+/* Layout chrome from the shared markup that this design does not use */
+.banner,
+.side {
+    display: none;
+}
+
+.page,
+.main {
+    display: block;
+}
+
+.titlebar {
+    position: relative;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto 40px;
+    border-radius: calc(var(--border-radius) + 2px);
+    border: 5px solid var(--header-border-color);
+}
+
+.s-blog .entry-title {
+    font-size: 20px;
+}
+
+.s-redirect,
+.s-404 {
+    text-align: center;
+}
+
+.contact-note {
+    margin-top: 10px;
+}
+
+.footer-retro {
+    display: none;
+}
+
+.footer-modern {
+    margin-top: 40px;
+}
+
+.polaroid {
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.scribble {
+    display: none;
+}
+
+/* Design picker */
+.design-picker {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(30, 32, 33, 0.55);
+}
+
+.design-picker-panel {
+    width: 100%;
+    max-width: 440px;
+    padding: 28px 24px;
+    background: var(--background-dark);
+    border: 5px solid var(--header-border-color);
+    border-radius: calc(var(--border-radius) + 2px);
+    text-align: center;
+}
+
+.design-picker-title {
+    margin: 0 0 8px;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 1.25;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.design-picker-hint {
+    margin-bottom: 22px;
+    font-size: 1rem;
+    color: #b0a88a;
+}
+
+.design-picker-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.design-picker-choice {
+    min-width: 130px;
+    padding: 12px 20px;
+    background: transparent;
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    border: var(--button-color) 3px solid;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition:
+        background-color var(--transition-duration) var(--transition-easing),
+        transform 0.2s ease;
+}
+
+.design-picker-choice:hover,
+.design-picker-choice:focus-visible {
+    background-color: var(--button-color);
+    transform: scale(1.05);
+    outline: none;
+}
+
+@keyframes design-picker-flash {
+    50% {
+        background-color: var(--button-color);
+    }
+}
+
+.design-picker-choice-old {
+    animation: design-picker-flash 1.2s ease-in-out infinite;
+}
+
+.design-picker-choice-old:hover,
+.design-picker-choice-old:focus-visible {
+    animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .design-picker-choice-old {
+        animation: none;
+    }
+}
+
+.retro-only {
+  display: none;
 }
