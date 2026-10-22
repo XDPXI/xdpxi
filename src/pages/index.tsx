@@ -61,7 +61,7 @@ export default function Home() {
           </a>
           <br />
           <a
-            href="http://projects.xdpxi.net/explore/repos"
+            href="http://git.xdpxi.net/explore/repos"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -138,6 +138,13 @@ export default function Home() {
       <Title id="blogs">Blogs</Title>
 
       <Content>
+        <Section variant="s-blog">
+          <h2>Oct 22, 2026</h2>
+          <Link href="/blogs/a-new-design" className="entry-title">
+            A New Design!
+          </Link>
+        </Section>
+
         <Section variant="s-blog">
           <h2>Sep 17, 2026</h2>
           <Link href="https://cloud.xdpxi.dev/blog/another-network-upgrade" className="entry-title">
