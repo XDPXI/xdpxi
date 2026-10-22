@@ -20,13 +20,13 @@
 ### 🔹 Languages
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,ts,python,cs,swift,rust" />
+  <img src="https://skillicons.dev/icons?i=java,ts,cpp,cs,rust,py,go,swift" />
 </p>
 
-### 🔹 App & Game Development
+### 🔹 Tools
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=tauri,godot,unity" />
+  <img src="https://skillicons.dev/icons?i=tauri,godot,unity,nextjs,bun,cmake,gradle,docker" />
 </p>
 
 <!--
@@ -54,6 +54,13 @@
       src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&style=for-the-badge"
       height="35"
       alt="Twitch"
+    />
+  </a>
+  <a href="https://kick.com/xdpxi" target="_blank" rel="noreferrer">
+    <img
+      src="https://img.shields.io/static/v1?message=Kick&logo=kick&label=&color=53FC18&logoColor=black&style=for-the-badge"
+      height="35"
+      alt="Kick"
     />
   </a>
 </p>
