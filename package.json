@@ -13,12 +13,12 @@
     "@databuddy/sdk": "^3.0.0",
     "@marsidev/react-turnstile": "^1.6.1",
     "next": "^16.3.6",
-    "react": "^19.2.8",
+    "react": "^19.3.1",
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@types/node": "^26.6.3",
-    "@types/react": "^19.2.18",
+    "@types/react": "^19.3.0",
     "typescript": "^7.0.2",
     "critters": "^0.0.25"
   }
