@@ -5,7 +5,7 @@
     "": {
       "name": "xdpxi",
       "dependencies": {
-        "@databuddy/sdk": "^3.0.0",
+        "@databuddy/sdk": "^3.2.2",
         "@marsidev/react-turnstile": "^1.6.1",
         "next": "^16.3.6",
         "react": "^19.3.1",
@@ -20,7 +20,7 @@
     },
   },
   "packages": {
-    "@databuddy/sdk": ["@databuddy/sdk@3.0.0", "", { "peerDependencies": { "react": ">=18", "vue": ">=3" }, "optionalPeers": ["react", "vue"] }, "sha512-TeWALJJClxp9qPqGZoq1vrETYgwD40X3G65LuaWeQUCKx8WmACHSwg4uxXvrsW0wmhxu3ySkrQ4TsJUHiGJ02A=="],
+    "@databuddy/sdk": ["@databuddy/sdk@3.2.2", "", { "peerDependencies": { "react": ">=18", "vue": ">=3" }, "optionalPeers": ["react", "vue"] }, "sha512-zvu27h5KUum7gDAL6o6SwOTzSNssDUN4V05VuKbhqvggHkZbJEsK7FPioZzzNTnGWgEjFZsVwnGX7GzSwxm8GQ=="],
 
     "@emnapi/runtime": ["@emnapi/runtime@1.11.3", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA=="],
 
