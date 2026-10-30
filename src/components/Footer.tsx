@@ -65,7 +65,7 @@ export default function Footer() {
           <br />
           Made with{" "}
           <img
-            src="/imgs/web/heart.svg"
+            src="/imgs/heart.svg"
             alt="love"
             width={14}
             height={12}
