@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@databuddy/sdk": "^3.2.2",
+    "@databuddy/sdk": "^3.4.4",
     "@marsidev/react-turnstile": "^1.6.3",
     "next": "^16.4.3",
     "react": "^19.3.1",
